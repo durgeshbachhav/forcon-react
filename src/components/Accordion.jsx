@@ -2,8 +2,8 @@ import React from "react";
 
 const AccordionComponent = () => {
   return (
-    <div className=" p-4 max-w-4xl mx-auto">
-      <div className="space-y-2">
+    <div className="py-12 lg:px-8  bg-accordion">
+      <div className="space-y-2 mx-12">
         <AccordionItem
           title="EXPERTISE:"
           content="Over 20 years of experience in civil works like R.C.C pip"
@@ -24,6 +24,10 @@ const AccordionComponent = () => {
           title="DISTINGUISHED USPs:"
           content="Our raw materials, plant and machinery improve construction quality, cost, and control."
         />
+        <AccordionItem
+          title="PROJECT MANAGEMENT:"
+          content="We have skilled management, excellent project management, and on-time delivery."
+        />
       </div>
     </div>
   );
@@ -31,9 +35,9 @@ const AccordionComponent = () => {
 
 const AccordionItem = ({ title, content }) => {
   return (
-    <details className="group bg-green-500" open>
-      <summary className="flex items-center justify-between p-4 cursor-pointer outline-none group-open:bg-green-600 group-open:text-red ">
-        <span className="text-lg font-semibold sm:text-xl md:text-2xl lg:text-3xl text-white">
+    <details className="group bg-blue-300 rounded-md" open>
+      <summary className="flex items-center justify-between p-4 cursor-pointer outline-none group-open:bg-blue-200 group-open:text-red rounded-md">
+        <span className="text-lg font-semibold sm:text-xl md:text-xl lg:text-xl text-white">
           {title}
         </span>
         <svg
@@ -52,7 +56,7 @@ const AccordionItem = ({ title, content }) => {
         </svg>
       </summary>
       <div className="px-4 pb-4">
-        <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-white py-2">
+        <p className="text-base sm:text-lg md:text-xl lg:text-xl text-gray-700 py-2">
           {content}
         </p>
       </div>

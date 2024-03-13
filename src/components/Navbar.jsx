@@ -1,18 +1,19 @@
 import React from "react";
 import { ChevronDown, Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const menuItems = [
   {
-    name: "Home",
+    name: "HOME",
     to: "*",
   },
   {
-    name: "About Us",
+    name: "ABOUT US",
     to: "/about",
   },
   {
-    name: "Verticals",
-    to: "/verticals",
+    name: "VERTICALS",
+    to: "",
     subMenu: [
       { name: "HIGHWAY", to: "/verticals/highway" },
       { name: "AIRPORTS", to: "/verticals/airports" },
@@ -25,11 +26,11 @@ const menuItems = [
     ],
   },
   {
-    name: "Plant & Machinary",
-    to: "/plant-and-machinary",
+    name: "PLANT & MACHINERY",
+    to: "/plant-and-machinery",
   },
   {
-    name: "Contact",
+    name: "CONTACT",
     to: "/contact",
   },
 ];
@@ -46,9 +47,19 @@ const Navbar = () => {
     setIsSubMenuOpen(!isSubMenuOpen);
   };
 
+  const handleMenuItemClick = (itemName) => {
+    if (itemName === "VERTICALS") {
+      setIsSubMenuOpen(!isSubMenuOpen);
+    } else {
+      setIsSubMenuOpen(false);
+    }
+  };
+
   return (
-    <div className="relative w-full bg-white">
-      <div className=" flex max-w-7xl items-center justify-between px-4 py-2 sm:px-6 lg:px-8">
+    <div className="relative w-full bg-primary font-tienne py-4">
+      <div className="flex  items-center justify-between px-4 py-2 sm:px-6 lg:px-8">
+        {/* DESKTOP SCREEN */}
+        {/* LOGO  */}
         <div className="inline-flex items-center space-x-2">
           <span className="">
             <img
@@ -60,43 +71,49 @@ const Navbar = () => {
             />
           </span>
         </div>
+        {/* NAVITEMS  */}
         <div className="hidden lg:block">
           <ul
             onMouseLeave={() => setIsSubMenuOpen(false)}
             className="inline-flex space-x-8"
           >
             {menuItems.map((item) => (
+              // SINGLE NAVITEMS
               <li
                 key={item.name}
-                // onClick={() =>
-                //   item.name === "Verticals" && setIsSubMenuOpen(true)
-                // }
+                onMouseEnter={() => setIsSubMenuOpen(item.name === "VERTICALS")}
               >
-                <a
+                <Link
                   to={item.to}
-                  className={`text-sm font-semibold text-gray-800 hover:text-gray-900 flex items-center justify-center gap-0 ${
-                    isSubMenuOpen ? "" : ""
-                  }`}
+                  className={`text-sm font-semibold text-white hover:text-gray-300 flex items-center justify-center gap-0`}
+                  onClick={() => {
+                    if (item.name === "VERTICALS") {
+                      setIsSubMenuOpen(true);
+                    }
+                    // handleMenuItemClick(item.name);
+                  }}
                 >
                   {item.name}
-                  {item.name === "Verticals" && (
+                  {item.name === "VERTICALS" && (
                     <ChevronDown className="ml-1 h-4 w-4" />
                   )}
-                </a>
-                {item.name === "Verticals" && isSubMenuOpen && (
-                  <div className="absolute right-30 z-10 bg-black divide-y divide-gray-100 rounded-lg shadow-lg">
+                </Link>
+                {/* SUBMENU OPENS */}
+                {item.name === "VERTICALS" && isSubMenuOpen && (
+                  <div className="absolute  right-30 z-10 text-white hover:text-gray-300 rounded-lg shadow-lg">
                     <ul
-                      className="py-2 text-sm text-gray-700 dark:text-gray-200"
+                      className="py-2 text-sm text-white hover:text-gray-300"
                       aria-labelledby="dropdownDefaultButton"
                     >
                       {item.subMenu.map((subItem) => (
                         <li key={subItem.name}>
-                          <a
+                          <Link
                             to={subItem.to}
-                            className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                            className="block px-4 py-2 text-white hover:text-gray-300 bg-blue-700 hover:bg-blue-600"
+                            onClick={() => setIsSubMenuOpen(false)}
                           >
                             {subItem.name}
-                          </a>
+                          </Link>
                         </li>
                       ))}
                     </ul>
@@ -107,13 +124,17 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="lg:hidden">
-          <Menu onClick={toggleMenu} className="h-6 w-6 cursor-pointer" />
+          <Menu
+            onClick={toggleMenu}
+            className="h-6 w-6 text-white cursor-pointer"
+          />
         </div>
+        {/* MOBILE SCREEN */}
         {isMenuOpen && (
-          <div className="absolute inset-x-0 top-0 z-50 origin-top-right transform p-2 transition lg:hidden">
-            <div className="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
-              <div className="px-5 pb-6 pt-5">
-                <div className="flex items-center justify-between">
+          <div className="absolute inset-x-0 top-0 z-50 bg-primary font-tienne  lg:hidden">
+            <div className=" rounded-lg">
+              <div className="px-4 pb-6 pt-6 ">
+                <div className="flex items-center justify-between pb-4">
                   <div className="inline-flex items-center space-x-2">
                     <img
                       src={
@@ -133,21 +154,46 @@ const Navbar = () => {
                     </button>
                   </div>
                 </div>
-                <div className="mt-6">
-                  <nav className="grid gap-y-4">
-                    {menuItems.map((item) => (
-                      <a
-                        key={item.name}
-                        href={item.href}
-                        className="-m-3 flex items-center rounded-md p-3 text-sm font-semibold hover:bg-gray-50"
+                {/* Mobile Menu */}
+                <ul className="flex flex-col justify-start items-start gap-6 px-4 bg-secondary py-4">
+                  {menuItems.map((item) => (
+                    <li
+                      key={item.name}
+                      to={item.to}
+                      onClick={() => handleMenuItemClick(item.name)}
+                      className="hover:bg-blue-400 "
+                    >
+                      <Link
+                        to={item.to}
+                        className={`text-sm font-tennie font-bold text-white hover:text-gray-300 active:text-gray-500 flex items-center justify-center gap-0 w-full`}
                       >
-                        <span className="ml-3 text-base font-medium text-gray-900">
-                          {item.name}
-                        </span>
-                      </a>
-                    ))}
-                  </nav>
-                </div>
+                        {item.name}
+                        {item.name === "VERTICALS" && (
+                          <ChevronDown className="ml-1 h-4 w-4" />
+                        )}
+                      </Link>
+                      {item.name === "VERTICALS" && isSubMenuOpen && (
+                        <div className="absolute  left-20 z-10 bg-white   rounded-lg shadow-lg">
+                          <ul
+                            className="py-2 text-sm text-gray-700 dark:text-gray-200"
+                            aria-labelledby="dropdownDefaultButton"
+                          >
+                            {item.subMenu.map((subItem) => (
+                              <li key={subItem.name}>
+                                <Link
+                                  to={subItem.to}
+                                  className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                                >
+                                  {subItem.name}
+                                </Link>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
           </div>
@@ -158,163 +204,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-//////////////////////////////////////////////////////////////////////
-
-// import React from "react";
-
-// const Navbar = () => {
-//   const subMenuList = [
-//     "HIGHWAY",
-//     "AIRPORTS",
-//     "CRUSHERS",
-//     "RMC",
-//     "MARINE ENGINEERING",
-//     "BUILDINGS",
-//     "DAMS & IRRIGATION",
-//     "MANUFACTURING",
-//   ];
-
-//   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-//   const [isSubMenuOpen, setIsSubMenuOpen] = React.useState(false);
-
-//   const toggleMenu = () => {
-//     setIsMenuOpen(!isMenuOpen);
-//   };
-
-//   const toggleSubMenu = () => {
-//     setIsSubMenuOpen(!isSubMenuOpen);
-//   };
-
-//   return (
-//     <nav className="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
-//       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-//         <a to="#" className="flex items-center space-x-3 rtl:space-x-reverse">
-//           <img
-//             src={
-//               "/src/img/logo2.png" || "https://i.postimg.cc/yxrZ4ygc/logo2.png"
-//             }
-//             alt=""
-//           />
-//         </a>
-//         <button
-//           data-collapse-toggle="navbar-multi-level"
-//           type="button"
-//           className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-//           aria-controls="navbar-multi-level"
-//           aria-expanded="false"
-//         >
-//           <svg
-//             className="w-5 h-5"
-//             aria-hidden="true"
-//             xmlns="http://www.w3.org/2000/svg"
-//             fill="none"
-//             viewBox="0 0 17 14"
-//           >
-//             <path
-//               stroke="currentColor"
-//               stroke-linecap="round"
-//               stroke-linejoin="round"
-//               stroke-width="2"
-//               d="M1 1h15M1 7h15M1 13h15"
-//             />
-//           </svg>
-//         </button>
-//         <div
-//           className="hidden w-full md:block md:w-auto"
-//           id="navbar-multi-level"
-//         >
-//           <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-//             <li>
-//               <a
-//                 to="#"
-//                 className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
-//                 aria-current="page"
-//               >
-//                 HOME
-//               </a>
-//             </li>
-//             <li>
-//               <a
-//                 to="#"
-//                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-//               >
-//                 ABOUT US
-//               </a>
-//             </li>
-//             {/* dropdown menu */}
-//             <li>
-//               <button
-//                 id="dropdownNavbarLink"
-//                 data-dropdown-toggle="dropdownNavbar"
-//                 className="flex items-center justify-between w-full py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
-//                 onClick={() => toggleSubMenu()}
-//               >
-//                 VERTICALS{" "}
-//                 <svg
-//                   className="w-2.5 h-2.5 ms-2.5"
-//                   aria-hidden="true"
-//                   xmlns="http://www.w3.org/2000/svg"
-//                   fill="none"
-//                   viewBox="0 0 10 6"
-//                 >
-//                   <path
-//                     stroke="currentColor"
-//                     stroke-linecap="round"
-//                     stroke-linejoin="round"
-//                     stroke-width="2"
-//                     d="m1 1 4 4 4-4"
-//                   />
-//                 </svg>
-//               </button>
-
-//               <div
-//                 id="dropdownNavbar"
-//                 className={`z-10 ${
-//                   isSubMenuOpen ? "block" : "hidden"
-//                 } font-normal bg-white divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600`}
-//               >
-//                 <ul
-//                   className="py-2 text-sm text-gray-700 dark:text-gray-200"
-//                   aria-labelledby="dropdownLargeButton"
-//                 >
-//                   <ul>
-//                     {subMenuList.map((list, index) => (
-//                       <li key={index} className="cursor-pointer">
-//                         <a
-//                           to={`/${list}`} // Change 'to' to 'href'
-//                           className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
-//                         >
-//                           {list}
-//                         </a>
-//                       </li>
-//                     ))}
-//                   </ul>
-//                 </ul>
-//               </div>
-//             </li>
-
-//             <li>
-//               <a
-//                 to="#"
-//                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-//               >
-//                 PLANT & MACHINERY
-//               </a>
-//             </li>
-//             <li>
-//               <a
-//                 to="#"
-//                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-//               >
-//                 CONTACT
-//               </a>
-//             </li>
-//           </ul>
-//         </div>
-//       </div>
-//     </nav>
-//   );
-// };
-
-// export default Navbar;

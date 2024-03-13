@@ -1,6 +1,7 @@
 
 
 const ImageAndData = ({ data }) => {
+  console.log('data',data)
   return (
     <div className="flex flex-col gap-2  w-full lg:flex lg:flex-row items-center justify-center lg:gap-8 lg:justify-around ">
       <div>

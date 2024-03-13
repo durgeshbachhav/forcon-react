@@ -2,28 +2,28 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="w-full py-6 md:py-12 lg:py-16">
-      <div className="container px-4 md:px-6">
+    <section className="w-full py-6 md:py-12 lg:py-12 lg:px-16">
+      <div className=" px-4 md:px-6">
         <div className="flex flex-col gap-4 min-h-[600px] items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
             <p className="text-sm font-semibold tracking-wide text-gray-500 uppercase dark:text-gray-400">
-              Welcome to Forcon Infra
+              Welcome to <span className="text-black">Forcon Infra</span>
             </p>
             <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-              Providing Sustainable Infrastructure Solutions for Integrating the
-              Nation
+              Providing Sustainable{" "}
+              <span className="text-pink-800">Infrastructure Solutions</span>{" "}
+              for Integrating the Nation
             </h1>
           </div>
           <div className="mx-auto max-w-2xl space-y-4">
             <p className="text-base text-gray-500 md:text-xl dark:text-gray-400">
-              An industry-leading construction company dedicated to providing
+              Welcome to <span className="text-black">Forcon Infra</span>, an
+              industry-leading construction company dedicated to providing
               infrastructure, construction, machinery, RMC, and manufacturing
-              solutions of the highest quality.
-            </p>
-            <p className="text-base text-gray-500 md:text-xl dark:text-gray-400">
-              With more than two decades of experience in the industry, we've
-              become a reliable partner for businesses seeking to construct,
-              develop, and transform their infrastructure.
+              solutions of the highest quality. With more than two decades of
+              experience in the industry, we've become a reliable partner for
+              businesses seeking to construct, develop, and transform their
+              infrastructure.
             </p>
             <p className="text-base text-gray-500 md:text-xl dark:text-gray-400">
               Our services include civil construction, industrial

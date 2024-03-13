@@ -1,14 +1,39 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import ImageOne from "../assets/img/bg.jpg";
+import ImageTwo from "../assets/img/bg2.jpg";
+import ImageThree from "../assets/img/bg3.jpg";
+import ImageFour from "../assets/img/bg4.jpg";
+import ImageFive from "../assets/img/bg5.jpg";
+import ImageSix from "../assets/img/bg7.jpg";
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const images = [
-    "https://images.unsplash.com/photo-1567954970774-58d6aa6c50dc?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://picsum.photos/",
-    "https://picsum.photos/",
-    "https://images.unsplash.com/photo-1567954970774-58d6aa6c50dc?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "https://picsum.photos/",
+    {
+      src: ImageOne,
+      title: `Providing Smart Infrastructure Solutions for a better tomorrow`,
+    },
+    {
+      src: ImageTwo,
+      title: `Bringing Vision to Life-Building futuristic sustainability`,
+    },
+    {
+      src: ImageThree,
+      title: `Our Aim - Delivering quality within time and budget`,
+    },
+    {
+      src: ImageFour,
+      title: `Excellence in Action-Providing Innovative Solutions`,
+    },
+    {
+      src: ImageFive,
+      title: `Smart Infrastructure for a Brighter Future`,
+    },
+    {
+      src: ImageSix,
+      title: `Delivering Excellence in Infrastructure Manufacturing`,
+    },
   ];
 
   const nextSlide = () => {
@@ -27,23 +52,37 @@ const Carousel = () => {
     setCurrentIndex(index);
   };
 
+  // Autoplay functionality
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      nextSlide();
+    }, 12000); // Adjust the interval as needed (5000 milliseconds = 5 seconds)
+
+    return () => clearInterval(intervalId); // Cleanup function to clear interval when component unmounts
+  }, [currentIndex]);
+
   return (
     <div className="relative w-full">
       {/* Carousel wrapper */}
-      <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
+      <div className="relative h-64 overflow-hidden md:h-96 ">
         {/* Carousel items */}
         {images.map((image, index) => (
           <div
             key={index}
-            className={`absolute top-0 left-0 w-full h-full transform transition-transform duration-700 ease-in-out ${
+            className={`absolute top-0 left-0 w-full h-full   ${
               index === currentIndex ? "" : "hidden"
             }`}
           >
             <img
-              src={image}
+              src={image.src}
               alt={`Slide ${index + 1}`}
-              className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              className="absolute   Carousel-animation"
             />
+            <div className="absolute top-4 text-center lg:text-right lg:w-80 lg:right-40 lg:top-28 lg:text-wrap ">
+              <h1 className="text-white font-tienne font-bold text-xl lg:text-4xl ">
+                {image.title}
+              </h1>
+            </div>
           </div>
         ))}
       </div>
@@ -63,6 +102,7 @@ const Carousel = () => {
         ))}
       </div>
       {/* Slider controls */}
+
       <button
         type="button"
         className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
@@ -70,9 +110,9 @@ const Carousel = () => {
         onClick={prevSlide}
       >
         {/* Previous button */}
-        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full  dark:bg-gray-800 group-focus:ring-4  group-focus:outline-none">
           <svg
-            className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+            className="w-4 h-4 text-white  rtl:rotate-180"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -96,9 +136,9 @@ const Carousel = () => {
         onClick={nextSlide}
       >
         {/* Next button */}
-        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+        <span className="inline-flex items-center justify-center w-10 h-10 rounded-full  dark:bg-gray-800 group-focus:ring-4  group-focus:outline-none">
           <svg
-            className="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+            className="w-4 h-4 text-white rtl:rotate-180"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

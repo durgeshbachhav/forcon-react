@@ -17,6 +17,8 @@ import FlyoversAndBridges from "./pages/FlyoversAndBridges";
 import Marine from "./pages/Marine";
 import Building from "./pages/Buildings";
 import Dam from "./pages/Dam";
+import PlantAndMachinary from "./pages/PlantAndMachinary";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -26,15 +28,17 @@ function App() {
         <Route path="*" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/verticals/highway" element={<Highway />} />
-        <Route path="/verticals/airport" element={<Airport />} />
+        <Route path="/verticals/airports" element={<Airport />} />
         <Route path="/verticals/crushers" element={<Crushers />} />
         <Route
           path="/verticals/flyovers-and-bridges"
           element={<FlyoversAndBridges />}
         />
-        <Route path="/verticals/marine" element={<Marine />} />
+        <Route path="/verticals/marine-engineering" element={<Marine />} />
         <Route path="/verticals/buildings" element={<Building />} />
-        <Route path="/verticals/dam" element={<Dam />} />
+        <Route path="/verticals/dams-irrigation" element={<Dam />} />
+        <Route path="/plant-and-machinery" element={<PlantAndMachinary />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </div>
