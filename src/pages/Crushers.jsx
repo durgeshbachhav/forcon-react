@@ -1,3 +1,4 @@
+import Breadcrumb from "../components/BreadCrumb";
 import CrushersData from "../components/CrushersData";
 
 const Crushers = () => {
@@ -76,7 +77,19 @@ const Crushers = () => {
     ],
   };
   return (
-    <div>
+    <div className="py-8 px-8 lg:px-24">
+      <div className="mb-8">
+        <Breadcrumb values={["Home", "Verticals", "Crushers"]} />
+      </div>
+      <div>
+        <p className="text-justify georgia-regular text-[18px]">
+          Forcon Infra is also actively involved in the mining and construction
+          industries, providing equipment, tools, services and solutions for the
+          same. All our crushers are high performance machineries with
+          commitment to sustainability, and designed to minimize environmental
+          impact while delivering maximum productivity.
+        </p>
+      </div>
       <CrushersData projects={projects} />
       <CrushersData projects={production} />
       <CrushersData projects={anotherProduction} />

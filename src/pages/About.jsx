@@ -1,9 +1,10 @@
 import React from "react";
 import ImageAndData from "../components/ImageAndData";
-import aboutImage from "../assets/img/about1.jpg";
+import aboutImage from "../assets/img/Jpeg/5.jpg";
 import CoreImage from "../assets/img/Info1.jpg";
 import DirectorImage from "../assets/img/director.jpg";
 import VisionMissionValues from "../components/VisionMissionValues";
+import Breadcrumb from "../components/BreadCrumb";
 
 const About = () => {
   const data = {
@@ -14,20 +15,24 @@ const About = () => {
       "Our commitment to excellence was recognized in 2004, when we received an award for excellent work in the Sinhastha Kumbha Mela. Throughout the years, we continued to reach new heights and milestones, including a turning point in 2009 when we established a new venture of Automatic Vibro Casting Pipe. Another significant milestone was achieved in 2012 when we ventured into the RMC Business, which has become an integral part of our business today. In 2015, we were awarded the first 123 km of National Highway Project in BEED District, which paved the way for our success.",
     ],
   };
+
   return (
-    <div>
+    <div className="">
       {/*  */}
-      <div>{<ImageAndData data={data} />}</div>
+      <div className="mt-8 px-8 lg:px-24">
+        <Breadcrumb values={["Home", "About Us"]} />
+      </div>
+      <div className="py-12">{<ImageAndData data={data} />}</div>
       {/*  */}
-      <div>
-        <p>
+      <div className="py-8 px-8 lg:px-24 text-gray-300  text-xl bg-primary">
+        <p className="lg:text-justify georgia-regular mb-4">
           In addition to these accomplishments, we successfully completed the
           First Police Housing Project In Dhule in 2018, a testament to our
           commitment to quality and customer satisfaction. Our endless efforts
           were recognized with an award for excellent contribution to the
           development of infrastructure for NHAI Project.
         </p>
-        <p>
+        <p className="lg:text-justify georgia-regular">
           Our company's name, Forcon, represents our commitment to hard work,
           stability, and a strong forward thrust. By providing robust and
           dependable infrastructure solutions, we believe we can contribute to
@@ -36,30 +41,35 @@ const About = () => {
         </p>
       </div>
       {/*  */}
-      <div>
-        <div>Our Core Competency:</div>
-        <div>
-          <img src={CoreImage} alt="CoreImage" />
-        </div>
+      <div className="py-8 px-8 flex flex-col items-center justify-center gap-2 lg:px-24 ">
+        <h1 className="text-black text-xl lg:text-4xl font-bold py-2 mb-4 text-center font-tienne">
+          Our Core Competency
+        </h1>
+
+        <img src={CoreImage} alt="CoreImage" className="lg:w-[80%]" />
       </div>
       {/*  */}
-      <VisionMissionValues />
+      <div className="bg-primary">
+        <VisionMissionValues />
+      </div>
       {/*  */}
-      <div className="flex flex-col items-center justify-center lg:flex-row lg:gap-8">
-        <div>
+      <div className="w-full py-8 px-8 lg:px-24 flex flex-col items-center justify-center lg:flex-row lg:gap-8 lg:justify-between gap-4">
+        <div className="lg:w-[40%]">
           <img
             src={DirectorImage}
             alt="Director"
-            className="w-full lg:w-auto"
+            className="w-full lg:w-auto rounded-md"
           />{" "}
           {/* Apply Tailwind CSS class for responsive image */}
         </div>
-        <div className="max-w-md lg:w-1/2">
+        <div className="lg:w-[60%] ">
           {" "}
           {/* Limit the width of the content on larger screens */}
-          <h2 className="text-xl font-bold mb-4">Director Desk:</h2>{" "}
+          <h2 className="text-2xl  font-bold mb-4 text-justify font-tienne lg:text-3xl">
+            Director Desk:
+          </h2>{" "}
           {/* Apply appropriate text styles */}
-          <p className="text-sm lg:text-base">
+          <p className="text-base text-justify georgia-regular">
             {" "}
             {/* Apply appropriate text styles */}
             “Our vision is to make your living better, with assured quality.

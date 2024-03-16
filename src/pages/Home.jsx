@@ -6,8 +6,10 @@ import FamilyComponent from "../components/FamilyComponent";
 import AccordionComponent from "../components/Accordion";
 import TimeLine from "../components/TimeLine";
 import CardCarousel from "../components/CardCarousel";
+import SwiperComponent from "../components/SwiperComponent";
 
 const Home = () => {
+  
   return (
     <div>
       <Carousel />
@@ -17,6 +19,7 @@ const Home = () => {
       <AccordionComponent />
       <TimeLine />
       <CardCarousel />
+      
     </div>
   );
 };

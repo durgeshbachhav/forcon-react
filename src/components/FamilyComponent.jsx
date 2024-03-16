@@ -25,20 +25,20 @@ const FamilyComponent = () => {
   }, [members, roads, experience]);
 
   return (
-    <div className="p-12 lg:flex justify-center py-12 bg-white">
-      <div className="flex flex-col gap-3 lg:flex-row lg:gap-20">
+    <div className="p-12 lg:flex justify-center py-16 bg-white">
+      <div className="flex flex-col gap-8 lg:flex-row lg:gap-20">
         <div className="text-center flex flex-col items-center justify-center">
-          <img src={C1} alt="" />
+          <img src={C1} alt="" className="w-24" />
           <p className="mt-4 text-3xl font-bold">{members}+</p>
-          <p className="text-lg">Members In Forcon Family</p>
+          <p className="text-lg">Workers in Forcon Family</p>
         </div>
         <div className="text-center flex flex-col items-center justify-center">
-          <img src={C2} alt="" />
+          <img src={C2} alt="" className="w-24" />
           <p className="mt-4 text-3xl font-bold">{roads}+</p>
           <p className="text-lg">KMS Of Roads Constructed</p>
         </div>
         <div className="text-center flex flex-col items-center justify-center">
-          <img src={C3} alt="" />
+          <img src={C3} alt="" className="w-24" />
           <p className="mt-4 text-3xl font-bold">{experience}+</p>
           <p className="text-lg">Years Of Broad Experience</p>
         </div>

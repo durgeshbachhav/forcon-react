@@ -11,6 +11,7 @@ import povers from "../assets/img/Pavers.jpg";
 import Laboratory from "../assets/img/Laboratory.jpg";
 import surveyEquipment from "../assets/img/survey-equipment.jpg";
 import otherEquipment from "../assets/img/other-machinery.jpg";
+import Breadcrumb from "../components/BreadCrumb";
 
 const PlantAndMachinary = () => {
   const data = [
@@ -41,7 +42,8 @@ const PlantAndMachinary = () => {
         Line Pump: We jhave in total 3 line pumps, which has pouring capcity upto 25 floor Schwing stetter Aquerous.`,
         `Concrete - Concrete mixer , we have total fleet of 20 transit mixer with capcity of 8 cubic meters, 7 cubic meters and 6 cubic meter of carriage capcity.
 
-        RMC product: M10-M60 - grade of concrete for coventional as well as customized construction application.`,
+        `,
+        `RMC product: M10-M60 - grade of concrete for coventional as well as customized construction application.`,
       ],
     },
     // weight plant
@@ -58,9 +60,11 @@ const PlantAndMachinary = () => {
       text: [
         "Concrete Equipment:",
         `Concrete Boom Pump S36X - We use the Schwing Stetter India Pvt Ltd’s 36 mtr Concrete Boom Pump, as it provides precise concrete placement which is important for the complex structures we are known for. With a 36-meter vertical reach and 32-meter horizontal reach, it is a particular kind of mobile concrete pump that can cover a huge region.
-        Concrete Transit Mixer - We use 10 Concrete Transit Mixers, made by Bharat Benz Leyland and AMW-Schwing Stetter with a capacity of 6 and 8 Cum.`,
+        `,
+        `Concrete Transit Mixer - We use 10 Concrete Transit Mixers, made by Bharat Benz Leyland and AMW-Schwing Stetter with a capacity of 6 and 8 Cum.`,
         `Concrete Mixer - We have 3 Kirloskar’s (Universal Sales Corporation) Concrete Mixer with 6 H.P which drives the mixing drum to ensure efficient and consistent mixing of concrete.
-        Concrete Pump - We use 2 of Schwing Stetter’s Concrete Pumps of 100 MT capacity to handle high volumes of concrete, as it is a safe and reliable option for high quality.`,
+        `,
+        `Concrete Pump - We use 2 of Schwing Stetter’s Concrete Pumps of 100 MT capacity to handle high volumes of concrete, as it is a safe and reliable option for high quality.`,
       ],
     },
     // transportEquipment
@@ -69,19 +73,19 @@ const PlantAndMachinary = () => {
       text: [
         "Transportation Equipment:",
         "Transportation equipment offers a high amount of reliability and ease for transit and mobility of various machines, materials and more. The list of the transportation equipment we use are:",
-        `21 of Ashok Leland and Tata’s Hyawa (Tipper) - 7.5 / 9.5 Cum Capacity
+        `21 of Ashok Leland and Tata’s Hyawa (Tipper)-  7.5 / 9.5 Cum Capacity,
 
-        3 Asphalt Bowser - 9 Ton Capacity
-        
-        2 Allwin Equipment and Jadish Industries - 6 MT, 4 MT Capacity
-        
-        4 Tata Water Tankers - 10,000 Ltr Capacity
-        
-        2 Mahindra 9 Seater Jeeps
-        
-        1 Mahindra Bolero Camper Utility Van
-        
-        4 HMT and Mahindra Tractors - 3511 275 DI Capacity`,
+3 Asphalt Bowser - 9 Ton Capacity,
+
+2 Allwin Equipment and Jadish Industries - 6 MT, 4 MT Capacity,
+
+4 Tata Water Tankers - 10,000 Ltr Capacity,
+
+2 Mahindra 9 Seater Jeeps,
+
+1 Mahindra Bolero Camper Utility Van,
+
+4 HMT and Mahindra Tractors - 3511 275 DI Capacity`,
       ],
     },
     // construction equipment
@@ -89,14 +93,11 @@ const PlantAndMachinary = () => {
       img: constructionEquipment,
       text: [
         "Construction Equipment:",
-        `Excavator (Poclain) - For best use on construction sites, we use Tata Hitachi, JCB India Ltd, Hyundai, L&T, Cobalco’s 6 excavators of various capacities to operate in a range of environments, including construction sites, mines, and quarries.
-
-        Hydraulic Breaker - When it comes to powerful and strong equipment, we choose Atlas Copco's 3 Hydraulic Breakers for breaking concrete, asphalt, rocks and other materials.
-        
-        Backhoe Loader - For both digging and loading tasks on construction sites, we use Escorts Delhi JCB India and Terex Vectra’s 10 Backhoe Loaders of 3 DX Capacity.`,
-        `Loader - For medium sized-jobs, we use Caterpillar India Pvt Ltd and GMMCO Ltd’s 1.7 cum capacity loaders, which are used for a range of tasks, including loading and unloading trucks, grading roads, and excavating foundations.
-
-        Motor Grader - For even grading and leveling the surface, we use Caterpillar India Pvt Ltd and BEML’s Motor Graders of capacity 605 R2 for its moderate to heavy load.`,
+        `Excavator (Poclain) - For best use on construction sites, we use Tata Hitachi, JCB India Ltd, Hyundai, L&T, Cobalco’s 6 excavators of various capacities to operate in a range of environments, including construction sites, mines, and quarries.`,
+        `Hydraulic Breaker - When it comes to powerful and strong equipment, we choose Atlas Copco's 3 Hydraulic Breakers for breaking concrete, asphalt, rocks and other materials.`,
+        `Backhoe Loader - For both digging and loading tasks on construction sites, we use Escorts Delhi JCB India and Terex Vectra’s 10 Backhoe Loaders of 3 DX Capacity.`,
+        `Loader - For medium sized-jobs, we use Caterpillar India Pvt Ltd and GMMCO Ltd’s 1.7 cum capacity loaders, which are used for a range of tasks, including loading and unloading trucks, grading roads, and excavating foundations.`,
+        `Motor Grader - For even grading and leveling the surface, we use Caterpillar India Pvt Ltd and BEML’s Motor Graders of capacity 605 R2 for its moderate to heavy load.`,
       ],
     },
     // rollars
@@ -113,9 +114,8 @@ const PlantAndMachinary = () => {
       img: povers,
       text: [
         "Pavers:",
-        `Apollo Make 9 Meter Paver - In road construction and maintenance projects, for laying asphalt on roads, pavements, and other areas, we use Apollo Industries Ltd’s 9 Meter Paver.
-
-        Sensor Leveling Paver Finisher - We use technologically advanced Sensor Leveling Paver Finisher from Jagdish Industries & Unipave for precision and accuracy.`,
+        `Apollo Make 9 Meter Paver - In road construction and maintenance projects, for laying asphalt on roads, pavements, and other areas, we use Apollo Industries Ltd’s 9 Meter Paver.`,
+        `Sensor Leveling Paver Finisher - We use technologically advanced Sensor Leveling Paver Finisher from Jagdish Industries & Unipave for precision and accuracy.`,
         `Paver Finisher - To lay different types of asphalt, including hot mix, warm mix, and cold mix, we use the Unipave, Maruti and United’s 60 TPH Capacity Paver Finishers.`,
       ],
     },
@@ -133,12 +133,10 @@ const PlantAndMachinary = () => {
       img: surveyEquipment,
       text: [
         "Survey Equipment:",
-        `Total Station - To precisely measure the distances and angles of our construction projects, we place our trust in 5 Paragon Instrument’s Total Stations with a capacity of TS-635.
-
-        Auto-level - As another measurement equipment, we use 20 of Nikon’s Auto Levels, as it is a sureshot mark of accuracy, which makes it reliable with robust construction that ensures it can withstand the rigors of field use.`,
-        `Theodolite - Another of our survey tools is Universal’s Theodolites - whose ability to measure angles and distances with a high level of precision is very important on the field.
-
-        Dumpy Level - To measure the difference between height and distance appropriately, we use Universal’s Dumpy Levels, which, because of its simplicity, is very easy for laymen to understand and include in their work.`,
+        `Total Station - To precisely measure the distances and angles of our construction projects, we place our trust in 5 Paragon Instrument’s Total Stations with a capacity of TS-635.`,
+        `Auto-level - As another measurement equipment, we use 20 of Nikon’s Auto Levels, as it is a sureshot mark of accuracy, which makes it reliable with robust construction that ensures it can withstand the rigors of field use.`,
+        `Theodolite - Another of our survey tools is Universal’s Theodolites - whose ability to measure angles and distances with a high level of precision is very important on the field.`,
+        `Dumpy Level - To measure the difference between height and distance appropriately, we use Universal’s Dumpy Levels, which, because of its simplicity, is very easy for laymen to understand and include in their work.`,
       ],
     },
     // other equipment
@@ -153,10 +151,14 @@ const PlantAndMachinary = () => {
     },
   ];
   return (
-    <div>
-      <div>
-        <h2>Plant and Machinery</h2>
-        <p>
+    <div className="py-8 px-8 lg:px-20">
+      <div className="flex flex-col items-start justify-center">
+        <Breadcrumb values={["Home", "Plant & Machinery"]} />
+
+        <h2 className="text-2xl font-bold mt-8 font-tienne  lg:text-3xl text-tableheadcolor">
+          Plant and Machinery
+        </h2>
+        <p className="text-justify georgia-regular text-[18px] my-4 lg:my-10">
           At Forcon Infra, we recognize the significance of using appropriate
           tools and machinery for any infrastructure or construction project. We
           have made significant investments in a wide range of modern and

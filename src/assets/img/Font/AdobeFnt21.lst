@@ -1,3 +1,46 @@
-%!Adobe-FontList 1.20
-%Locale:0x409
+theme one :
 
+colors: {
+        primary: 'black',
+        secondary: '#ff0095',
+        uicolor: "#ff98e3",
+        tableheadcolor: "#d42a4d",
+        tablesubheadingcolor: "#e84b64",
+        navitemprimary: "#5356FF",
+        navitemsecondary: "#16f1af"
+      },
+
+
+theme two:
+
+colors: {
+        primary: '#5241d2',
+        secondary: '#392ca7',
+        uicolor: "#605ef6",
+        tableheadcolor: "#d42a4d",
+        tablesubheadingcolor: "#e84b64",
+        navitemprimary: "#5356FF",
+        navitemsecondary: "#16f1af"
+      },
+
+theme three:
+colors: {
+        primary: '#042f11',
+        secondary: '#146729',
+        uicolor: "#4ee473",
+        tableheadcolor: "#d42a4d",
+        tablesubheadingcolor: "#e84b64",
+        navitemprimary: "#5356FF",
+        navitemsecondary: "#16f1af"
+      },
+
+theme four
+ colors: {
+        primary: '#28272a',
+        secondary: '#514e56',
+        uicolor: "#96939d",
+        tableheadcolor: "#d42a4d",
+        tablesubheadingcolor: "#e84b64",
+        navitemprimary: "#5356FF",
+        navitemsecondary: "#16f1af"
+      },

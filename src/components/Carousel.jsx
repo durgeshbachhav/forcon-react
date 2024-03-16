@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import ImageOne from "../assets/img/bg.jpg";
-import ImageTwo from "../assets/img/bg2.jpg";
-import ImageThree from "../assets/img/bg3.jpg";
-import ImageFour from "../assets/img/bg4.jpg";
-import ImageFive from "../assets/img/bg5.jpg";
-import ImageSix from "../assets/img/bg7.jpg";
+import ImageOne from "../assets/img/Jpeg/8.jpg";
+import ImageTwo from "../assets/img/Jpeg/2.jpg";
+import ImageThree from "../assets/img/Jpeg/3.jpg";
+import ImageFour from "../assets/img/Jpeg/6.jpg";
+import ImageFive from "../assets/img/Jpeg/5.jpg";
+import ImageSix from "../assets/img/Jpeg/7.jpg";
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -56,7 +56,7 @@ const Carousel = () => {
   useEffect(() => {
     const intervalId = setInterval(() => {
       nextSlide();
-    }, 12000); // Adjust the interval as needed (5000 milliseconds = 5 seconds)
+    }, 18000); // Adjust the interval as needed (5000 milliseconds = 5 seconds)
 
     return () => clearInterval(intervalId); // Cleanup function to clear interval when component unmounts
   }, [currentIndex]);
@@ -64,7 +64,7 @@ const Carousel = () => {
   return (
     <div className="relative w-full">
       {/* Carousel wrapper */}
-      <div className="relative h-64 overflow-hidden md:h-96 ">
+      <div className="relative h-64 overflow-hidden md:h-96 lg:h-[80vh] ">
         {/* Carousel items */}
         {images.map((image, index) => (
           <div
@@ -76,10 +76,10 @@ const Carousel = () => {
             <img
               src={image.src}
               alt={`Slide ${index + 1}`}
-              className="absolute   Carousel-animation"
+              className="absolute  w-full h-full Carousel-animation"
             />
-            <div className="absolute top-4 text-center lg:text-right lg:w-80 lg:right-40 lg:top-28 lg:text-wrap ">
-              <h1 className="text-white font-tienne font-bold text-xl lg:text-4xl ">
+            <div className="absolute  text-center top-10 lg:text-right lg:w-[30vw]  lg:right-0 lg:top-0 lg:text-wrap h-screen">
+              <h1 className="text-white font-tienne font-bold text-xl lg:text-4xl lg:h-screen lg:bg-gray-950 lg:bg-opacity-50 lg:w-full lg:flex lg:items-start lg:justify-start p-10">
                 {image.title}
               </h1>
             </div>
@@ -105,7 +105,7 @@ const Carousel = () => {
 
       <button
         type="button"
-        className="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        className="hidden lg:block absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
         data-carousel-prev
         onClick={prevSlide}
       >
@@ -131,7 +131,7 @@ const Carousel = () => {
       </button>
       <button
         type="button"
-        className="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        className="hidden lg:block absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
         data-carousel-next
         onClick={nextSlide}
       >

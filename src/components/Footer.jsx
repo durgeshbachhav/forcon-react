@@ -1,22 +1,29 @@
-import { FaLocationPin } from "react-icons/fa6";
+import { MdLocationPin } from "react-icons/md";
 import { IoCallSharp } from "react-icons/io5";
+import { FaCaretRight } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaTwitter,
+  FaWhatsapp,
+} from "react-icons/fa";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   const links = [
-    { label: "About us", url: "#" },
-    { label: "Plant & Machinery", url: "#" },
-    { label: "Affiliate Program", url: "#" },
-    { label: "Press Kit", url: "#" },
+    { icon: <FaCaretRight />, label: "About us", url: "/about" },
+    { icon: <FaCaretRight />, label: "Plant & Machinery", url: "/plant-and-machinery" },
+    { icon: <FaCaretRight />, label: "Affiliate Program", url: "#" },
+    { icon: <FaCaretRight />, label: "Press Kit", url: "#" },
   ];
 
   const contact = [
     {
-      icon: <FaLocationPin size={30} />,
+      icon: <MdLocationPin size={30} />,
       add: `Mumbai - 209, Maker Chamber-V, Nariman Point, Mumbai, 400021`,
     },
     {
-      icon: <FaLocationPin size={30} />,
+      icon: <MdLocationPin size={30} />,
       add: `Nashik - 102, Hill View Apartment, Tidke Colony Nashik, 422002`,
     },
     {
@@ -26,67 +33,62 @@ const Footer = () => {
   ];
 
   return (
-    <section className="relative overflow-hidden py-10 bg-primary text-white">
-      <div className="relative z-10 mx-auto max-w-7xl px-4">
-        <div className="-m-6 flex flex-col md:flex-row lg:flex-row justify-around">
-          <div className="w-full p-6 md:w-1/2 lg:w-5/12">
-            <div className="flex h-full flex-col justify-between">
-              <div className="mb-4 inline-flex items-center">
-                <span className="">
-                  <img
-                    src={
-                      "/src/img/logo2.png" ||
-                      "https://i.postimg.cc/yxrZ4ygc/logo2.png"
-                    }
-                    alt=""
-                  />
-                </span>
-              </div>
-              <div>
-                <p className="mb-4 text-base font-medium">design by SINSS</p>
-                <p className="text-sm text-white">
-                  &copy; Copyright {currentYear}.SINSS
-                </p>
-              </div>
-            </div>
+    <footer className="bg-primary text-white py-6 px-8  font-tienne flex items-center justify-center  flex-col lg:gap-16 lg:py-8 lg:">
+      <div className=" flex flex-col lg:flex-row justify-center lg:justify-between gap-10 lg:gap-24">
+        {/* Quick Links */}
+        <div className="lg:w-1/3  ">
+          <h1 className="text-lg font-bold mb-4">Quick Links</h1>
+          <div>
+            {links.map((link, index) => (
+              <a key={index} href={link.url} className="flex items-center mb-2">
+                <div className="mr-2">{link.icon}</div>
+                <span className="hover:underline">{link.label}</span>
+              </a>
+            ))}
           </div>
-          <div className="w-full p-6 md:w-1/2 lg:w-2/12">
-            <div className="h-full">
-              <h3 className="tracking-px mb-9 text-xs font-semibold uppercase text-white">
-                Quick Links
-              </h3>
-              <ul>
-                {links.map((link, index) => (
-                  <li key={index} className="mb-4">
-                    <a
-                      className="text-base font-medium text-white hover:text-gray-200"
-                      href={link.url}
-                    >
-                      {link.label}
-                    </a>
-                  </li>
-                ))}
-              </ul>
+        </div>
+
+        {/* Logo */}
+        <div className="lg:w-1/5 flex items-center justify-center flex-col gap-8 ">
+          <img src="/src/img/logo2.png" alt="Logo" className=" w-full" />
+          <div className="flex justify-center">
+            <div className="mx-2 bg-blue-50 rounded-full p-2 text-black">
+              <FaFacebookF className="text-xl" />
             </div>
-          </div>
-          <div className="w-full p-6 md:w-1/2 lg:w-2/12">
-            <div className="h-full">
-              <h3 className="tracking-px mb-9 text-xs font-semibold uppercase text-white">
-                Support
-              </h3>
-              <ul>
-                {contact.map((info, index) => (
-                  <li key={index} className="mb-4 flex items-center">
-                    {info.icon}
-                    <p className="ml-2">{info.add}</p>
-                  </li>
-                ))}
-              </ul>
+            <div className="mx-2 bg-blue-50 rounded-full p-2 text-black">
+              <FaInstagram className="text-xl" />
+            </div>
+            <div className="mx-2 bg-blue-50 rounded-full p-2 text-black">
+              <FaTwitter className="text-xl" />
+            </div>
+            <div className="mx-2 bg-blue-50 rounded-full p-2 text-black">
+              <FaWhatsapp className="text-xl" />
             </div>
           </div>
         </div>
+
+        {/* Contact */}
+        <div className="lg:w-1/3">
+          <h2 className="text-lg font-bold mb-4">Contact</h2>
+          <div>
+            {contact.map((data, index) => (
+              <div key={index} className="flex items-center mb-2">
+                <div className="mr-2">{data.icon}</div>
+                <span>{data.add}</span>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
-    </section>
+
+      {/* brandtheory */}
+      <div className="mt-8 text-center">
+        <div className="mb-4">
+          <h2 className="text-lg font-bold">Designed by Brand Theory</h2>
+          <p>© All rights reserved {currentYear}</p>
+        </div>
+      </div>
+    </footer>
   );
 };
 

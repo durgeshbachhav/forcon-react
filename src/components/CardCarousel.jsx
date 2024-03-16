@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Card from "./Card";
+
 import ImageOne from "../assets/img/slide-img1.jpg";
 import ImageTwo from "../assets/img/slide-img2.jpg";
 import ImageThree from "../assets/img/slide-img3.jpg";
@@ -7,12 +7,11 @@ import ImageFour from "../assets/img/slide-img4.jpg";
 import ImageFive from "../assets/img/slide-img5.jpg";
 import ImageSix from "../assets/img/slide-img6.jpg";
 import ImageSeven from "../assets/img/slide-img7.jpg";
-import { CiSquareChevLeft } from "react-icons/ci";
-import { CiSquareChevRight } from "react-icons/ci";
+
+import SwiperComponent from "./SwiperComponent";
 
 const CardCarousel = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const cardData = [
+  const data = [
     {
       id: 1,
       img: ImageOne,
@@ -50,62 +49,9 @@ const CardCarousel = () => {
     },
   ];
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) =>
-        prevIndex === cardData.length - 1 ? 0 : prevIndex + 1
-      );
-    }, 3000); // Change slide every 3 seconds (adjust as needed)
-
-    return () => clearInterval(interval);
-  }, [currentIndex, cardData.length]);
-
-  const handleClickLeft = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? cardData.length - 1 : prevIndex - 1
-    );
-  };
-
-  const handleClickRight = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === cardData.length - 1 ? 0 : prevIndex + 1
-    );
-  };
-
-  const getDisplayIndex = (index) => {
-    return (index + cardData.length) % cardData.length;
-  };
-
-  const getDisplayCards = () => {
-    const displayIndex = getDisplayIndex(currentIndex);
-    return [
-      cardData[getDisplayIndex(displayIndex - 1)],
-      cardData[displayIndex],
-      cardData[getDisplayIndex(displayIndex + 1)],
-    ];
-  };
-
   return (
-    <div className="w-full overflow-hidden flex justify-center items-center">
-      <div className="flex items-center justify-center">
-        <button
-          onClick={handleClickLeft}
-          className="mr-2 bg-gray-200 px-4 py-2 rounded-md focus:outline-none"
-        >
-          <CiSquareChevLeft size={20} />
-        </button>
-        <div className="flex gap-4">
-          {getDisplayCards().map((card) => (
-            <Card key={card.id} cardData={card} />
-          ))}
-        </div>
-        <button
-          onClick={handleClickRight}
-          className="ml-2 bg-gray-200 px-4 py-2 rounded-md focus:outline-none"
-        >
-          <CiSquareChevRight size={20} />
-        </button>
-      </div>
+    <div className="w-full py-8 lg:py-12  lg:px-16 font-tienne">
+      <SwiperComponent data={data} />
     </div>
   );
 };

@@ -1,31 +1,50 @@
 import React from "react";
+import EXPERTISE from "../assets/img/us1.png";
+import DEDICATION from "../assets/img/us2.png";
+import CUSTOMER from "../assets/img/us3.png";
+import SUSTAINABILITY from "../assets/img/us4.png";
+import USPs from "../assets/img/us5.png";
+import MANAGEMENT from "../assets/img/us6.png";
 
 const AccordionComponent = () => {
   return (
-    <div className="py-12 lg:px-8  bg-accordion">
-      <div className="space-y-2 mx-12">
+    <div className="py-12 lg:px-8  bg-primary">
+      <div className="space-y-2 px-8 lg:px-12">
+        <h1 className="font-tienne tienne-bold text-2xl lg:text-3xl text-white">
+          Excellence in People, Planning and Processes
+        </h1>
+        <h5 className="font-tienne text-xs lg:text-xl text-white py-2">
+          At Forcon Infra, we believe in establishing enduring relationships
+          with our clients based on trust, honesty, and openness.
+        </h5>
         <AccordionItem
-          title="EXPERTISE:"
-          content="Over 20 years of experience in civil works like R.C.C pip"
+          image={EXPERTISE}
+          title="EXPERTISE"
+          content="Over 25+ years in civil works like Roads, Flyovers, Buildings, Marines, Dams, RCC Pipelines and Drainage project."
         />
         <AccordionItem
-          title="DEDICATION TO QUALITY:"
-          content="Outstanding record of offering value-added engine"
+          image={DEDICATION}
+          title="DEDICATION TO QUALITY"
+          content="Impressive achievements of offering value added engineering construction and service expertise."
         />
         <AccordionItem
-          title="CUSTOMER SATISFACTION:"
-          content="Our clients are our top priority, and we"
+          image={CUSTOMER}
+          title="CUSTOMER SATISFACTION"
+          content="Our clients are our top priority, and we are committed to providing them with exceptional service and support."
         />
         <AccordionItem
-          title="SUSTAINABILITY:"
-          content="We believe that sustainable infr"
+          image={SUSTAINABILITY}
+          title="SUSTAINABILITY"
+          content="We believe in sustainability so we use machinery that is in good condition so that there is less noise and air pollution."
         />
         <AccordionItem
-          title="DISTINGUISHED USPs:"
-          content="Our raw materials, plant and machinery improve construction quality, cost, and control."
+          image={USPs}
+          title="DISTINGUISHED USPs"
+          content="Skilled and experienced employees, plant and machinery improve quality, cost and control."
         />
         <AccordionItem
-          title="PROJECT MANAGEMENT:"
+          image={MANAGEMENT}
+          title="PROJECT MANAGEMENT"
           content="We have skilled management, excellent project management, and on-time delivery."
         />
       </div>
@@ -33,13 +52,16 @@ const AccordionComponent = () => {
   );
 };
 
-const AccordionItem = ({ title, content }) => {
+const AccordionItem = ({ image, title, content }) => {
   return (
-    <details className="group bg-blue-300 rounded-md" open>
-      <summary className="flex items-center justify-between p-4 cursor-pointer outline-none group-open:bg-blue-200 group-open:text-red rounded-md">
-        <span className="text-lg font-semibold sm:text-xl md:text-xl lg:text-xl text-white">
-          {title}
-        </span>
+    <details className="group bg-secondary rounded-md ">
+      <summary className="flex items-center justify-between p-4 cursor-pointer outline-none group-open:bg-uicolor group-open:text-red rounded-md hover:bg-uicolor   ">
+        <div className="flex items-center justify-center gap-2">
+          <img src={image} className="w-8 h-8" alt="" />
+          <span className="text-lg font-semibold sm:text-xl md:text-xl lg:text-xl text-white font-tienne">
+            {title}
+          </span>
+        </div>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -56,7 +78,7 @@ const AccordionItem = ({ title, content }) => {
         </svg>
       </summary>
       <div className="px-4 pb-4">
-        <p className="text-base sm:text-lg md:text-xl lg:text-xl text-gray-700 py-2">
+        <p className="text-base sm:text-lg md:text-xl lg:text-xl text-white py-2 georgia-regular">
           {content}
         </p>
       </div>

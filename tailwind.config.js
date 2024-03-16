@@ -10,8 +10,13 @@ export default {
         'tienne': ['Tienne', 'serif'],
       },
       colors: {
-        primary: '#104e69',
-        secondary: '#03759b'
+        primary: '#2a2546',
+        secondary: '#5549ac',
+        uicolor: "#848ad6",
+        tableheadcolor: "#d42a4d",
+        tablesubheadingcolor: "#e84b64",
+        navitemprimary: "#5356FF",
+        navitemsecondary: "#16f1af"
       },
     },
   },

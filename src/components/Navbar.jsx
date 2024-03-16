@@ -13,7 +13,7 @@ const menuItems = [
   },
   {
     name: "VERTICALS",
-    to: "",
+    to: "/verticals",
     subMenu: [
       { name: "HIGHWAY", to: "/verticals/highway" },
       { name: "AIRPORTS", to: "/verticals/airports" },
@@ -22,7 +22,7 @@ const menuItems = [
       { name: "MARINE ENGINEERING", to: "/verticals/marine-engineering" },
       { name: "BUILDINGS", to: "/verticals/buildings" },
       { name: "DAMS & IRRIGATION", to: "/verticals/dams-irrigation" },
-      { name: "Flyovers & Bridges", to: "/verticals/Flyovers-and-bridges" },
+      { name: "FLYOVERS & BRIDGES", to: "/verticals/Flyovers-and-bridges" },
     ],
   },
   {
@@ -56,7 +56,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="relative w-full bg-primary font-tienne py-4">
+    <div className="relative w-full bg-primary font-tienne py-4 lg:px-12">
       <div className="flex  items-center justify-between px-4 py-2 sm:px-6 lg:px-8">
         {/* DESKTOP SCREEN */}
         {/* LOGO  */}
@@ -109,7 +109,7 @@ const Navbar = () => {
                         <li key={subItem.name}>
                           <Link
                             to={subItem.to}
-                            className="block px-4 py-2 text-white hover:text-gray-300 bg-blue-700 hover:bg-blue-600"
+                            className="block px-4 py-2 text-white hover:text-gray-300 bg-secondary hover:bg-uicolor"
                             onClick={() => setIsSubMenuOpen(false)}
                           >
                             {subItem.name}

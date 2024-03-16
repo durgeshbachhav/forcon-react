@@ -1,23 +1,25 @@
-
-
 const ImageAndData = ({ data }) => {
-  console.log('data',data)
+  console.log("data", data);
   return (
-    <div className="flex flex-col gap-2  w-full lg:flex lg:flex-row items-center justify-center lg:gap-8 lg:justify-around ">
-      <div>
+    <div className="flex flex-col gap-4 items-center justify-center lg:flex-row lg:justify-between px-8 lg:px-24">
+      <div className="lg:w-1/2">
         <img
-          src={data?.img || "https://picsum.photos/200/300"}
+          src={data?.img}
           alt=""
-          className="aspect-ratio: 300 / 150; object-fit: cover"
+          className="rounded-sm lg:h-[80vh] lg:w-full object-cover"
         />
       </div>
-      <div className="p-4">
+      <div className="lg:w-1/2">
         {data?.text.map((para, index) => (
           <div key={index}>
             {index === 0 ? (
-              <h3 className="text-xl font-semibold mb-2">{para}</h3>
+              <h3 className=" font-tienne tienne-bold text-2xl font-semibold mb-2 lg:text-3xl lg:py-2 text-tableheadcolor">
+                {para}
+              </h3>
             ) : (
-              <p className="text-base mb-2">{para}</p>
+              <p className="text-base mb-2 lg:text-justify georgia-regular">
+                {para}
+              </p>
             )}
           </div>
         ))}
@@ -27,5 +29,3 @@ const ImageAndData = ({ data }) => {
 };
 
 export default ImageAndData;
-
-
