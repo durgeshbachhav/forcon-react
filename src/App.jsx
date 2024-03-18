@@ -13,7 +13,7 @@ import PlantAndMachinary from "./pages/PlantAndMachinary";
 import Contact from "./pages/Contact";
 import Rmc from "./pages/Rmc";
 import FlyoverAndBridge from "./pages/FlyoversAndBridges";
-import Verticals from "./pages/Verticals";
+
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/verticals/*" element={<Verticals />} />
+        
         <Route path="/verticals/highway" element={<Highway />} />
         <Route path="/verticals/airports" element={<Airport />} />
         <Route path="/verticals/crushers" element={<Crushers />} />

@@ -1,5 +1,5 @@
 import React from "react";
-import TimeLineImage from "../assets/img/Timeline.png";
+import TimeLineImage from "../assets/img/timeline-new.jpg";
 
 const TimeLine = () => {
   return (

@@ -38,8 +38,8 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-primary text-white py-6 px-8  font-tienne flex items-center justify-center  flex-col lg:gap-16 lg:py-8">
-      <div className=" flex flex-col lg:flex-row justify-center lg:justify-between gap-10 lg:gap-24">
+    <footer className="bg-primary text-white py-6 px-8  font-tienne flex items-center justify-center  flex-col lg:gap-16 lg:py-8 ">
+      <div className=" flex flex-col lg:flex-row justify-center lg:justify-between gap-10 lg:gap-16">
         {/* Quick Links */}
         <div className="lg:w-1/3  ">
           <h1 className="text-lg font-bold mb-4">Quick Links</h1>
@@ -87,7 +87,7 @@ const Footer = () => {
       </div>
 
       {/* brandtheory */}
-      <div className="mt-8 text-center">
+      <div className="mt-8 lg:-mt-6 text-center">
         <div className="mb-4">
           <h2 className="text-lg font-bold">Designed by Brand Theory</h2>
           <p>© All rights reserved {currentYear}</p>

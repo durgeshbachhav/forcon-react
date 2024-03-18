@@ -14,7 +14,7 @@ const menuItems = [
   },
   {
     name: "VERTICALS",
-    to: "/verticals",
+    to: "/verticals/highway",
     subMenu: [
       { name: "HIGHWAY", to: "/verticals/highway" },
       { name: "AIRPORTS", to: "/verticals/airports" },
