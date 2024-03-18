@@ -18,6 +18,7 @@ export default {
         navitemprimary: "#5356FF",
         navitemsecondary: "#16f1af"
       },
+      
     },
   },
   plugins: [],

@@ -14,15 +14,14 @@ import Contact from "./pages/Contact";
 import Rmc from "./pages/Rmc";
 import FlyoverAndBridge from "./pages/FlyoversAndBridges";
 
-
 function App() {
   return (
-    <div className="">
+    <div className="animate-slidein100">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        
+
         <Route path="/verticals/highway" element={<Highway />} />
         <Route path="/verticals/airports" element={<Airport />} />
         <Route path="/verticals/crushers" element={<Crushers />} />

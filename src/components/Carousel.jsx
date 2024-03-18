@@ -76,10 +76,10 @@ const Carousel = () => {
             <img
               src={image.src}
               alt={`Slide ${index + 1}`}
-              className="absolute  w-full h-full Carousel-animation"
+              className="absolute  w-full h-full Carousel-animation "
             />
             <div className="absolute  text-center top-20 lg:text-right lg:w-[30vw]  lg:right-0 lg:top-0 lg:text-wrap h-screen">
-              <h1 className="text-white font-tienne font-bold text-xl flex items-center justify-center bg-gray-950 bg-opacity-50 p-2 lg:text-4xl lg:h-screen lg:bg-gray-950 lg:bg-opacity-50 lg:w-full lg:flex lg:items-start lg:justify-start lg:p-10">
+              <h1 className="text-white font-tienne font-bold text-xl flex items-center justify-center bg-gray-950 bg-opacity-50 p-2 lg:text-4xl lg:h-screen lg:bg-gray-950 lg:bg-opacity-50 lg:w-full lg:flex lg:items-start lg:justify-start lg:p-10 ">
                 {image.title}
               </h1>
             </div>
