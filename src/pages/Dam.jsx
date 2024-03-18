@@ -14,33 +14,31 @@ const Dam = () => {
 
   const data = [
     {
-      no: 1,
-      "name of work":
-        "construction of left side ghat on d/s of janardan swami bridge in dasak panchak area on godavari river.",
-      department: "minor irrigation",
-      "total  rs (in crores)": 19.53,
-      date: "2015-2017",
-      location: "nashik ",
+        No: 1,
+        "Name of Work": "Construction of Left Side Ghat on D/S of Janardan Swami Bridge in Dasak Panchak Area on Godavari River.",
+        Department: "Minor Irrigation",
+        "Total  Rs (in Crores)": 19.53,
+        Date: "2015-2017",
+        Location: "Nashik",
     },
     {
-      no: 2,
-      "name of work":
-        "constructing of right side ghat on d/s of janardan swami bridge in dasak panchak area on godavari river. ",
-      department: "minor irrigation",
-      "total  rs (in crores)": 17.44,
-      date: "2015-2017",
-      location: "nashik ",
+        No: 2,
+        "Name of Work": "Constructing of Right Side Ghat on D/S of Janardan Swami Bridge in Dasak Panchak Area on Godavari River. ",
+        Department: "Minor Irrigation",
+        "Total  Rs (in Crores)": 17.44,
+        Date: "2015-2017",
+        Location: "Nashik",
     },
     {
-      no: 3,
-      "name of work":
-        "constructing of right side ghat on d/s of nasardi-godavari sangam in takali area at nashik .",
-      department: "minor irrigation",
-      "total  rs (in crores)": 18.02,
-      date: "2015-2017",
-      location: "nashik ",
+        No: 3,
+        "Name of Work": "Constructing of Right Side Ghat on D/S of Nasardi-Godavari Sangam in Takali Area at Nashik",
+        Department: "Minor Irrigation",
+        "Total  Rs (in Crores)": 18.02,
+        Date: "2015-2017",
+        Location: "Nashik",
     },
-  ];
+];
+
 
   return (
     <div className="">

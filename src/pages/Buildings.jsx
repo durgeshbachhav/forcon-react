@@ -13,131 +13,131 @@ const Building = () => {
   ];
   const data = [
     {
-      no: 1,
-      "name of work":
-        "construction of girls hostel building in tribal ashram school complex at bhaler",
-      department: "public works department (p.w.d.) ",
-      date: "2020-2023",
-      location: "nandurbar ",
-      "total  rs (in crores)": 10.77,
+      No: 1,
+      "Name of Work":
+        "Construction of Girls Hostel Building in Tribal Ashram School Complex at Bhaler",
+      Department: "Public Works Department (P.W.D.)",
+      Date: "2020-2023",
+      Location: "Nandurbar",
+      "Total  Rs (in Crores)": 10.77,
     },
     {
-      no: 2,
-      "name of work":
-        "construction of boys hostel building in tribal ashram school complex at bhaler, ",
-      department: "public works department (p.w.d.) ",
-      date: "2020-2023",
-      location: "nandurbar ",
-      "total  rs (in crores)": 10.55,
+      No: 2,
+      "Name of Work":
+        "Construction of Boys Hostel Building in Tribal Ashram School Complex at Bhaler",
+      Department: "Public Works Department (P.W.D.)",
+      Date: "2020-2023",
+      Location: "Nandurbar",
+      "Total  Rs (in Crores)": 10.55,
     },
     {
-      no: 3,
-      "name of work":
-        "construction of two floor for pediatric, newro surgery, plastic surgery, department of regional refferal hospital at shalimar,",
-      department: "public works department (p.w.d.) ",
-      date: "2021-2023",
-      location: "nashik",
-      "total  rs (in crores)": 13.92,
+      No: 3,
+      "Name of Work":
+        "Construction of Two Floor for Pediatric, Newro Surgery, Plastic Surgery, Department of Regional Referral Hospital at Shalimar",
+      Department: "Public Works Department (P.W.D.)",
+      Date: "2021-2023",
+      Location: "Nashik",
+      "Total  Rs (in Crores)": 13.92,
     },
     {
-      no: 4,
-      "name of work":
-        "proposed bus depot at pr no.246 reservation no 412 near nashik road railway station nashik road div",
-      department: "nashik municipal corporation",
-      date: "2021-2024",
-      location: "nashik road",
-      "total  rs (in crores)": 25.65,
+      No: 4,
+      "Name of Work":
+        "Proposed Bus Depot at PR No.246 Reservation No 412 near Nashik Road Railway Station Nashik Road Div",
+      Department: "Nashik Municipal Corporation",
+      Date: "2021-2024",
+      Location: "Nashik Road",
+      "Total  Rs (in Crores)": 25.65,
     },
     {
-      no: 5,
-      "name of work":
-        "construction of hostel building for 200 trainees, 18 residencial quarters 8 classrooms, first floor toilet block of hostel building and multipurpose hall with infrastrural development on ctc no.3526",
-      department: "other contracts",
-      date: "2018-2020",
-      location: "dhule ",
-      "total  rs (in crores)": 15.42,
+      No: 5,
+      "Name of Work":
+        "Construction of Hostel Building for 200 Trainees, 18 Residencial Quarters 8 Classrooms, First Floor Toilet Block of Hostel Building and Multipurpose Hall with Infrastrural Development on CTC No.3526",
+      Department: "Other Contracts",
+      Date: "2018-2020",
+      Location: "Dhule",
+      "Total  Rs (in Crores)": 15.42,
     },
     {
-      no: 6,
-      "name of work":
-        "construction of administrative building of police station & 74 quarters of s.p. buldhana at chikhali",
-      department: "other contracts",
-      date: "2018-2021",
-      location: "buldhana",
-      "total  rs (in crores)": 17.87,
+      No: 6,
+      "Name of Work":
+        "Construction of Administrative Building of Police Station & 74 Quarters of S.P. Buldhana at Chikhali",
+      Department: "Other Contracts",
+      Date: "2018-2021",
+      Location: "Buldhana",
+      "Total  Rs (in Crores)": 17.87,
     },
     {
-      no: 7,
-      "name of work":
-        "proposed bus depot at pr. no. sr. no. 246 reservation no. 412 near nashik road railway station nashik road.",
-      department: "nashik municipal corporation",
-      date: "2020-2023",
-      location: "nashik",
-      "total  rs (in crores)": 29.65,
+      No: 7,
+      "Name of Work":
+        "Proposed Bus Depot at PR. No. Sr. No. 246 Reservation No. 412 near Nashik Road Railway Station Nashik Road.",
+      Department: "Nashik Municipal Corporation",
+      Date: "2020-2023",
+      Location: "Nashik",
+      "Total  Rs (in Crores)": 29.65,
     },
     {
-      no: 8,
-      "name of work":
-        "construction of administrative building of police station & 74 quarters for s. p. buldhana at chikhali,\ndist. buldhana including all infrastructural amenities.",
-      department:
-        "maharashtra state police housing & welfare corporation, mumbai",
-      date: "2017-2018",
-      location: "buldhana",
-      "total  rs (in crores)": 19.07,
+      No: 8,
+      "Name of Work":
+        "Construction of Administrative Building of Police Station & 74 Quarters for S. P. Buldhana at Chikhali,\ndist. Buldhana Including All Infrastructural Amenities.",
+      Department:
+        "Maharashtra State Police Housing & Welfare Corporation, Mumbai",
+      Date: "2017-2018",
+      Location: "Buldhana",
+      "Total  Rs (in Crores)": 19.07,
     },
     {
-      no: 9,
-      "name of work":
-        "construction of hostel building for 200 trainees, 18 resi. quarters, 8 classrooms, first floor toilet block\nof hostel building & multipurpose hall with infrastructural development on cts no. 3526 – a, for\nptc, dhule",
-      department:
-        "maharashtra state police housing & welfare corporation, mumbai",
-      date: "2016-2018",
-      location: "buldhana",
-      "total  rs (in crores)": 16.39,
+      No: 9,
+      "Name of Work":
+        "Construction of Hostel Building for 200 Trainees, 18 Resi. Quarters, 8 Classrooms, First Floor Toilet Block\nof Hostel Building & Multipurpose Hall with Infrastructural Development on CTS No. 3526 – A, for\nPTC, Dhule",
+      Department:
+        "Maharashtra State Police Housing & Welfare Corporation, Mumbai",
+      Date: "2016-2018",
+      Location: "Buldhana",
+      "Total  Rs (in Crores)": 16.39,
     },
     {
-      no: 10,
-      "name of work":
-        "proposed construction of cricket stadium at s.no. 325/1, 327/2b, 327/3, 328 & development of elearning\nlibrary and garden at s.no.197/1 to 10, 198, 199/1, 200, 201 in nmc open space in p. no. 1, panchavati div.",
-      department: "nashik municipal corporation",
-      date: "2022-2023",
-      location: "nashik",
-      "total  rs (in crores)": 23.77,
+      No: 10,
+      "Name of Work":
+        "Proposed Construction of Cricket Stadium at S.No. 325/1, 327/2B, 327/3, 328 & Development of Elearning\nLibrary and Garden at S.No.197/1 to 10, 198, 199/1, 200, 201 in NMC Open Space in P. No. 1, Panchavati Div.",
+      Department: "Nashik Municipal Corporation",
+      Date: "2022-2023",
+      Location: "Nashik",
+      "Total  Rs (in Crores)": 23.77,
     },
     {
-      no: 11,
-      "name of work":
-        "proposed development of 30 m dp road at sant sawatamali marg in p. no. 23,",
-      department: "maharashtra maritime board",
-      date: "2 year",
-      location: "nashik",
-      "total  rs (in crores)": 29.93,
+      No: 11,
+      "Name of Work":
+        "Proposed Development of 30 M DP Road at Sant Sawatamali Marg in P. No. 23,",
+      Department: "Maharashtra Maritime Board",
+      Date: "2 Year",
+      Location: "Nashik",
+      "Total  Rs (in Crores)": 29.93,
     },
     {
-      no: 12,
-      "name of work":
-        "construction of eklavya model residential school (emrs) in single- phase comprise of school building, boys hostel (240 students), girls-hostel (240 students), kitchen & dinning block, 2 blocks of type-iii quarters including guest house (8+8 nos), type-ii quarters (10 nos), principal residence, warden residence (boys & girls), electrical provision, water supply and sanitary installations, external sewerage system and drainage facility, campus development such a road,",
-      department: "nashik municipal corporation",
-      date: "2 year",
-      location: "shahada",
-      "total  rs (in crores)": 36.44,
+      No: 12,
+      "Name of Work":
+        "Construction of Eklavya Model Residential School (EMRS) in Single- Phase Comprise of School Building, Boys Hostel (240 Students), Girls-Hostel (240 Students), Kitchen & Dinning Block, 2 Blocks of Type-III Quarters Including Guest House (8+8 Nos), Type-II Quarters (10 Nos), Principal Residence, Warden Residence (Boys & Girls), Electrical Provision, Water Supply and Sanitary Installations, External Sewerage System and Drainage Facility, Campus Development Such a Road",
+      Department: "Nashik Municipal Corporation",
+      Date: "2 Year",
+      Location: "Shahada",
+      "Total  Rs (in Crores)": 36.44,
     },
     {
-      no: 13,
-      "name of work": "construction of groynes and dredging work at mulgaon",
-      department: "maharashtra maritime board",
-      date: "2 year",
-      location: "shrivardhan / raigad",
-      "total  rs (in crores)": 68.88,
+      No: 13,
+      "Name of Work": "Construction of Groynes and Dredging Work at Mulgaon",
+      Department: "Maharashtra Maritime Board",
+      Date: "2 Year",
+      Location: "Shrivardhan / Raigad",
+      "Total  Rs (in Crores)": 68.88,
     },
     {
-      no: 14,
-      "name of work":
-        "construction of stadium on s. no.325/1, 327/2, b-327/328 in p. no.1, panchavati division",
-      department: "civil construction",
-      date: "2 year",
-      location: "nashik",
-      "total  rs (in crores)": 29.94,
+      No: 14,
+      "Name of Work":
+        "Construction of Stadium on S. No.325/1, 327/2, B-327/328 in P. No.1, Panchavati Division",
+      Department: "Civil Construction",
+      Date: "2 Year",
+      Location: "Nashik",
+      "Total  Rs (in Crores)": 29.94,
     },
   ];
 

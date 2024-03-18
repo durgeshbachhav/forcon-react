@@ -29,18 +29,20 @@ const FamilyComponent = () => {
       <div className="flex flex-col gap-8 lg:flex-row lg:gap-20">
         <div className="text-center flex flex-col items-center justify-center">
           <img src={C1} alt="" className="w-24" />
-          <p className="mt-4 text-3xl font-bold">{members}+</p>
-          <p className="text-lg">Workers in Forcon Family</p>
+          <p className="mt-4 text-3xl font-bold georgia-regular">{members}+</p>
+          <p className="text-lg georgia-regular">Workers in Forcon Family</p>
         </div>
         <div className="text-center flex flex-col items-center justify-center">
           <img src={C2} alt="" className="w-24" />
-          <p className="mt-4 text-3xl font-bold">{roads}+</p>
-          <p className="text-lg">KMS Of Roads Constructed</p>
+          <p className="mt-4 text-3xl font-bold georgia-regular">{roads}+</p>
+          <p className="text-lg georgia-regular">KMS Of Roads Constructed</p>
         </div>
         <div className="text-center flex flex-col items-center justify-center">
           <img src={C3} alt="" className="w-24" />
-          <p className="mt-4 text-3xl font-bold">{experience}+</p>
-          <p className="text-lg">Years Of Broad Experience</p>
+          <p className="mt-4 text-3xl font-bold georgia-regular">
+            {experience}+
+          </p>
+          <p className="text-lg georgia-regular">Years Of Broad Experience</p>
         </div>
       </div>
     </div>

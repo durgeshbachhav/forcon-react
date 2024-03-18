@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
 const SwiperComponent = ({ data }) => {
-  console.log(data);
+  // console.log(data);
   return (
     <div className="px-8 lg:px-8">
       <Swiper
@@ -37,7 +37,7 @@ const SwiperComponent = ({ data }) => {
               <img
                 src={src.img}
                 alt=""
-                className="w-full h-48 object-cover rounded-lg group-hover:opacity-75 p-2 cursor-pointer"
+                className="w-full h-60 object-cover rounded-lg group-hover:opacity-75 p-2 cursor-pointer"
               />
               <p className="  px-4 py-2 text-tablesubheadingcolor h-24 ">
                 {src.desc}

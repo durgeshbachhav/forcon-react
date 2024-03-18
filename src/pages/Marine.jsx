@@ -5,57 +5,57 @@ import Table from "../components/Table";
 const Marine = () => {
   const data = [
     {
-      no: 1,
-      "name of work":
-        "dvp infra projects pvt. ltd.- construction of anti sea erosion bund using tetrapods & groin from murguwada whilte sea to mirya",
-      department: "sub-contracts",
-      date: "2023-2024",
-      location: "ratnagiri",
-      "total  rs (in crores)": 31.69,
+      No: 1,
+      "Name of Work":
+        "DVP Infra Projects Pvt. Ltd.- Construction of Anti Sea Erosion Bund Using Tetrapods & Groin from Murguwada Whilte Sea to Mirya",
+      Department: "Sub-Contracts",
+      Date: "2023-2024",
+      Location: "Ratnagiri",
+      "Total  Rs (in Crores)": 31.69,
     },
     {
-      no: 2,
-      "name of work":
-        "dvp-forcon (jv) - construction of jetty and breakwater at janjira fort",
-      department: "sub-contracts",
-      date: "1 year",
-      location: "raigad",
-      "total  rs (in crores)": 18.59,
+      No: 2,
+      "Name of Work":
+        "DVP-Forcon (JV) - Construction of Jetty and Breakwater at Janjira Fort",
+      Department: "Sub-Contracts",
+      Date: "1 Year",
+      Location: "Raigad",
+      "Total  Rs (in Crores)": 18.59,
     },
     {
-      no: 3,
-      "name of work":
-        "construction of krushi bhavan building st shingada talav, gadkari chowk",
-      department: "maharashtra maritime board",
-      date: "1.5 year",
-      location: "nashik",
-      "total  rs (in crores)": 10.71,
+      No: 3,
+      "Name of Work":
+        "Construction of Krushi Bhavan Building St Shingada Talav, Gadkari Chowk",
+      Department: "Maharashtra Maritime Board",
+      Date: "1.5 Year",
+      Location: "Nashik",
+      "Total  Rs (in Crores)": 10.71,
     },
     {
-      no: 4,
-      "name of work":
-        "construction of anti sea ersion bund using tetrapod and groynes from murguwada white sea to mirya (more tembe)",
-      department: "engineering project india",
-      date: "2 year",
-      location: "ratnagiri",
-      "total  rs (in crores)": 80.62,
+      No: 4,
+      "Name of Work":
+        "Construction of Anti Sea Ersion Bund Using Tetrapod and Groynes from Murguwada White Sea to Mirya (More Tembe)",
+      Department: "Engineering Project India",
+      Date: "2 Year",
+      Location: "Ratnagiri",
+      "Total  Rs (in Crores)": 80.62,
     },
     {
-      no: 5,
-      "name of work": "construction of jetty and breakwater at janjira fort.",
-      department: "maharashtra maritime board",
-      date: "2 year",
-      location: "murud / ratnagiri",
-      "total  rs (in crores)": 65.5,
+      No: 5,
+      "Name of Work": "Construction of Jetty and Breakwater at Janjira Fort.",
+      Department: "Maharashtra Maritime Board",
+      Date: "2 Year",
+      Location: "Murud / Ratnagiri",
+      "Total  Rs (in Crores)": 65.5,
     },
     {
-      no: 6,
-      "name of work":
-        "development of fishries at jeevana, tal. shrivardhan, dist. raigad",
-      department: "breakwater",
-      date: "2 year",
-      location: "raigad",
-      "total  rs (in crores)": 158.06,
+      No: 6,
+      "Name of Work":
+        "Development of Fishries at Jeevana, Tal. Shrivardhan, Dist. Raigad",
+      Department: "Breakwater",
+      Date: "2 Year",
+      Location: "Raigad",
+      "Total  Rs (in Crores)": 158.06,
     },
   ];
 

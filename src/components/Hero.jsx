@@ -6,28 +6,25 @@ const Hero = () => {
       <div className=" px-4 md:px-6">
         <div className="flex flex-col gap-4 min-h-[600px] items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
-            <p className="text-sm font-semibold tracking-wide text-gray-500 uppercase dark:text-gray-400">
+            <p className="text-sm font-semibold tracking-wide  uppercase ">
               Welcome to{" "}
               <span className="text-tableheadcolor">Forcon Infra</span>
             </p>
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+            <h2 className="text-3xl font-bold tracking-tighter lg:text-4xl ">
               Providing Sustainable{" "}
               <span className="text-tableheadcolor">
                 Infrastructure Solutions
               </span>{" "}
               for Integrating the Nation
-            </h1>
+            </h2>
           </div>
           <div className="font-tienne">
-            <p className="text-base text-gray-600 md:text-xl dark:text-gray-400 lg:text-justify">
-              Welcome to Forcon Infra, an industry-leading construction company
+            <p className="text-base  md:text-xl   lg:text-justify">
+              Welcome to Forcon Infra, an industry-leading Construction Company
               dedicated to providing Infrastructure, Construction, Machinery,
-              Marine and RMC of the highest quality. With more than two decades
-              of experience in the industry, we've become a reliable partner for
-              businesses seeking to construct, develop, and transform their
-              infrastructure.
+              Marine Engineering and RMC of the highest quality.
             </p>
-            <p className="text-base py-2  text-gray-500 md:text-xl dark:text-gray-400 lg:text-justify text-center lg:py-8">
+            <p className="text-base py-2   md:text-xl  lg:text-justify text-center lg:py-8">
               Our expertise include Civil Construction, Industrial
               Infrastructure, Road Construction, Bridge Construction, Marine
               Engineering, and much more. Our team of specialists is equipped

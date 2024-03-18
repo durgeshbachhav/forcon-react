@@ -14,33 +14,31 @@ const FlyoverAndBridge = () => {
 
   const data = [
     {
-      no: 1,
-      "name of work":
-        "construction of approaches for railway over bridge (rob) on nampur satana kalwan wani pimpalgaon niphad sinner road",
-      department: "PWD",
-      date: "2022-2024",
-      location: "nashik",
-      totalRs: 100,
+        No: 1,
+        "Name of Work": "Construction of Approaches for Railway Over Bridge (ROB) on Nampur Satana Kalwan Wani Pimpalgaon Niphad Sinner Road",
+        Department: "PWD",
+        Date: "2022-2024",
+        Location: "Nashik",
+        "Total Rs": 100,
     },
     {
-      no: 2,
-      "name of work":
-        "construction of approaches for railway over bridge (rob) on nampur satana kalwan wani pimpalgaon niphad sinner road sh-27 (near kundewadi village) at 115/000 tal. niphad dist. nashik",
-      department: "bridges",
-      date: "1 year",
-      location: "nashik",
-      totalRs: 40.605,
+        No: 2,
+        "Name of Work": "Construction of Approaches for Railway Over Bridge (ROB) on Nampur Satana Kalwan Wani Pimpalgaon Niphad Sinner Road SH-27 (Near Kundewadi Village) at 115/000 Tal. Niphad Dist. Nashik",
+        Department: "Bridges",
+        Date: "1 year",
+        Location: "Nashik",
+        "Total Rs": 40.605,
     },
     {
-      no: 3,
-      "name of work":
-        "construction of high level bridge across waghur river at km 2/415 on kadgaon jogalkhede road vr-1 under submergence of shelgaon barrage medium project",
-      department: "bridges",
-      date: "2 year",
-      location: "jalgoan / nashik",
-      totalRs: 22.41,
+        No: 3,
+        "Name of Work": "Construction of High Level Bridge Across Waghur River at Km 2/415 on Kadgaon Jogalkhede Road VR-1 Under Submergence of Shelgaon Barrage Medium Project",
+        Department: "Bridges",
+        Date: "2 year",
+        Location: "Jalgoan / Nashik",
+        "Total Rs": 22.41,
     },
-  ];
+];
+
 
   return (
     <div>

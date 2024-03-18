@@ -31,7 +31,7 @@ const Table = ({ headings, data }) => {
                         {Object.keys(item).map((key, index) => (
                           <td
                             key={index}
-                            className="px-4 py-2 border capitalize text-[14px]   "
+                            className="px-4 py-2 border  text-[14px]   "
                           >
                             {item[key]}
                           </td>

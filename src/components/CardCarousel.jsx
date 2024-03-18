@@ -6,7 +6,7 @@ import ImageThree from "../assets/img/slide-img3.jpg";
 import ImageFour from "../assets/img/slide-img4.jpg";
 import ImageFive from "../assets/img/slide-img5.jpg";
 import ImageSix from "../assets/img/slide-img6.jpg";
-import ImageSeven from "../assets/img/slide-img7.jpg";
+// import ImageSeven from "../assets/img/rb.jpg";
 
 import SwiperComponent from "./SwiperComponent";
 
@@ -42,11 +42,11 @@ const CardCarousel = () => {
       img: ImageSix,
       desc: "Six Laning of Pimpalgaon - Nashik - Gonde Section of NH-3, Ozar Nashik",
     },
-    {
-      id: 7,
-      img: ImageSeven,
-      desc: "ASE Bund At More Tembe, Taluka & District: Ratnagiri",
-    },
+    // {
+    //   id: 7,
+    //   img: ImageSeven,
+    //   desc: "ASE Bund At More Tembe, Taluka & District: Ratnagiri",
+    // },
   ];
 
   return (

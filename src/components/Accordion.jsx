@@ -14,8 +14,7 @@ const AccordionComponent = () => {
           Excellence in People, Planning and Processes
         </h1>
         <h5 className="font-tienne text-xs lg:text-xl text-white py-2">
-          At Forcon Infra, we believe in establishing enduring relationships
-          with our clients based on trust, honesty, and openness.
+        At Forcon Infra, we believe in establishing enduring relationships with the government and businesses based on trust, honesty, and openness.
         </h5>
         <AccordionItem
           image={EXPERTISE}
@@ -25,7 +24,7 @@ const AccordionComponent = () => {
         <AccordionItem
           image={DEDICATION}
           title="DEDICATION TO QUALITY"
-          content="Impressive achievements of offering value added engineering construction and service expertise."
+          content="Remarkable achievements in providing engineering construction and service expertise with added value."
         />
         <AccordionItem
           image={CUSTOMER}
@@ -35,17 +34,17 @@ const AccordionComponent = () => {
         <AccordionItem
           image={SUSTAINABILITY}
           title="SUSTAINABILITY"
-          content="We believe in sustainability so we use machinery that is in good condition so that there is less noise and air pollution."
+          content="Due to our commitment to sustainability, we utilise well-maintained machinery to minimise both noise and air pollution."
         />
         <AccordionItem
           image={USPs}
           title="DISTINGUISHED USPs"
-          content="Skilled and experienced employees, plant and machinery improve quality, cost and control."
+          content="Skilled and experienced personnels, plant and machinery improve construction quality, cost and control."
         />
         <AccordionItem
           image={MANAGEMENT}
           title="PROJECT MANAGEMENT"
-          content="We have skilled management, excellent project management, and on-time delivery."
+          content="Our management team is highly skilled, adept in project management, and consistently achieves on-time delivery."
         />
       </div>
     </div>
