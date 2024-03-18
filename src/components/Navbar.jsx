@@ -1,6 +1,7 @@
 import React from "react";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
+import Logo from "/src/img/logo2.png";
 
 const menuItems = [
   {
@@ -63,11 +64,9 @@ const Navbar = () => {
         <div className="inline-flex items-center space-x-2">
           <span className="">
             <img
-              src={
-                "/src/img/logo2.png" ||
-                "https://i.postimg.cc/yxrZ4ygc/logo2.png"
-              }
+              src={Logo || "https://i.postimg.cc/yxrZ4ygc/logo2.png"}
               alt=""
+              className="w-40 lg:w-full"
             />
           </span>
         </div>
@@ -81,6 +80,7 @@ const Navbar = () => {
               // SINGLE NAVITEMS
               <li
                 key={item.name}
+                
                 onMouseEnter={() => setIsSubMenuOpen(item.name === "VERTICALS")}
               >
                 <Link
@@ -104,13 +104,20 @@ const Navbar = () => {
                     <ul
                       className="py-2 text-sm text-white hover:text-gray-300"
                       aria-labelledby="dropdownDefaultButton"
+                      onClick={() => {
+                        setIsSubMenuOpen(false);
+                        toggleMenu();
+                      }}
                     >
                       {item.subMenu.map((subItem) => (
                         <li key={subItem.name}>
                           <Link
                             to={subItem.to}
                             className="block px-4 py-2 text-white hover:text-gray-300 bg-secondary hover:bg-uicolor"
-                            onClick={() => setIsSubMenuOpen(false)}
+                            onClick={() => {
+                              setIsSubMenuOpen(false);
+                              toggleMenu();
+                            }}
                           >
                             {subItem.name}
                           </Link>
@@ -155,17 +162,21 @@ const Navbar = () => {
                   </div>
                 </div>
                 {/* Mobile Menu */}
-                <ul className="flex flex-col justify-start items-start gap-6 px-4 bg-secondary py-4">
+                <ul className="flex flex-col justify-start items-start gap-6 px-4 bg-secondary py-4 hover:rounded-lg">
                   {menuItems.map((item) => (
                     <li
                       key={item.name}
                       to={item.to}
-                      onClick={() => handleMenuItemClick(item.name)}
-                      className="hover:bg-blue-400 "
+                      onClick={() => {
+                        handleMenuItemClick(item.name);
+                        item.name !== 'VERTICALS' && toggleMenu();
+                      }}
+                      
+                      className=" "
                     >
                       <Link
                         to={item.to}
-                        className={`text-sm font-tennie font-bold text-white hover:text-gray-300 active:text-gray-500 flex items-center justify-center gap-0 w-full`}
+                        className={`static text-sm font-tennie font-bold text-white hover:text-gray-300 active:text-gray-500 flex items-center justify-center gap-0 w-full `}
                       >
                         {item.name}
                         {item.name === "VERTICALS" && (
@@ -173,7 +184,7 @@ const Navbar = () => {
                         )}
                       </Link>
                       {item.name === "VERTICALS" && isSubMenuOpen && (
-                        <div className="absolute  left-20 z-10 bg-white   rounded-lg shadow-lg">
+                        <div className="absolute w-[80%]  z-10 bg-secondary   rounded-lg shadow-lg  ">
                           <ul
                             className="py-2 text-sm text-gray-700 dark:text-gray-200"
                             aria-labelledby="dropdownDefaultButton"
@@ -182,7 +193,8 @@ const Navbar = () => {
                               <li key={subItem.name}>
                                 <Link
                                   to={subItem.to}
-                                  className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                                  className="static block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white "
+                                  onClick={()=>toggleMenu()}
                                 >
                                   {subItem.name}
                                 </Link>

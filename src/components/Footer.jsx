@@ -7,12 +7,17 @@ import {
   FaTwitter,
   FaWhatsapp,
 } from "react-icons/fa";
+import Logo from "/src/img/logo2.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   const links = [
     { icon: <FaCaretRight />, label: "About us", url: "/about" },
-    { icon: <FaCaretRight />, label: "Plant & Machinery", url: "/plant-and-machinery" },
+    {
+      icon: <FaCaretRight />,
+      label: "Plant & Machinery",
+      url: "/plant-and-machinery",
+    },
     { icon: <FaCaretRight />, label: "Affiliate Program", url: "#" },
     { icon: <FaCaretRight />, label: "Press Kit", url: "#" },
   ];
@@ -33,7 +38,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-primary text-white py-6 px-8  font-tienne flex items-center justify-center  flex-col lg:gap-16 lg:py-8 lg:">
+    <footer className="bg-primary text-white py-6 px-8  font-tienne flex items-center justify-center  flex-col lg:gap-16 lg:py-8">
       <div className=" flex flex-col lg:flex-row justify-center lg:justify-between gap-10 lg:gap-24">
         {/* Quick Links */}
         <div className="lg:w-1/3  ">
@@ -50,25 +55,25 @@ const Footer = () => {
 
         {/* Logo */}
         <div className="lg:w-1/5 flex items-center justify-center flex-col gap-8 ">
-          <img src="/src/img/logo2.png" alt="Logo" className=" w-full" />
+          <img src={Logo} alt="Logo" className="w-40 lg:w-full" />
           <div className="flex justify-center">
-            <div className="mx-2 bg-blue-50 rounded-full p-2 text-black">
-              <FaFacebookF className="text-xl" />
+            <div className="mx-2 bg-blue-50 rounded-full p-2 text-black hover:bg-tableheadcolor cursor-pointer">
+              <FaFacebookF className="text-xl " />
             </div>
-            <div className="mx-2 bg-blue-50 rounded-full p-2 text-black">
+            <div className="mx-2 bg-blue-50 rounded-full p-2 text-black hover:bg-tableheadcolor cursor-pointer">
               <FaInstagram className="text-xl" />
             </div>
-            <div className="mx-2 bg-blue-50 rounded-full p-2 text-black">
+            <div className="mx-2 bg-blue-50 rounded-full p-2 text-black hover:bg-tableheadcolor cursor-pointer">
               <FaTwitter className="text-xl" />
             </div>
-            <div className="mx-2 bg-blue-50 rounded-full p-2 text-black">
+            <div className="mx-2 bg-blue-50 rounded-full p-2 text-black hover:bg-tableheadcolor cursor-pointer">
               <FaWhatsapp className="text-xl" />
             </div>
           </div>
         </div>
 
         {/* Contact */}
-        <div className="lg:w-1/3">
+        <div className="lg:w-1/3 ">
           <h2 className="text-lg font-bold mb-4">Contact</h2>
           <div>
             {contact.map((data, index) => (

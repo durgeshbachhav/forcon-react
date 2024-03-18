@@ -7,7 +7,7 @@ const Marine = () => {
     {
       no: 1,
       "Name of Work":
-        "DVP Infra Projects Pvt. Ltd.- CONSTRUCTION OF ANTI SEA EROSION BUND USING TETRAPODS & GROYNE FROM MURGUWADA WHILTE SEA TO MIRYA (MORE TEBLE), ",
+        "dvp infra projects pvt. ltd.- construction of anti sea erosion bund using tetrapods & groin from murguwada whilte sea to mirya",
       Department: "Sub-Contracts",
       Date: "2023-2024",
       Location: "RATNAGIRI",
@@ -16,7 +16,7 @@ const Marine = () => {
     {
       no: 2,
       "Name of Work":
-        "DVP-FORCON (JV) - CONSTRUCTION OF JETTY AND BREAKWATER AT JANJIRA FORT,",
+        "dvp-forcon (jv) - construction of jetty and breakwater at janjira fort",
       Department: "Sub-Contracts",
       date: "1 Year", //check this
       Location: "RAIGAD",
@@ -25,7 +25,7 @@ const Marine = () => {
     {
       no: 3,
       "Name of Work":
-        "Construction of Krushi Bhavan Building st Shingada Talav, Gadkari Chowk,",
+        "Construction of Krushi Bhavan Building st Shingada Talav, Gadkari Chowk",
       Department: "MAHARASHTRA MARITIME BOARD",
       Date: "1.5 YEAR",
       Location: "NASHIK",

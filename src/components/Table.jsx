@@ -33,7 +33,7 @@ const Table = ({ headings, data }) => {
                             key={index}
                             className="px-4 py-2 border capitalize text-[14px]   "
                           >
-                            {item[key]}
+                            { item[key] }
                           </td>
                         ))}
                       </tr>

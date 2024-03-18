@@ -51,7 +51,7 @@ const CardCarousel = () => {
 
   return (
     <div className="w-full py-8 lg:py-12  lg:px-16 font-tienne">
-      <SwiperComponent data={data} />
+      <SwiperComponent data={data} imagesperSide={null} />
     </div>
   );
 };

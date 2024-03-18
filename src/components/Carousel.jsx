@@ -160,3 +160,42 @@ const Carousel = () => {
 };
 
 export default Carousel;
+
+// import React from "react";
+// import SwiperComponent from "./SwiperComponent";
+
+// const Carousel = () => {
+//   const images = [
+//     {
+//       src: ImageOne,
+//       title: `Providing Smart Infrastructure Solutions for a better tomorrow`,
+//     },
+//     {
+//       src: ImageTwo,
+//       title: `Bringing Vision to Life-Building futuristic sustainability`,
+//     },
+//     {
+//       src: ImageThree,
+//       title: `Our Aim - Delivering quality within time and budget`,
+//     },
+//     {
+//       src: ImageFour,
+//       title: `Excellence in Action-Providing Innovative Solutions`,
+//     },
+//     {
+//       src: ImageFive,
+//       title: `Smart Infrastructure for a Brighter Future`,
+//     },
+//     {
+//       src: ImageSix,
+//       title: `Delivering Excellence in Infrastructure Manufacturing`,
+//     },
+//   ];
+//   return (
+//     <div>
+//       <SwiperComponent data={images} imagesperSide={1} />
+//     </div>
+//   );
+// };
+
+// export default Carousel;
