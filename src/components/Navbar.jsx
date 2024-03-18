@@ -6,7 +6,7 @@ import Logo from "/src/img/logo2.png";
 const menuItems = [
   {
     name: "HOME",
-    to: "",
+    to: "/",
   },
   {
     name: "ABOUT US",
