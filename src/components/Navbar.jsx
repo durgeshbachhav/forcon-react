@@ -6,7 +6,7 @@ import Logo from "/src/img/logo2.png";
 const menuItems = [
   {
     name: "HOME",
-    to: "*",
+    to: "",
   },
   {
     name: "ABOUT US",
@@ -80,7 +80,6 @@ const Navbar = () => {
               // SINGLE NAVITEMS
               <li
                 key={item.name}
-                
                 onMouseEnter={() => setIsSubMenuOpen(item.name === "VERTICALS")}
               >
                 <Link
@@ -169,9 +168,8 @@ const Navbar = () => {
                       to={item.to}
                       onClick={() => {
                         handleMenuItemClick(item.name);
-                        item.name !== 'VERTICALS' && toggleMenu();
+                        item.name !== "VERTICALS" && toggleMenu();
                       }}
-                      
                       className=" "
                     >
                       <Link
@@ -194,7 +192,7 @@ const Navbar = () => {
                                 <Link
                                   to={subItem.to}
                                   className="static block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white "
-                                  onClick={()=>toggleMenu()}
+                                  onClick={() => toggleMenu()}
                                 >
                                   {subItem.name}
                                 </Link>
