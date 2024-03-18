@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
-import ImageOne from "../assets/img/Jpeg/8.jpg";
-import ImageTwo from "../assets/img/Jpeg/2.jpg";
-import ImageThree from "../assets/img/Jpeg/3.jpg";
-import ImageFour from "../assets/img/Jpeg/6.jpg";
-import ImageFive from "../assets/img/Jpeg/5.jpg";
-import ImageSix from "../assets/img/Jpeg/7.jpg";
+import ImageOne from "../assets/img/Jpeg/eight.jpg";
+import ImageTwo from "../assets/img/Jpeg/two.jpg";
+import ImageThree from "../assets/img/Jpeg/three.jpg";
+import ImageFour from "../assets/img/Jpeg/six.jpg";
+import ImageFive from "../assets/img/Jpeg/five.jpg";
+import ImageSix from "../assets/img/Jpeg/seven.jpg";
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
