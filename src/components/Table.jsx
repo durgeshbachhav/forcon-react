@@ -3,7 +3,7 @@ import React from "react";
 const Table = ({ headings, data }) => {
   return (
     <>
-      <section className="mx-auto w-full max-w-7xl  py-4">
+      <section className="m w-full   py-4">
         <div className="mt-6 flex flex-col">
           <div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
             <div className="inline-block min-w-full py-2 align-middle md:px-6 lg:px-8">
@@ -33,7 +33,7 @@ const Table = ({ headings, data }) => {
                             key={index}
                             className="px-4 py-2 border capitalize text-[14px]   "
                           >
-                            { item[key] }
+                            {item[key]}
                           </td>
                         ))}
                       </tr>

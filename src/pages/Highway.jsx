@@ -217,8 +217,8 @@ const Highway = () => {
   ];
 
   return (
-    <div className="py-8 px-8 lg:px-24">
-      <section className="w-full ">
+    <div >
+      <section className="py-8 px-8 lg:px-24 ">
         <div className="mb-8">
           <Breadcrumb values={["Home", "Verticals", "Highways"]} />
         </div>
@@ -232,7 +232,7 @@ const Highway = () => {
           </p>
         </div>
         {/* table */}
-        <div>
+        <div className="mt-6 flex flex-col ">
           <Table data={data} headings={headings} />
         </div>
       </section>

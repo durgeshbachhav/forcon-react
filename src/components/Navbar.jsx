@@ -184,7 +184,7 @@ const Navbar = () => {
                         )}
                       </Link>
                       {item.name === "VERTICALS" && isSubMenuOpen && (
-                        <div className="absolute w-[80%]  z-10 bg-secondary   rounded-lg shadow-lg  ">
+                        <div className="absolute w-[80%]  z-10 bg-primary  rounded-lg shadow-lg">
                           <ul
                             className="py-2 text-sm text-gray-700 dark:text-gray-200"
                             aria-labelledby="dropdownDefaultButton"

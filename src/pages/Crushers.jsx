@@ -1,81 +1,59 @@
 import Breadcrumb from "../components/BreadCrumb";
-import CrushersData from "../components/CrushersData";
+import Table from "../components/Table";
 
 const Crushers = () => {
-  const projects = {
-    projectData: [
-      {
-        number: "1",
-        title: "20 MM Metal",
-        department: "150 MM Metal",
-        role: "All Product use in Road and Building work",
-      },
-      {
-        number: "2",
-        title: "10 MM Metal",
-        department: "40 MM Metal",
-        role: "All Product use in Road and Building work",
-      },
-      {
-        number: "3",
-        title: "6 MM Metal",
-        department: "65 MM Metal",
-        role: "All Product use in Road and Building work",
-      },
-      {
-        number: "4",
-        title: "Artificial Sand",
-        department: "GSB",
-        role: "All Product use in Road and Building work",
-      },
-    ],
-    additionalInfo: [
-      {
-        heading: "Crushing Plant 250 TPH Make Sandvik",
-        subHeading: "Production of Sandvik Plant",
-      },
-    ],
-  };
+  const headings = ["Sr. No", "VSI Product", "HIS Product", ""];
+  const projectOne = [
+    {
+      number: "1",
+      title: "20 MM Metal",
+      department: "150 MM Metal",
+      role: "All Product use in Road and Building work",
+    },
+    {
+      number: "2",
+      title: "10 MM Metal",
+      department: "40 MM Metal",
+      role: "All Product use in Road and Building work",
+    },
+    {
+      number: "3",
+      title: "6 MM Metal",
+      department: "65 MM Metal",
+      role: "All Product use in Road and Building work",
+    },
+    {
+      number: "4",
+      title: "Artificial Sand",
+      department: "GSB",
+      role: "All Product use in Road and Building work",
+    },
+  ];
 
-  const production = {
-    projectData: [
-      {
-        number: "1",
-        title: "Wash Sand",
-        department: "VSI Product",
-        role: "All Product use Building work",
-      },
-      {
-        number: "2",
-        title: "Plaster Sand",
-        department: "VSI Product",
-        role: "All Product use Building work",
-      },
-    ],
-    additionalInfo: [
-      {
-        heading: "Wash Plant 200 TPH Make Alstone",
-        subHeading: "Production",
-      },
-    ],
-  };
+  const projectTwo = [
+    {
+      number: "1",
+      title: "Wash Sand",
+      department: "VSI Product",
+      role: "All Product use Building work",
+    },
+    {
+      number: "2",
+      title: "Plaster Sand",
+      department: "VSI Product",
+      role: "All Product use Building work",
+    },
+  ];
 
-  const anotherProduction = {
-    projectData: [
-      {
-        number: "1",
-        title: "WMM",
-        department: "Weat mix Macadam",
-        role: "This Product use in Road work",
-      },
-    ],
-    additionalInfo: [
-      {
-        heading: "WMM Plant 120 TPH",
-        subHeading: "Production",
-      },
-    ],
-  };
+  const projectThree = [
+    {
+      number: "1",
+      title: "WMM",
+      department: "Weat mix Macadam",
+      role: "This Product use in Road work",
+    },
+  ];
+
   return (
     <div className="py-8 px-8 lg:px-24">
       <div className="mb-8">
@@ -90,9 +68,22 @@ const Crushers = () => {
           impact while delivering maximum productivity.
         </p>
       </div>
-      <CrushersData projects={projects} />
-      <CrushersData projects={production} />
-      <CrushersData projects={anotherProduction} />
+
+      <div className="py-8 font-tienne">
+        <h2 className="text-xl py-2">Crushing Plant 250 TPH Make Sandvik</h2>
+        <h5 className="">Production of Sandvik Plant</h5>
+        <Table data={projectOne} headings={headings} />
+      </div>
+      <div className="py-2 font-tienne">
+        <h2 className="text-xl py-2">WMM Plant 120 TPH</h2>
+        <h5>Production</h5>
+        <Table data={projectTwo} headings={headings} />
+      </div>
+      <div className="py-2 font-tienne">
+        <h2 className="text-xl py-2">WMM Plant 120 TPH</h2>
+        <h5>Production</h5>
+        <Table data={projectThree} headings={headings} />
+      </div>
     </div>
   );
 };

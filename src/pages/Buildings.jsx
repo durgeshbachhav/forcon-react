@@ -14,166 +14,150 @@ const Building = () => {
   const data = [
     {
       no: 1,
-      "Name of Work":
-        "CONSTRUCTION OF GIRLS HOSTEL BUILDING IN TRIBAL ASHRAM SCHOOL COMPLEX AT BHALER, ",
-      Department: "Public Works Department (P.W.D.) ",
-
-      Date: "2020-2023",
-      Location: "NANDURBAR ",
-      "Total  Rs (In Crores)": 10.77,
+      "name of work":
+        "construction of girls hostel building in tribal ashram school complex at bhaler",
+      department: "public works department (p.w.d.) ",
+      date: "2020-2023",
+      location: "nandurbar ",
+      "total  rs (in crores)": 10.77,
     },
     {
       no: 2,
-      "Name of Work":
-        "CONSTRUCTION OF BOYS HOSTEL BUILDING IN TRIBAL ASHRAM SCHOOL COMPLEX AT BHALER, ",
-      Department: "Public Works Department (P.W.D.) ",
-
-      Date: "2020-2023",
-      Location: "NANDURBAR ",
-      "Total  Rs (In Crores)": 10.55,
+      "name of work":
+        "construction of boys hostel building in tribal ashram school complex at bhaler, ",
+      department: "public works department (p.w.d.) ",
+      date: "2020-2023",
+      location: "nandurbar ",
+      "total  rs (in crores)": 10.55,
     },
     {
       no: 3,
-      "Name of Work":
-        "CONSTRUCTION OF TWO FLOOR FOR PEDIATRIC, NEWRO SURGERY, PLASTIC SURGERY, DEPARTMENT OF REGIONAL REFFERAL HOSPITAL AT SHALIMAR,",
-      Department: "Public Works Department (P.W.D.) ",
-
-      Date: "2021-2023",
-      Location: "NASHIK",
-      "Total  Rs (In Crores)": 13.92,
+      "name of work":
+        "construction of two floor for pediatric, newro surgery, plastic surgery, department of regional refferal hospital at shalimar,",
+      department: "public works department (p.w.d.) ",
+      date: "2021-2023",
+      location: "nashik",
+      "total  rs (in crores)": 13.92,
     },
     {
       no: 4,
-      "Name of Work":
-        "PROPOSED BUS DEPOT AT PR NO.246 RESERVATION NO 412 NEAR NASHIK ROAD RAILWAY STATION NASHIK ROAD DIV",
-      Department: "Nashik Municipal Corporation",
-
-      Date: "2021-2024",
-      Location: "NASHIK ROAD",
-      "Total  Rs (In Crores)": 25.65,
+      "name of work":
+        "proposed bus depot at pr no.246 reservation no 412 near nashik road railway station nashik road div",
+      department: "nashik municipal corporation",
+      date: "2021-2024",
+      location: "nashik road",
+      "total  rs (in crores)": 25.65,
     },
     {
       no: 5,
-      "Name of Work":
-        "CONSTRUCTION OF HOSTEL BUILDING FOR 200 TRAINEERS, 18 RESIDENCIAL QUARTERS 8 CLASSROOMS, FIRST FLOOR TOILET BLOCK OF HOSTEL BUILDING AND MULTIPURPOSE HALL WITH INFRASTRURAL DEVELOPMENT ON CTC NO.3526",
-      Department: "Other Contracts",
-
-      Date: "2018-2020",
-      Location: "DHULE ",
-      "Total  Rs (In Crores)": 15.42,
+      "name of work":
+        "construction of hostel building for 200 trainees, 18 residencial quarters 8 classrooms, first floor toilet block of hostel building and multipurpose hall with infrastrural development on ctc no.3526",
+      department: "other contracts",
+      date: "2018-2020",
+      location: "dhule ",
+      "total  rs (in crores)": 15.42,
     },
     {
       no: 6,
-      "Name of Work":
-        "CONSTRUCTION OF ADMINISTRATIVE BUILDING OF POLICE STATION & 74 QUARTERS OF S.P. BULDHANA AT CHIKHALI",
-      Department: "Other Contracts",
-
-      Date: "2018-2021",
-      Location: "BULDANA",
-      "Total  Rs (In Crores)": 17.87,
+      "name of work":
+        "construction of administrative building of police station & 74 quarters of s.p. buldhana at chikhali",
+      department: "other contracts",
+      date: "2018-2021",
+      location: "buldhana",
+      "total  rs (in crores)": 17.87,
     },
     {
       no: 7,
-      "Name of Work":
-        "Proposed Bus Depot at Pr. No. Sr. No. 246 Reservation No. 412 Near Nashik Road Railway Station Nashik Road.",
-      Department: "NASHIK MUNICIPAL CORPORATION",
-
-      Date: "2020-2023",
-      Location: "NASHIK",
-      "Total  Rs (In Crores)": 29.65,
+      "name of work":
+        "proposed bus depot at pr. no. sr. no. 246 reservation no. 412 near nashik road railway station nashik road.",
+      department: "nashik municipal corporation",
+      date: "2020-2023",
+      location: "nashik",
+      "total  rs (in crores)": 29.65,
     },
     {
       no: 8,
-      "Name of Work":
-        "Construction of Administrative Building of Police Station & 74 Quarters for S. P. Buldhana at Chikhali,\nDist. Buldhana including All Infrastructural amenities.",
-      Department:
-        "MAHARASHTRA STATE POLICE HOUSING & WELFARE CORPORATION, MUMBAI",
-
-      Date: "2017-2018",
-      Location: "Buldhana",
-      "Total  Rs (In Crores)": 19.07,
+      "name of work":
+        "construction of administrative building of police station & 74 quarters for s. p. buldhana at chikhali,\ndist. buldhana including all infrastructural amenities.",
+      department:
+        "maharashtra state police housing & welfare corporation, mumbai",
+      date: "2017-2018",
+      location: "buldhana",
+      "total  rs (in crores)": 19.07,
     },
     {
       no: 9,
-      "Name of Work":
-        "Construction of Hostel Building for 200 trainees, 18 Resi. Quarters, 8 Classrooms, First Floor Toilet Block\nof Hostel Building & Multipurpose Hall with Infrastructural Development on CTS No. 3526 – A, for\nPTC, Dhule",
-      Department:
-        "MAHARASHTRA STATE POLICE HOUSING & WELFARE CORPORATION, MUMBAI",
-
-      Date: "2016-2018",
-      Location: "Buldhana",
-      "Total  Rs (In Crores)": 16.39,
+      "name of work":
+        "construction of hostel building for 200 trainees, 18 resi. quarters, 8 classrooms, first floor toilet block\nof hostel building & multipurpose hall with infrastructural development on cts no. 3526 – a, for\nptc, dhule",
+      department:
+        "maharashtra state police housing & welfare corporation, mumbai",
+      date: "2016-2018",
+      location: "buldhana",
+      "total  rs (in crores)": 16.39,
     },
     {
       no: 10,
-      "Name of Work":
-        "Proposed Construction of Cricket Stadium at S.no. 325/1, 327/2B, 327/3, 328 & Development of elearning\nlibrary and garden at S.No.197/1 to 10, 198, 199/1, 200, 201 in NMC open space in P. No. 1, Panchavati Div.",
-      Department: "NASHIK MUNICIPAL CORPORATION",
-
-      Date: "2022-2023",
-      Location: "NASHIK",
-      "Total  Rs (In Crores)": 23.77,
+      "name of work":
+        "proposed construction of cricket stadium at s.no. 325/1, 327/2b, 327/3, 328 & development of elearning\nlibrary and garden at s.no.197/1 to 10, 198, 199/1, 200, 201 in nmc open space in p. no. 1, panchavati div.",
+      department: "nashik municipal corporation",
+      date: "2022-2023",
+      location: "nashik",
+      "total  rs (in crores)": 23.77,
     },
     {
       no: 11,
-      "Name of Work":
-        "Proposed Development of 30 m DP road at Sant Sawatamali Marg in P. No. 23,",
-      Department: "MAHARASHTRA MARITIME BOARD",
-
-      Date: "2 YEAR",
-      Location: "NASHIK",
-      "Total  Rs (In Crores)": 29.93,
+      "name of work":
+        "proposed development of 30 m dp road at sant sawatamali marg in p. no. 23,",
+      department: "maharashtra maritime board",
+      date: "2 year",
+      location: "nashik",
+      "total  rs (in crores)": 29.93,
     },
     {
       no: 12,
-      "Name of Work":
-        "Construction of Eklavya Model Residential School (EMRS) in Single- Phase comprise of school building, Boys hostel (240 students), Girls-hostel (240 students), Kitchen & Dinning block, 2 blocks of Type-III quarters including guest house (8+8 Nos), Type-II quarters (10 Nos), Principal Residence, Warden Residence (Boys & Girls), electrical provision, water supply and Sanitary installations, External sewerage system and Drainage facility, Campus development such a road,",
-      Department: "NASHIK MUNICIPAL CORPORATION",
-
-      Date: "2 YEAR",
-      Location: "Shahada",
-      "Total  Rs (In Crores)": 36.44,
+      "name of work":
+        "construction of eklavya model residential school (emrs) in single- phase comprise of school building, boys hostel (240 students), girls-hostel (240 students), kitchen & dinning block, 2 blocks of type-iii quarters including guest house (8+8 nos), type-ii quarters (10 nos), principal residence, warden residence (boys & girls), electrical provision, water supply and sanitary installations, external sewerage system and drainage facility, campus development such a road,",
+      department: "nashik municipal corporation",
+      date: "2 year",
+      location: "shahada",
+      "total  rs (in crores)": 36.44,
     },
     {
       no: 13,
-      "Name of Work": "Construction of Groynes and Dredging Work at Mulgaon",
-      Department: "MAHARASHTRA MARITIME BOARD",
-
-      Date: "2 YEAR",
-      Location: "Shrivardhan / Raigad",
-      "Total  Rs (In Crores)": 68.88,
+      "name of work": "construction of groynes and dredging work at mulgaon",
+      department: "maharashtra maritime board",
+      date: "2 year",
+      location: "shrivardhan / raigad",
+      "total  rs (in crores)": 68.88,
     },
     {
       no: 14,
-      "Name of Work":
-        "Construction of Stadium on S. No.325/1, 327/2, B-327/328 in P. No.1, Panchavati Division",
-      Department: "CIVIL CONSTRUCTION",
-
-      Date: "2 YEAR",
-      Location: "NASHIK",
-      "Total  Rs (In Crores)": 29.94,
+      "name of work":
+        "construction of stadium on s. no.325/1, 327/2, b-327/328 in p. no.1, panchavati division",
+      department: "civil construction",
+      date: "2 year",
+      location: "nashik",
+      "total  rs (in crores)": 29.94,
     },
   ];
 
   return (
-    <div className="py-8 px-8 lg:px-20">
-      <section className="mx-auto w-full max-w-7xl px-4 py-4">
+    <div className="">
+      <section className="py-8 px-8 lg:px-24 ">
         <div className="mb-8">
           <Breadcrumb values={["Home", "Verticals", "Buildings"]} />
         </div>
-        <div className="flex flex-col space-y-4 md:flex-row md:items-center md:justify-between md:space-y-0">
-          <div>
-            <p className="text-justify georgia-regular text-[18px]">
-              Forcon Infra stands as a preeminent leader in the field of highway
-              and transportation infrastructure construction. Renowned for our
-              unwavering commitment to quality, safety, and innovation, the
-              company's exceptional team of engineers, architects, and
-              construction specialists collaboratively strive to bring each
-              project to fruition, setting new benchmarks for excellence.
-            </p>
-          </div>
-        </div>
         <div>
+          <p className="text-[18px] text-justify georgia-regular">
+            Forcon Infra stands as a preeminent leader in the field of highway
+            and transportation infrastructure construction. Renowned for our
+            unwavering commitment to quality, safety, and innovation, the
+            company's exceptional team of engineers, architects, and
+            construction specialists collaboratively strive to bring each
+            project to fruition, setting new benchmarks for excellence.
+          </p>
+        </div>
+        <div className="mt-6 flex flex-col ">
           <Table data={data} headings={headings} />
         </div>
       </section>
