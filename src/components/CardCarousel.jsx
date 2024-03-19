@@ -15,7 +15,7 @@ const CardCarousel = () => {
     {
       id: 1,
       img: ImageOne,
-      desc: "International Cricket stadium for Municipal Corporation, Nashik",
+      desc: "International Cricket stadium , Nashik",
     },
     {
       id: 2,

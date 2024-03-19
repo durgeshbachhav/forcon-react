@@ -50,7 +50,7 @@ const PlantAndMachinary = () => {
     {
       img: weightPlant,
       text: [
-        "Weight Mix Plant:",
+        "Batch Mix Plant:",
         "For large scale construction projects, we choose the Ammann Apollo Pvt Ltd.’s 200 TPH capacity Weight Mix Plant for efficient and reliable production of high quality concrete.",
       ],
     },
