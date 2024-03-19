@@ -30,7 +30,7 @@ const CardCarousel = () => {
     {
       id: 4,
       img: ImageFour,
-      desc: "Stone Crusher Plant at Moho Post Chincholi, Taluka Sinnar, Nashik",
+      desc: "Batch Mix Plant at Moho Post Chincholi, Taluka Sinnar, Nashik",
     },
     {
       id: 5,

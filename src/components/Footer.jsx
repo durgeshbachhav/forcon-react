@@ -49,7 +49,7 @@ const Footer = () => {
               <Link
                 key={index}
                 // to={link.url}
-                to={link.url === "Verticals" ? "/#sector" : "undefined"}
+                to={link.url === "Verticals" ? "/#sector" : ""}
                 className="flex items-center mb-2"
               >
                 <div className="mr-2">{link.icon}</div>
