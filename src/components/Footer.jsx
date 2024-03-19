@@ -19,7 +19,7 @@ const Footer = () => {
       label: "Plant & Machinery",
       url: "/plant-and-machinery",
     },
-    { icon: <FaCaretRight />, label: "Verticals", url: "/verticals/highway" },
+    { icon: <FaCaretRight />, label: "Verticals", url: "" },
     { icon: <FaCaretRight />, label: "Contact Us", url: "/contact" },
   ];
 
@@ -48,7 +48,8 @@ const Footer = () => {
             {links.map((link, index) => (
               <Link
                 key={index}
-                to={link.url}
+                // to={link.url}
+                to={link.url === "Verticals" ? "/#sector" : "undefined"}
                 className="flex items-center mb-2"
               >
                 <div className="mr-2">{link.icon}</div>

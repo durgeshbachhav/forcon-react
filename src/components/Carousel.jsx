@@ -12,27 +12,27 @@ const Carousel = () => {
   const images = [
     {
       src: ImageOne,
-      title: `Providing Smart Infrastructure Solutions for a better tomorrow`,
+      title: `Providing Smart Infrastructure Solutions For A Better Tomorrow`,
     },
     {
       src: ImageTwo,
-      title: `Bringing Vision to Life-Building futuristic sustainability`,
+      title: `Bringing Vision To Life-Building Futuristic Sustainability`,
     },
     {
       src: ImageThree,
-      title: `Our Aim - Delivering quality within time and budget`,
+      title: `Our Aim - Delivering Quality Within Time And Budget`,
     },
     {
       src: ImageFour,
-      title: `Excellence in Action-Providing Innovative Solutions`,
+      title: `Excellence In Action-Providing Innovative Solutions`,
     },
     {
       src: ImageFive,
-      title: `Smart Infrastructure for a Brighter Future`,
+      title: `Smart Infrastructure For A Brighter Future`,
     },
     {
       src: ImageSix,
-      title: `Delivering Excellence in Infrastructure Manufacturing`,
+      title: `Delivering Excellence In Infrastructure Manufacturing`,
     },
   ];
 

@@ -149,12 +149,10 @@ const Building = () => {
         </div>
         <div>
           <p className="text-[18px] text-justify georgia-regular">
-            Forcon Infra stands as a preeminent leader in the field of highway
-            and transportation infrastructure construction. Renowned for our
-            unwavering commitment to quality, safety, and innovation, the
-            company's exceptional team of engineers, architects, and
-            construction specialists collaboratively strive to bring each
-            project to fruition, setting new benchmarks for excellence.
+            We excel in the dynamic Buildings Sector, where we derive immense
+            pleasure from crafting exquisite homes and commercial spaces. With
+            our unwavering commitment to creativity and meticulous attention to
+            detail, we have the power to transform skylines.
           </p>
         </div>
         <div className="mt-6 flex flex-col ">

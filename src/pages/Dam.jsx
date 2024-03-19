@@ -48,12 +48,7 @@ const Dam = () => {
         </div>
         <div>
           <p className="text-[18px] text-justify georgia-regular">
-            Forcon Infra stands as a cutting-edge firm specializing in airport
-            infrastructure development and timely project delivery. Our
-            expertise extends to constructing runways, taxiways, aprons, and
-            other vital airport facilities. Forcon Infra also prioritizes safety
-            and sustainability, ensuring that our projects are safe and
-            environment friendly.
+          At Forcon Infra, we construct colossal dams and implement state-of-the-art irrigation technology to revolutionize water management. Our unwavering commitment involves thorough planning, precise design, impeccable execution, and ongoing maintenance, all in adherence to industry standards.
           </p>
         </div>
         <div className="mt-6 flex flex-col ">
