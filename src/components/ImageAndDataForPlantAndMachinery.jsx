@@ -33,7 +33,7 @@ const ImageAndDataForPlantAndMachinery = ({ data }) => {
                         {para.split(" - ").slice(1).join(" - ").trim()}
                       </p>
                     ) : (
-                      <p className="text-xl mb-2">{para}</p>
+                      <p className="text-xl mb-2 georgia-regular">{para}</p>
                     )}
                   </React.Fragment>
                 )}

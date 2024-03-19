@@ -8,35 +8,39 @@ import Dams from "../assets/img/dams.png";
 import Building from "../assets/img/building3.png";
 import Flyovers from "../assets/img/lastbridge.png";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const VerticalLink = ({ to, imgSrc, altText }) => (
-  <Link
+  <HashLink
     to={`/verticals/${to}`}
     className="flex items-center justify-center  rounded-md  bg-uicolor hover:bg-secondary "
   >
     <img src={imgSrc} alt={altText} className="w-40 lg:w-48" />
-  </Link>
+  </HashLink>
 );
 
-const Sector = (  ) => {
-  
+const Sector = () => {
   const sectors = [
-    { to: "highway", imgSrc: Highway, altText: "Highway" },
-    { to: "airports", imgSrc: Airport, altText: "Airports" },
-    { to: "crushers", imgSrc: Crusher, altText: "Crushers" },
-    { to: "rmc", imgSrc: Rmc, altText: "RMC" },
-    { to: "marine-engineering", imgSrc: Marine, altText: "Marine Engineering" },
-    { to: "buildings", imgSrc: Building, altText: "Buildings" },
-    { to: "dams-irrigation", imgSrc: Dams, altText: "Dams & Irrigation" },
+    { to: "highway#top", imgSrc: Highway, altText: "Highway" },
+    { to: "airports#top", imgSrc: Airport, altText: "Airports" },
+    { to: "crushers#top", imgSrc: Crusher, altText: "Crushers" },
+    { to: "rmc#top", imgSrc: Rmc, altText: "RMC" },
     {
-      to: "Flyovers-and-bridges",
+      to: "marine-engineering#top",
+      imgSrc: Marine,
+      altText: "Marine Engineering",
+    },
+    { to: "buildings#top", imgSrc: Building, altText: "Buildings" },
+    { to: "dams-irrigation#top", imgSrc: Dams, altText: "Dams & Irrigation" },
+    {
+      to: "Flyovers-and-bridges#top",
       imgSrc: Flyovers,
       altText: "Flyovers & Bridges",
     },
   ];
 
   return (
-    <div id="sector"  className="bg-primary py-8 px-8 md:py-12 lg:px-12 ">
+    <div id="sector" className="bg-primary py-8 px-8 md:py-12 lg:px-12 ">
       <Link className="max-w-7xl mx-auto sm:px-6 lg:px-8">
         <h2 className="text-3xl sm:text-4xl font-bold text-white text-center py-4 font-tienne">
           Sectors we are active in:

@@ -68,26 +68,26 @@ const PlantAndMachinary = () => {
       ],
     },
     // transportEquipment
-    {
-      img: transportEquipment,
-      text: [
-        "Transportation Equipment:",
-        "Transportation equipment offers a high amount of reliability and ease for transit and mobility of various machines, materials and more. The list of the transportation equipment we use are:",
-        `21 of Ashok Leland and Tata’s Hyawa (Tipper)-  7.5 / 9.5 Cum Capacity,
+//     {
+//       img: transportEquipment,
+//       text: [
+//         "Transportation Equipment:",
+//         "Transportation equipment offers a high amount of reliability and ease for transit and mobility of various machines, materials and more. The list of the transportation equipment we use are:",
+//         `21 of Ashok Leland and Tata’s Hyawa (Tipper)-  7.5 / 9.5 Cum Capacity,
 
-3 Asphalt Bowser - 9 Ton Capacity,
+// 3 Asphalt Bowser - 9 Ton Capacity,
 
-2 Allwin Equipment and Jadish Industries - 6 MT, 4 MT Capacity,
+// 2 Allwin Equipment and Jadish Industries - 6 MT, 4 MT Capacity,
 
-4 Tata Water Tankers - 10,000 Ltr Capacity,
+// 4 Tata Water Tankers - 10,000 Ltr Capacity,
 
-2 Mahindra 9 Seater Jeeps,
+// 2 Mahindra 9 Seater Jeeps,
 
-1 Mahindra Bolero Camper Utility Van,
+// 1 Mahindra Bolero Camper Utility Van,
 
-4 HMT and Mahindra Tractors - 3511 275 DI Capacity`,
-      ],
-    },
+// 4 HMT and Mahindra Tractors - 3511 275 DI Capacity`,
+//       ],
+//     },
     // construction equipment
     {
       img: constructionEquipment,
@@ -171,6 +171,7 @@ const PlantAndMachinary = () => {
       <div>
         <ImageAndDataForPlantAndMachinery data={data} />
       </div>
+      
     </div>
   );
 };
