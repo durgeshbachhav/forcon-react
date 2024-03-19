@@ -8,19 +8,19 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 import Logo from "/src/img/logo2.png";
-import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   const links = [
-    { icon: <FaCaretRight />, label: "About us", url: "/about" },
+    { icon: <FaCaretRight />, label: "About us", url: "/about#top" },
     {
       icon: <FaCaretRight />,
       label: "Plant & Machinery",
-      url: "/plant-and-machinery",
+      url: "/plant-and-machinery#top",
     },
-    { icon: <FaCaretRight />, label: "Verticals", url: "" },
-    { icon: <FaCaretRight />, label: "Contact Us", url: "/contact" },
+    { icon: <FaCaretRight />, label: "Verticals", url: "/#sector" },
+    { icon: <FaCaretRight />, label: "Contact Us", url: "/contact#top" },
   ];
 
   const contact = [
@@ -46,15 +46,14 @@ const Footer = () => {
           <h1 className="text-lg font-bold mb-4">Quick Links</h1>
           <div>
             {links.map((link, index) => (
-              <Link
+              <HashLink
                 key={index}
-                to={link.url} 
-                id={link.url === "Verticals" ? "sector" : undefined}
+                to={link.url}
                 className="flex items-center mb-2"
               >
                 <div className="mr-2">{link.icon}</div>
                 <span className="hover:underline">{link.label}</span>
-              </Link>
+              </HashLink>
             ))}
           </div>
         </div>

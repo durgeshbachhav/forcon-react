@@ -12,7 +12,9 @@ const Home = () => {
     <div>
       <Carousel />
       <Hero />
-      <Sector sector="sector" />
+      <div id="sector">
+        <Sector />
+      </div>
       <FamilyComponent />
       <AccordionComponent />
       <TimeLine />

@@ -18,8 +18,8 @@ const VerticalLink = ({ to, imgSrc, altText }) => (
   </Link>
 );
 
-const Sector = ( sector ) => {
-  console.log(sector)
+const Sector = (  ) => {
+  
   const sectors = [
     { to: "highway", imgSrc: Highway, altText: "Highway" },
     { to: "airports", imgSrc: Airport, altText: "Airports" },
@@ -36,7 +36,7 @@ const Sector = ( sector ) => {
   ];
 
   return (
-    <div id={sector} className="bg-primary py-8 px-8 md:py-12 lg:px-12">
+    <div id="sector"  className="bg-primary py-8 px-8 md:py-12 lg:px-12">
       <Link className="max-w-7xl mx-auto sm:px-6 lg:px-8">
         <h2 className="text-3xl sm:text-4xl font-bold text-white text-center py-4 font-tienne">
           Sectors we are active in:

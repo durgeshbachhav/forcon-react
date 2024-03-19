@@ -4,7 +4,7 @@ import { Home, ChevronRight } from "lucide-react";
 const Breadcrumb = ({ values }) => {
   console.log(values);
   return (
-    <nav className="flex " aria-label="Breadcrumb">
+    <nav  className="flex " aria-label="Breadcrumb">
       <ol className="inline-flex items-center space-x-1 md:space-x-3 georgia-regular">
         {values?.map((value, index) => (
           <li key={index} className="inline-flex items-center">
