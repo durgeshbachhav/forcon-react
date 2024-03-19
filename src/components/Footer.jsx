@@ -19,8 +19,8 @@ const Footer = () => {
       label: "Plant & Machinery",
       url: "/plant-and-machinery",
     },
-    { icon: <FaCaretRight />, label: "Affiliate Program", url: "#" },
-    { icon: <FaCaretRight />, label: "Press Kit", url: "#" },
+    { icon: <FaCaretRight />, label: "Verticals", url: "/verticals/highway" },
+    { icon: <FaCaretRight />, label: "Contact Us", url: "/contact" },
   ];
 
   const contact = [

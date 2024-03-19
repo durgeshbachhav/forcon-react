@@ -148,7 +148,7 @@ export const Contact = () => {
             </div>
           </div>
           <div className="mb-4">
-            <p className="font-bold text-xl mb-2 lg:mb-4">SINNER PLANT</p>
+            <p className="font-bold text-xl mb-2 lg:mb-4">SINNAR PLANT</p>
             <div className="flex items-start justify-start flex-col bg-secondary p-4 text-white rounded-md w-72 h-40">
               <div className="flex items-start justify-center gap-4">
                 <div>
