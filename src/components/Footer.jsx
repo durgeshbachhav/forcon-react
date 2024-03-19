@@ -8,6 +8,7 @@ import {
   FaWhatsapp,
 } from "react-icons/fa";
 import Logo from "/src/img/logo2.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -45,10 +46,14 @@ const Footer = () => {
           <h1 className="text-lg font-bold mb-4">Quick Links</h1>
           <div>
             {links.map((link, index) => (
-              <a key={index} href={link.url} className="flex items-center mb-2">
+              <Link
+                key={index}
+                to={link.url}
+                className="flex items-center mb-2"
+              >
                 <div className="mr-2">{link.icon}</div>
                 <span className="hover:underline">{link.label}</span>
-              </a>
+              </Link>
             ))}
           </div>
         </div>
