@@ -220,7 +220,7 @@ const Highway = () => {
     {
       No: 25,
       "Name of Work":
-        "Development of DP Road in Ward No1 Panchawati, Nashik & Widening and Construction of Bridge on Waghadi River in Gunjalbaba Nagar,",
+        "Development of DP Road in Ward No1 Panchawati, Nashik & Widening and Construction of Bridge on Waghadi River in Gunjalbaba Nagar",
       Department: "Public Work Department, Maharashtra",
       Date: "2 Year",
       Location: "Nashik",
