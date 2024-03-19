@@ -57,7 +57,7 @@ const Navbar = () => {
   };
 
   return (
-    <div id="top" className="relative w-full bg-primary font-tienne py-4 lg:px-12">
+    <div id="top" className="relative w-full bg-primary font-tienne py-4 lg:px-12 ">
       <div className="flex  items-center justify-between px-4 py-2 sm:px-6 lg:px-8">
         {/* DESKTOP SCREEN */}
         {/* LOGO  */}
