@@ -1,6 +1,6 @@
 import React from "react";
 import ImageAndData from "../components/ImageAndData";
-import aboutImage from "../assets/img/Jpeg/about.jpg";
+import aboutImage from "../assets/img/Jpeg/aboutnew.jpg";
 import CoreImage from "../assets/img/Info1.jpg";
 import DirectorImage from "../assets/img/director.jpg";
 import VisionMissionValues from "../components/VisionMissionValues";
