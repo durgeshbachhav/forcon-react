@@ -39,7 +39,7 @@ const SwiperComponent = ({ data }) => {
                 alt=""
                 className="w-full h-60 object-cover rounded-lg group-hover:opacity-75 p-2 cursor-pointer"
               />
-              <p className="text-[14px]  px-4 py-2 text-tablesubheadingcolor  ">
+              <p className="text-[14px]  px-4 py-2 text-tablesubheadingcolor h-24 ">
                 {src.desc}
               </p>
             </div>
