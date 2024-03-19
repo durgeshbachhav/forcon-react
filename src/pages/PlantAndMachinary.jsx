@@ -3,7 +3,7 @@ import crusherImage from "../assets/img/1.png";
 import HotMixPlant from "../assets/img/hot-mix-plant.jpg";
 import rmcPlant from "../assets/img/mix-plant.jpg";
 import weightPlant from "../assets/img/weight-plant.jpg";
-import concreateEquipment from "../assets/img/concrete-equipment.jpg";
+import concreateEquipment from "../assets/img/concreate.jpg";
 import transportEquipment from "../assets/img/transportation-equipment.jpg";
 import constructionEquipment from "../assets/img/2.png";
 import rollars from "../assets/img/roller.jpg";

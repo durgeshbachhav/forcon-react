@@ -69,7 +69,7 @@ const Building = () => {
     {
       No: 7,
       "Name of Work":
-        "Proposed Bus Depot at PR. No. Sr. No. 246 Reservation No. 412 near Nashik Road Railway Station Nashik Road.",
+        "Proposed Bus Depot at PR. No. Sr. No. 246 Reservation No. 412 near Nashik Road Railway Station Nashik Road",
       Department: "Nashik Municipal Corporation",
       Date: "2020-2023",
       Location: "Nashik",
@@ -78,7 +78,7 @@ const Building = () => {
     {
       No: 8,
       "Name of Work":
-        "Construction of Administrative Building of Police Station & 74 Quarters for S. P. Buldhana at Chikhali,\ndist. Buldhana Including All Infrastructural Amenities.",
+        "Construction of Administrative Building of Police Station & 74 Quarters for S. P. Buldhana at Chikhali,\ndist. Buldhana Including All Infrastructural Amenities",
       Department:
         "Maharashtra State Police Housing & Welfare Corporation, Mumbai",
       Date: "2017-2018",
@@ -98,7 +98,7 @@ const Building = () => {
     {
       No: 10,
       "Name of Work":
-        "Proposed Construction of Cricket Stadium at S.No. 325/1, 327/2B, 327/3, 328 & Development of Elearning\nLibrary and Garden at S.No.197/1 to 10, 198, 199/1, 200, 201 in NMC Open Space in P. No. 1, Panchavati Div.",
+        "Proposed Construction of Cricket Stadium at S.No. 325/1, 327/2B, 327/3, 328 & Development of Elearning\nLibrary and Garden at S.No.197/1 to 10, 198, 199/1, 200, 201 in NMC Open Space in P. No. 1, Panchavati Div",
       Department: "Nashik Municipal Corporation",
       Date: "2022-2023",
       Location: "Nashik",
@@ -107,7 +107,7 @@ const Building = () => {
     {
       No: 11,
       "Name of Work":
-        "Proposed Development of 30 M DP Road at Sant Sawatamali Marg in P. No. 23,",
+        "Proposed Development of 30 M DP Road at Sant Sawatamali Marg in P. No. 23",
       Department: "Maharashtra Maritime Board",
       Date: "2 Year",
       Location: "Nashik",

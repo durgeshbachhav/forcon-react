@@ -15,7 +15,7 @@ const Dam = () => {
   const data = [
     {
         No: 1,
-        "Name of Work": "Construction of Left Side Ghat on D/S of Janardan Swami Bridge in Dasak Panchak Area on Godavari River.",
+        "Name of Work": "Construction of Left Side Ghat on D/S of Janardan Swami Bridge in Dasak Panchak Area on Godavari River",
         Department: "Minor Irrigation",
         "Total  Rs (in Crores)": 19.53,
         Date: "2015-2017",
@@ -23,7 +23,7 @@ const Dam = () => {
     },
     {
         No: 2,
-        "Name of Work": "Constructing of Right Side Ghat on D/S of Janardan Swami Bridge in Dasak Panchak Area on Godavari River. ",
+        "Name of Work": "Constructing of Right Side Ghat on D/S of Janardan Swami Bridge in Dasak Panchak Area on Godavari River",
         Department: "Minor Irrigation",
         "Total  Rs (in Crores)": 17.44,
         Date: "2015-2017",
