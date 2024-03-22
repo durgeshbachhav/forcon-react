@@ -24,7 +24,7 @@ const Airport = () => {
     <>
       <section className="py-8 px-8 lg:px-24">
         <div className="mb-8">
-          <Breadcrumb values={["Home", "Verticals", "Airports"]} />
+          <Breadcrumb values={["Home", "Airports"]} />
         </div>
         <div>
           <p className="text-justify georgia-regular text-[18px]">

@@ -44,7 +44,7 @@ const Dam = () => {
     <div className="">
       <section className="py-8 px-8 lg:px-24">
         <div className="mb-8">
-          <Breadcrumb values={["Home", "Verticals", "Dams"]} />
+          <Breadcrumb values={["Home", "Dams"]} />
         </div>
         <div>
           <p className="text-[18px] text-justify georgia-regular">

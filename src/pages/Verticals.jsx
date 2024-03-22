@@ -54,7 +54,6 @@ const Verticals = () => {
       <div className="mb-8 py-8 px-8 lg:px-20">
         <Breadcrumb values={["Home", "Verticals"]} />
       </div>
-     
 
       {/* text passage */}
       <div className="py-4 text-[16px] px-8 lg:px-20 georgia-regular">

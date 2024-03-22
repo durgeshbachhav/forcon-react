@@ -72,7 +72,7 @@ const Crushers = () => {
   return (
     <div className="py-8 px-8 lg:px-24">
       <div className="mb-8">
-        <Breadcrumb values={["Home", "Verticals", "Crushers"]} />
+        <Breadcrumb values={["Home", "Crushers"]} />
       </div>
       <div>
         <p className="text-justify georgia-regular text-[18px]">

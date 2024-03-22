@@ -92,7 +92,7 @@ const Rmc = () => {
     <div className="py-8 px-8 lg:px-24">
       <section className="w-full ">
         <div className="mb-8">
-          <Breadcrumb values={["Home", "Verticals", "Rmc"]} />
+          <Breadcrumb values={["Home", "Rmc"]} />
         </div>
         <div className="">
           <p className="text-[18px] text-justify georgia-regular">

@@ -72,7 +72,7 @@ const Marine = () => {
     <div>
       <section className="py-8 px-8 lg:px-24 ">
         <div className="mb-8 ">
-          <Breadcrumb values={["Home", "Verticals", "Marine Engineering"]} />
+          <Breadcrumb values={["Home", "Marine Engineering"]} />
         </div>
         <p className="text-[18px] text-justify georgia-regular">
           Marine engineering is a critical aspect of our company as we're at the

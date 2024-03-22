@@ -145,7 +145,7 @@ const Building = () => {
     <div className="">
       <section className="py-8 px-8 lg:px-24 ">
         <div className="mb-8">
-          <Breadcrumb values={["Home", "Verticals", "Buildings"]} />
+          <Breadcrumb values={["Home", "Buildings"]} />
         </div>
         <div>
           <p className="text-[18px] text-justify georgia-regular">
