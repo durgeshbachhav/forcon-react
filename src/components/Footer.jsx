@@ -7,7 +7,7 @@ import {
   FaTwitter,
   FaWhatsapp,
 } from "react-icons/fa";
-import Logo from "/src/img/logo2.png";
+import Logo from "/src/assets/img/logoForcon.png";
 import { HashLink } from "react-router-hash-link";
 
 const Footer = () => {
@@ -39,8 +39,8 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-primary text-white py-6 px-8  font-tienne flex items-center justify-center  flex-col lg:gap-16 lg:py-8 ">
-      <div className=" flex flex-col lg:flex-row justify-center lg:justify-between gap-10 lg:gap-16">
+    <footer className="bg-primary text-white py-6 px-8  font-tienne flex items-center justify-center  flex-col lg:gap-16 lg:py-8  lg:px-20">
+      <div className=" flex flex-col lg:flex-row justify-center lg:justify-center gap-10 lg:gap-16">
         {/* Quick Links */}
         <div className="lg:w-1/3  ">
           <h1 className="text-lg font-bold mb-4">Quick Links</h1>

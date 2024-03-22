@@ -1,7 +1,7 @@
 import React from "react";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
-import Logo from "/src/img/logo2.png";
+import Logo from "/src/assets/img/logoForcon.png";
 
 const menuItems = [
   {
@@ -57,7 +57,10 @@ const Navbar = () => {
   };
 
   return (
-    <div id="top" className="relative w-full bg-primary font-tienne py-4 lg:px-12 ">
+    <div
+      id="top"
+      className="relative w-full bg-primary font-tienne py-4 lg:px-12 "
+    >
       <div className="flex  items-center justify-between px-4 py-2 sm:px-6 lg:px-8">
         {/* DESKTOP SCREEN */}
         {/* LOGO  */}
@@ -66,7 +69,7 @@ const Navbar = () => {
             <img
               src={Logo || "https://i.postimg.cc/yxrZ4ygc/logo2.png"}
               alt=""
-              className="w-40 lg:w-full"
+              className="w-40 lg:w-56 "
             />
           </span>
         </div>

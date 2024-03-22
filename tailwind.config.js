@@ -10,15 +10,15 @@ export default {
         'tienne': ['Tienne', 'serif'],
       },
       colors: {
-        primary: "#2a2546",
-        secondary: '#5549ac',
-        uicolor: "#848ad6",
+        primary: '#04364a',
+        secondary: '#057999',
+        uicolor: "#0098be",
         tableheadcolor: "#d42a4d",
         tablesubheadingcolor: "#e84b64",
         navitemprimary: "#5356FF",
         navitemsecondary: "#16f1af"
       },
-      
+
     },
   },
   plugins: [],
