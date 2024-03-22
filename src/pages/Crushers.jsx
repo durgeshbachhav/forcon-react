@@ -3,6 +3,7 @@ import Table from "../components/Table";
 
 const Crushers = () => {
   const headings = ["Sr. No", "VSI Product", "HIS Product", ""];
+  const headingsTwo = ["Sr. No", "", "", "Remark"];
   const projectOne = [
     {
       number: "1",
@@ -53,6 +54,20 @@ const Crushers = () => {
       role: "This Product use in Road work",
     },
   ];
+  const projectFour = [
+    {
+      number: "1",
+      title: "Artificial Sand",
+      department: "VSI",
+      role: "Use Building and Road Work",
+    },
+    {
+      number: "2",
+      title: "Plaster Artificial Sand",
+      department: "VSI",
+      role: "Only Use Building Work",
+    },
+  ];
 
   return (
     <div className="py-8 px-8 lg:px-24">
@@ -61,11 +76,15 @@ const Crushers = () => {
       </div>
       <div>
         <p className="text-justify georgia-regular text-[18px]">
-          Forcon Infra is also actively involved in the mining and construction
-          industries, providing equipment, tools, services and solutions for the
-          same. All our crushers are high performance machineries with
-          commitment to sustainability, and designed to minimize environmental
-          impact while delivering maximum productivity.
+          Forcon Infra leads the mining and construction sectors with our
+          advanced crushers, delivering premium-shaped aggregate and unmatched
+          efficiency. Our crushers feature easy maintenance, low operational
+          costs per ton, reduced power consumption, and a large feed opening for
+          optimal performance. With innovative designs for easy throw setting
+          modification and unique crushing chambers, we ensure consistent
+          product quality and shape while maximizing capacity. Our dust seal
+          system protects internal components, minimizing maintenance costs and
+          achieving the highest production rates in their category.
         </p>
       </div>
 
@@ -83,6 +102,11 @@ const Crushers = () => {
         <h2 className="text-xl py-2">WMM Plant 120 TPH</h2>
         <h5>Production</h5>
         <Table data={projectThree} headings={headings} />
+      </div>
+      <div className="py-2 font-tienne">
+        <h2 className="text-xl py-2">Propel Sander Cone Plant 50 TPH</h2>
+        <h5>Production</h5>
+        <Table data={projectFour} headings={headingsTwo} />
       </div>
     </div>
   );
