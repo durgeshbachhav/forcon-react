@@ -7,7 +7,7 @@ import {
   FaTwitter,
   FaWhatsapp,
 } from "react-icons/fa";
-import Logo from "/src/assets/img/logoForcon.png";
+import Logo from "/src/assets/img/logoWhite.png";
 import { HashLink } from "react-router-hash-link";
 
 const Footer = () => {

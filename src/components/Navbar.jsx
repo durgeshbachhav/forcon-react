@@ -1,7 +1,7 @@
 import React from "react";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
-import Logo from "/src/assets/img/logoForcon.png";
+import Logo from "/src/assets/img/logoWhite.png";
 
 const menuItems = [
   {
@@ -147,10 +147,11 @@ const Navbar = () => {
                   <div className="inline-flex items-center space-x-2">
                     <img
                       src={
-                        "/src/img/logo2.png" ||
+                        Logo ||
                         "https://i.postimg.cc/yxrZ4ygc/logo2.png"
                       }
                       alt=""
+                      className="w-40 lg:w-56 "
                     />
                   </div>
                   <div className="-mr-2">

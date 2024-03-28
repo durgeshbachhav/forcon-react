@@ -54,7 +54,6 @@ const PlantAndMachinary = () => {
     <div className="py-8 px-8 lg:px-20">
       <div className="flex flex-col items-start justify-center">
         <Breadcrumb values={["Home", "Plant & Machinery"]} />
-
         <h2 className="text-2xl font-bold mt-8 font-tienne  lg:text-3xl text-tableheadcolor">
           Plant and Machinery
         </h2>
