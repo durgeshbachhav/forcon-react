@@ -1,33 +1,35 @@
 import Breadcrumb from "../components/BreadCrumb";
 import Table from "../components/Table";
+import images from "../carouselData/crushersCarousel";
+import Carousel from "../components/Carousel";
 
 const Crushers = () => {
-  const headings = ["Sr. No", "VSI Product", "HIS Product", ""];
-  const headingsTwo = ["Sr. No", "", "", "Remark"];
+  const headings = ["Sr. No", "VSI Product", "HIS Product", "Application"];
+  // const headingsTwo = ["Sr. No", "", "", "Remark"];
   const projectOne = [
     {
       number: "1",
-      title: "20 MM Metal",
+      title: "20 MM VSI Metal",
       department: "150 MM Metal",
-      role: "All Product use in Road and Building work",
+      role: "Product used in Road, Building work,RMC and Bitumen work",
     },
     {
       number: "2",
-      title: "10 MM Metal",
+      title: "10 MM VSI Metal",
       department: "40 MM Metal",
-      role: "All Product use in Road and Building work",
+      role: "Product used in Road, Building work,RMC and Bitumen work",
     },
     {
       number: "3",
-      title: "6 MM Metal",
+      title: "6 MM VSI Metal",
       department: "65 MM Metal",
-      role: "All Product use in Road and Building work",
+      role: "Product used in Road, Building work,RMC and Bitumen work",
     },
     {
       number: "4",
-      title: "Artificial Sand",
+      title: "Artificial Sand VSI metal",
       department: "GSB",
-      role: "All Product use in Road and Building work",
+      role: "All Product used in Road and Building work",
     },
   ];
 
@@ -36,13 +38,13 @@ const Crushers = () => {
       number: "1",
       title: "Wash Sand",
       department: "VSI Product",
-      role: "All Product use Building work",
+      role: "All Product used for Building work",
     },
     {
       number: "2",
       title: "Plaster Sand",
       department: "VSI Product",
-      role: "All Product use Building work",
+      role: "All Product used for Building work",
     },
   ];
 
@@ -50,8 +52,8 @@ const Crushers = () => {
     {
       number: "1",
       title: "WMM",
-      department: "Weat mix Macadam",
-      role: "This Product use in Road work",
+      department: "Wet mix Macadam",
+      role: "This Product is used for Road work",
     },
   ];
   const projectFour = [
@@ -59,13 +61,13 @@ const Crushers = () => {
       number: "1",
       title: "Artificial Sand",
       department: "VSI",
-      role: "Use Building and Road Work",
+      role: "Used for Building and Road Work",
     },
     {
       number: "2",
       title: "Plaster Artificial Sand",
       department: "VSI",
-      role: "Only Use Building Work",
+      role: "Only Used for Building Work",
     },
   ];
 
@@ -74,20 +76,47 @@ const Crushers = () => {
       <div className="mb-8">
         <Breadcrumb values={["Home", "Crushers"]} />
       </div>
-      <div>
-        <p className="text-justify georgia-regular text-[18px]">
-          Forcon Infra leads the mining and construction sectors with our
-          advanced crushers, delivering premium-shaped aggregate and unmatched
-          efficiency. Our crushers feature easy maintenance, low operational
-          costs per ton, reduced power consumption, and a large feed opening for
-          optimal performance. With innovative designs for easy throw setting
-          modification and unique crushing chambers, we ensure consistent
-          product quality and shape while maximizing capacity. Our dust seal
-          system protects internal components, minimizing maintenance costs and
-          achieving the highest production rates in their category.
-        </p>
+      <div className="py-4">
+        <h2 className="tienne-bold text-2xl text-tableheadcolor">
+          Forging the Future: Forcon Infra's Revolutionary Crushers Transforming
+          Mining and Construction
+        </h2>
       </div>
+      <Carousel images={images} title={false} />
 
+      <div className="mt-10">
+        <ul className="list-disc georgia-regular text-base lg:text-lg text-justify px-4">
+          <li className="">
+            Forcon Infra: Spearheading transformation in mining and construction
+            industries.
+          </li>
+          <li>
+            State-of-the-Art Crushers: Renowned for superior-quality aggregate
+            production.
+          </li>
+          <li>
+            Efficient Operations: Minimal maintenance costs, reduced power
+            consumption, and spacious feed opening.
+          </li>
+          <li>
+            Innovative Design: Effortless throw setting adjustment and
+            distinctive crushing chambers.
+          </li>
+          <li>
+            Consistent Quality: Guaranteed product quality and shape with
+            maximized capacity.
+          </li>
+          <li>
+            Dust Seal System: Ensures internal component safety, minimizing
+            maintenance expenses.
+          </li>
+          <li>
+            Industry-Leading Production Rates: Achieve unmatched efficiency with
+            Forcon Infra's crushers.
+          </li>
+        </ul>
+        {/* <p className=" georgia-regular text-[18px] lg:text-justify">Forcon Infra leads the charge in revolutionizing the mining and construction industries, delivering state-of-the-art crushers renowned for their ability to produce superior-quality aggregate with unmatched efficiency. Our crushers boast easy maintenance, minimal operational costs per ton, reduced power consumption, and a spacious feed opening to optimize performance. Featuring innovative designs for effortless throw setting adjustment and distinctive crushing chambers, we guarantee consistent product quality and shape while maximizing capacity. Moreover, our dust seal system safeguards internal components, minimizing maintenance expenses and achieving industry-leading production rates.</p> */}
+      </div>
       <div className="py-8 font-tienne">
         <h2 className="text-xl py-2">Crushing Plant 250 TPH Make Sandvik</h2>
         <h5 className="">Production of Sandvik Plant</h5>
@@ -106,7 +135,7 @@ const Crushers = () => {
       <div className="py-2 font-tienne">
         <h2 className="text-xl py-2">Propel Sander Cone Plant 50 TPH</h2>
         <h5>Production</h5>
-        <Table data={projectFour} headings={headingsTwo} />
+        <Table data={projectFour} headings={headings} />
       </div>
     </div>
   );

@@ -11,6 +11,13 @@ const Airport = () => {
       status: "Completed",
       value: "9.25",
     },
+    {
+      no: 2,
+      name: "Asphalt Surface of Runway of Ozar Airport",
+      department: "Work and Service Department",
+      status: "Completed",
+      value: "7.64",
+    },
   ];
 
   const headings = [
@@ -26,8 +33,14 @@ const Airport = () => {
         <div className="mb-8">
           <Breadcrumb values={["Home", "Airports"]} />
         </div>
+        <div className="py-2">
+          <h2 className="tienne-bold text-2xl text-tableheadcolor">
+            Elevating Air Travel: Forcon Infra's Pioneering Approach to Airport
+            Infrastructure Development
+          </h2>
+        </div>
         <div>
-          <p className="text-justify georgia-regular text-[18px]">
+          <p className=" georgia-regular text-[18px] lg:text-justify">
             Forcon Infra stands as a cutting-edge firm specializing in airport
             infrastructure development and timely project delivery. Our
             expertise extends to constructing runways, taxiways and other vital

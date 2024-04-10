@@ -243,8 +243,11 @@ const Highway = () => {
         <div className="mb-8">
           <Breadcrumb values={["Home", "Highways"]} />
         </div>
+        <div className="py-2">
+          <h2 className="tienne-bold text-2xl text-tableheadcolor"> Leading the Way: Forcon Infra's Commitment to Excellence in Highway and Transportation Construction</h2>
+        </div>
         <div className="">
-          <p className="text-[18px] text-justify georgia-regular">
+          <p className="text-[18px] lg:text-justify georgia-regular">
           Forcon Infra is recognized as a leading expert in highway and transportation construction. Renowned for our commitment to quality, safety, and innovation, the company's exceptional team of engineers, construction specialists and skilled management collaboratively strive to bring each project to fruition, setting new benchmarks for excellence.
           </p>
         </div>

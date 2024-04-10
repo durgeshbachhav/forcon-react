@@ -14,7 +14,9 @@ const AccordionComponent = () => {
           Excellence in People, Planning and Processes
         </h1>
         <h5 className="font-tienne text-xs lg:text-xl text-white py-2">
-        At Forcon Infra, we believe in establishing enduring relationships with the government and businesses based on trust, honesty, and openness.
+          At Forcon Infra, we believe in establishing enduring relationships
+          with the government and businesses based on trust, honesty, and
+          openness.
         </h5>
         <AccordionItem
           image={EXPERTISE}
@@ -29,17 +31,17 @@ const AccordionComponent = () => {
         <AccordionItem
           image={CUSTOMER}
           title="CUSTOMER SATISFACTION"
-          content="Our clients are our top priority, and we are committed to providing them with exceptional service and support."
+          content="Our foremost focus is on our clients, and we are dedicated to delivering outstanding service and support to them."
         />
         <AccordionItem
           image={SUSTAINABILITY}
           title="SUSTAINABILITY"
-          content="Due to our commitment to sustainability, we utilise well-maintained machinery to minimise both noise and air pollution."
+          content="We are committed to sustainability, we utilise well-maintained machinery to minimise both noise and air pollution."
         />
         <AccordionItem
           image={USPs}
           title="DISTINGUISHED USPs"
-          content="Skilled and experienced personnels, plant and machinery improve construction quality, cost and control."
+          content="Expert and seasoned personnel, along with advanced plant and machinery, enhance the quality, cost-effectiveness, and management of our projects."
         />
         <AccordionItem
           image={MANAGEMENT}

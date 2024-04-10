@@ -22,7 +22,7 @@ import wmmPlant from "../plantAndMachinery_json_data/wmmPlant.json";
 
 const PlantAndMachinary = () => {
   const data = [
-    { title: "Rmc", content: rmc },
+    { title: "RMC", content: rmc },
     { title: "Concreate Pump", content: Concreate },
     // { title: "Hyva Tipper", content: Hyva },
     // { title: "Water Tanker", content: waterTanker },
@@ -31,13 +31,13 @@ const PlantAndMachinary = () => {
     // { title: "Diesel Van", content: Diesel },
     // { title: "Bolero Camper", content: Bolero },
     { title: "Loader", content: Loader },
-    { title: "Roller S", content: Roller },
+    { title: "Rollers", content: Roller },
     { title: "Grader", content: Grader },
     { title: "Paver", content: Paver },
     // { title: "Farana Crane", content: Farana },
     // { title: "Tractor", content: Tractor },
     { title: "Excavator", content: Excavator },
-    { title: "Dg Set", content: DgSet },
+    { title: "DG Set", content: DgSet },
     { title: "Bitumen Plant", content: Bitemen },
     { title: "Wash Plant", content: washPlant },
     { title: "WMM Plant", content: wmmPlant },
@@ -57,7 +57,7 @@ const PlantAndMachinary = () => {
         <h2 className="text-2xl font-bold mt-8 font-tienne  lg:text-3xl text-tableheadcolor">
           Plant and Machinery
         </h2>
-        <p className="text-justify georgia-regular text-[18px] my-4 lg:my-10">
+        <p className=" georgia-regular text-[18px] my-4 lg:my-10 lg:text-justify">
           At Forcon Infra, we recognize the significance of using appropriate
           tools and machinery for any infrastructure or construction project. We
           have made significant investments in a wide range of modern and

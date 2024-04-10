@@ -4,11 +4,12 @@ import { FaCaretRight } from "react-icons/fa";
 import {
   FaFacebookF,
   FaInstagram,
-  FaTwitter,
+  FaLinkedin,
   FaWhatsapp,
 } from "react-icons/fa";
 import Logo from "/src/assets/img/logoWhite.png";
 import { HashLink } from "react-router-hash-link";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -55,7 +56,7 @@ const Footer = () => {
                 <span className="hover:underline">{link.label}</span>
               </HashLink>
             ))}
-          </div>
+          </div>  
         </div>
 
         {/* Logo */}
@@ -65,12 +66,18 @@ const Footer = () => {
             <div className="mx-2 bg-blue-50 rounded-full p-2 text-black hover:bg-tableheadcolor cursor-pointer">
               <FaFacebookF className="text-xl " />
             </div>
-            <div className="mx-2 bg-blue-50 rounded-full p-2 text-black hover:bg-tableheadcolor cursor-pointer">
+            <Link
+              to="https://www.instagram.com/forcon.infra?igsh=aWpxcDA3YWcwMnlr"
+              className="mx-2 bg-blue-50 rounded-full p-2 text-black hover:bg-tableheadcolor cursor-pointer"
+            >
               <FaInstagram className="text-xl" />
-            </div>
-            <div className="mx-2 bg-blue-50 rounded-full p-2 text-black hover:bg-tableheadcolor cursor-pointer">
-              <FaTwitter className="text-xl" />
-            </div>
+            </Link>
+            <Link
+              to={"https://www.linkedin.com/company/forcon-infra/"}
+              className="mx-2 bg-blue-50 rounded-full p-2 text-black hover:bg-tableheadcolor cursor-pointer"
+            >
+              <FaLinkedin className="text-xl" />
+            </Link>
             <div className="mx-2 bg-blue-50 rounded-full p-2 text-black hover:bg-tableheadcolor cursor-pointer">
               <FaWhatsapp className="text-xl" />
             </div>

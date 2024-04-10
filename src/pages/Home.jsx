@@ -6,11 +6,12 @@ import FamilyComponent from "../components/FamilyComponent";
 import AccordionComponent from "../components/Accordion";
 import TimeLine from "../components/TimeLine";
 import CardCarousel from "../components/CardCarousel";
+import images from '../carouselData/homecarousel'
 
 const Home = () => {
   return (
     <div>
-      <Carousel />
+      <Carousel images={images} title={true} />
       <Hero />
       <div id="sector">
         <Sector />

@@ -45,7 +45,7 @@ const CardCarousel = () => {
     {
       id: 7,
       img: ImageSeven,
-      desc: "ASE Bund At More Tembe, Taluka & District: Ratnagiri",
+      desc: "ASE Bund At More Tembe, Taluka District: Ratnagiri",
     },
   ];
 

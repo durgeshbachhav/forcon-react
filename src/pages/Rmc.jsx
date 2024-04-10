@@ -1,7 +1,8 @@
 import React from "react";
 import Breadcrumb from "../components/BreadCrumb";
 import ProductPortFolio from "../components/ProductPortFolio";
-
+import Carousel from "../components/Carousel";
+import images from "../carouselData/rmcCarousel";
 const Rmc = () => {
   const projectPortfolio = [
     {
@@ -50,6 +51,37 @@ const Rmc = () => {
         "ExpressCon is a special concrete, produced by using various blends of cementitious materials along with advanced quality super plasticizers. This results in the reinforcement of the micro-pore structure of the concrete leading to very dense, impervious and long-lasting structures.",
         "ExpressCon's unique formulation not only enhances the strength and durability of structures but also accelerates the curing process, making it ideal for projects requiring rapid turnaround times.",
       ],
+      table: [
+        {
+          feature: "Accelerates critical sections of construction process",
+          application: "Pavement & Trafficked roads",
+        },
+        {
+          feature: "Reduced labour and equipment working hrs",
+          application: "Pre-stressed concrete structures",
+        },
+        {
+          feature:
+            "Increased productivity due to quicker removal of frameworks",
+          application: "Precast applications: Beams, Panel & Specific elements",
+        },
+        {
+          feature:
+            "Structure can put into intended use earlier	Tunnel & Subways",
+          application: "Concrete casting using Aluform systems",
+        },
+        {
+          feature:
+            "Structure can put into intended use earlier	Tunnel & Subways",
+          application: "	Temporary water control structures",
+        },
+        {
+          feature:
+            "Structure can put into intended use earlier	Tunnel & Subways",
+          application: "	Climbing & Gliding framework systems",
+        },
+      ],
+      headings: ["Key Feature", "Application"],
     },
     {
       Heading: "FlowCon",
@@ -57,6 +89,29 @@ const Rmc = () => {
         "FlowCon is special concrete, produced by using high quality latest generation super plasticizers and viscosity modifying agents that gives it a unique self-compacting feature, which in turn allows complicated, intricate and elegant design without leaving any voids.",
         "FlowCon's innovative self-compacting properties not only ensure excellent flowability and workability but also eliminate the need for excessive vibration during placement, reducing labour costs and construction time. FlowCon delivers exceptional performance, reliability, and ease of use, enhancing efficiency and quality in every project.",
       ],
+      table: [
+        {
+          feature:
+            "Excellent quality in terms of surface finish; no honey combs, voids, etc. and hence, enhanced long-term durability.",
+          application: "Retaining walls, raft, footings and pile foundations",
+        },
+        {
+          feature:
+            "Safer working environment due to less labour required on site during placement of concrete",
+          application: "Repair, restoration and renewal of RCC structures.",
+        },
+        {
+          feature:
+            "Environmental friendly as, minimum vibration mitigates noise pollution",
+          application: "RCC members with heavy and congested reinforcement",
+        },
+        {
+          feature: "Better progress and speedy completion of project.",
+          application:
+            "RCC elements of intricate and complicated shape and design",
+        },
+      ],
+      headings: ["Key Feature", "Application"],
     },
     {
       Heading: "FibreCon",
@@ -64,6 +119,31 @@ const Rmc = () => {
         "FibreCon is an enhanced crack resistant and relatively ductile concrete, produced by using various types of fibres like polyster, polypropylene, glass, steel, etc. that minimize the problems of plastic shrinkage cracks of the concrete in the plastic stage and substantially increases its static and dynamic properties like flexural impact and tensile strength.",
         "FibreCon's superior crack resistance and enhanced durability make it an ideal choice for demanding applications such as Trimix flooring and slab construction, ensuring long-lasting performance and structural integrity even under heavy loads and harsh environmental conditions.",
       ],
+      table: [
+        {
+          feature: "Reduced plastic settlement and plastic shrinkage cracking",
+          application:
+            "Concrete roads, beams and precast concrete girders which require additional flexural strength.",
+        },
+        {
+          feature:
+            "Increased durability as it improves toughness, flexural, fatigue and abrasion resistance",
+          application:
+            "Slab on grade: All types of concrete pavements, industrial floors, airport taxiways, hangers etc",
+        },
+        {
+          feature: "Increased homogeneity and reduced bleeding",
+          application:
+            "Heavy traffic wearing surfaces such as warehouses, container yards, railway platforms etc.",
+        },
+        {
+          feature:
+            "Superior durability with high flexural and fatigue strength",
+          application:
+            "Water retaining structures like retaining walls, water tanks, hydel projects, ETPs, jetties and spillways",
+        },
+      ],
+      headings: ["Key Feature", "Application"],
     },
     {
       Heading: "ThermoCon",
@@ -71,12 +151,57 @@ const Rmc = () => {
         "ThermoCon is a special concrete, produced by using chilled water/ice which helps to control the temperature of the concrete and maintaining it within the acceptance criteria.  The other ingredients used in this concrete are also thermally controlled to bring down the temperature within the limits at the time of placing. This reduces the effect of high temperature and helps is minimizing shrinkage cracks, faster drying of concrete, formation of cold joint, etc.",
         "Its ability to maintain optimal temperatures during placement and curing accelerates construction timelines while guaranteeing superior quality and durability, making ThermoCon the preferred choice for critical infrastructure projects.",
       ],
+      table: [
+        {
+          feature:
+            "Controls the temperature differential between the core and surface of the concrete, thereby mitigating thermal tensile cracks.",
+          application: "Bridge Foundation & Bridge Piers",
+        },
+        {
+          feature: "Reduced plastic shrinkage cracks in fresh concrete",
+          application: "Large retaining walls",
+        },
+        {
+          feature:
+            "Rapid loss of slump and drying of fresh concrete is controlled",
+          application: "Mass raft foundations and deep beams",
+        },
+        {
+          feature: "Controlled early setting and stiffening of concrete",
+          application:
+            "Hydro-electric & power projects, mass concrete works in damss",
+        },
+      ],
+      headings: ["Key Feature", "Application"],
     },
     {
       Heading: "LightCon",
       content: [
         "LightCon is a special concrete, produced by using composite material consisting of Portland cement, aggregates, porous fillers, and modifying agents. Its density varies from 800 to 1500kg/m3.",
         "It is suitable for non-load bearing elements such as insulating materials for roofts, floors and electrical cables.In addition to its lightweight properties, LightCon offers excellent thermal and acoustic insulation, making it an ideal choice for applications where energy efficiency and sound attenuation are paramount.",
+      ],
+      headings: ["Key Feature", "Application"],
+      table: [
+        {
+          feature: "Reduction in structural dead load",
+          application: "Roofs and floors as an insulating material",
+        },
+        {
+          feature: "Excellent fire resistance properties",
+          application:
+            "Low strength filler material for variety of applications",
+        },
+        {
+          feature:
+            "Ease of handling & transportation.	Construction of partition walls",
+          application: "Construction of partition walls",
+        },
+        {
+          feature:
+            "Free flowing - spreads to fill all voids, thus enabling faster work",
+          application:
+            "Low strength filler material for variety of applications",
+        },
       ],
     },
     {
@@ -92,13 +217,21 @@ const Rmc = () => {
     <div className="py-8 px-8 lg:px-24">
       <section className="w-full ">
         <div className="mb-8">
-          <Breadcrumb values={["Home", "Rmc"]} />
+          <Breadcrumb values={["Home", "RMC"]} />
         </div>
-        <div className="">
-          <p className="text-[18px] text-justify georgia-regular">
+        <div className="py-4">
+          <h2 className="tienne-bold text-2xl text-tableheadcolor">
+            Pioneering Precision: Forcon Infra's Advanced Concrete Solutions and
+            Seamless Delivery
+
+          </h2>
+        </div>
+        <Carousel images={images} title={false} />
+        <div className="mt-10">
+          {/* <p className="text-[18px]  georgia-regular lg:text-justify">
             Forcon Infra boasts cutting-edge technology with state-of-the-art
             laboratories and fully automated batching plants, offering a total
-            installed capacity of 120 cubic metres per hour. Strategically
+            installed capacity of 120 Cubic meters per hour. Strategically
             located in Sinnar and Nashik, our two independent fully commercial
             plants ensure efficient service delivery. Backed by a large fleet of
             high-capacity vehicles and concrete pumps, we seamlessly cater to
@@ -109,18 +242,37 @@ const Rmc = () => {
             performance for every structure. With superior quality systems
             managing the end-to-end production process, coupled with expertise
             in dispatch and tracking, we guarantee on-time delivery of every
-            truckload, fulfilling each order to meet our customers' demands.
-          </p>
+            truckload, fulfilling each order to meet our customer's demands.
+          </p> */}
+          <ul className="list-disc georgia-regular text-base lg:text-lg text-justify px-4">
+            <li>
+              We provide specially designed concrete to achieve the desired
+              strength and performance of the structure.
+            </li>
+            <li>
+              RMC is manufactured at our state of the art fully automatic
+              batching plants we have superior quality systems for managing the
+              end-to-end production process
+            </li>
+            <li>
+              Benefit from our expertise in dispatch and tracking, ensuring
+              prompt delivery to meet your project demands.
+            </li>
+            <li>
+              Choose from a comprehensive range of RMC grades, from M7.5 to M60
+              and beyond, tailored to your specific structural requirements.
+            </li>
+          </ul>
         </div>
 
         {/* add table */}
         <div>
-          <h2 className="font-tienne text-2xl py-8 text-tableheadcolor">
+          <h1 className="font-tienne font-bold  py-8 text-tableheadcolor text-3xl">
             Product Portfolio
-          </h2>
-          <h5 className="georgia-regular text-xl mb-4">
+          </h1>
+          <h3 className="georgia-regular text-xl mb-4 font-bold">
             Aggregates & Building Materials
-          </h5>
+          </h3>
           {projectPortfolio.map((item, index) => (
             <ProductPortFolio
               key={index}
@@ -130,14 +282,17 @@ const Rmc = () => {
           ))}
         </div>
         <div>
-          <h2 className="georgia-regular text-xl mb-4 mt-8 text-tableheadcolor">
+          <h1 className="font-tienne font-bold  mb-4 mt-8 text-tableheadcolor text-3xl">
             Our Special Products
-          </h2>
+          </h1>
           {ourSpecialProject.map((item, index) => (
             <ProductPortFolio
               key={index}
               heading={item.Heading}
               content={item.content}
+              istable={true}
+              table={item.table}
+              tableheading={item.headings}
             />
           ))}
         </div>

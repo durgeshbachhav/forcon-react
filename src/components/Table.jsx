@@ -11,7 +11,7 @@ const Table = ({ headings, data }) => {
                 <table className="min-w-full divide-y divide-gray-200">
                   <thead className="bg-tableheadcolor text-white">
                     <tr>
-                      {headings.map((heading, index) => (
+                      {headings?.map((heading, index) => (
                         <th
                           key={index}
                           scope="col"
@@ -23,12 +23,12 @@ const Table = ({ headings, data }) => {
                     </tr>
                   </thead>
                   <tbody className="divide-y divide-gray-200 georgia-regular">
-                    {data.map((item, index) => (
+                    {data?.map((item, index) => (
                       <tr
                         key={index}
                         className={index % 2 === 0 ? "bg-gray-100" : "bg-white"}
                       >
-                        {Object.keys(item).map((key, index) => (
+                        {Object?.keys(item).map((key, index) => (
                           <td
                             key={index}
                             className="px-4 py-2 border  text-[14px]   "

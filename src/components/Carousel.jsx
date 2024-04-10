@@ -1,40 +1,8 @@
 import React, { useState, useEffect } from "react";
-import ImageOne from "../assets/img/Jpeg/eight.jpg";
-import ImageTwo from "../assets/img/Jpeg/two.jpg";
-import ImageThree from "../assets/img/Jpeg/three.jpg";
-import ImageFour from "../assets/img/Jpeg/six.jpg";
-import ImageFive from "../assets/img/Jpeg/five.jpg";
-import ImageSix from "../assets/img/Jpeg/seven.jpg";
 
-const Carousel = () => {
+const Carousel = ({ images ,title }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-
-  const images = [
-    {
-      src: ImageOne,
-      title: `Providing Smart Infrastructure Solutions For A Better Tomorrow`,
-    },
-    {
-      src: ImageTwo,
-      title: `Bringing Vision To Life-Building Futuristic Sustainability`,
-    },
-    {
-      src: ImageThree,
-      title: `Our Aim - Delivering Quality Within Time And Budget`,
-    },
-    {
-      src: ImageFour,
-      title: `Excellence In Action-Providing Innovative Solutions`,
-    },
-    {
-      src: ImageFive,
-      title: `Smart Infrastructure For A Brighter Future`,
-    },
-    {
-      src: ImageSix,
-      title: `Delivering Excellence In Infrastructure Manufacturing`,
-    },
-  ];
+  
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) =>
@@ -56,7 +24,7 @@ const Carousel = () => {
   useEffect(() => {
     const intervalId = setInterval(() => {
       nextSlide();
-    }, 18000); // Adjust the interval as needed (5000 milliseconds = 5 seconds)
+    }, 8000); // Adjust the interval as needed (5000 milliseconds = 5 seconds)
 
     return () => clearInterval(intervalId); // Cleanup function to clear interval when component unmounts
   }, [currentIndex]);
@@ -73,16 +41,28 @@ const Carousel = () => {
               index === currentIndex ? "" : "hidden"
             }`}
           >
-            <img
-              src={image.src}
-              alt={`Slide ${index + 1}`}
-              className="absolute  w-full h-full Carousel-animation "
-            />
-            <div className="absolute  text-center top-20 lg:text-right lg:w-[30vw]  lg:right-0 lg:top-0 lg:text-wrap h-screen">
-              <h1 className="text-white font-tienne font-bold text-xl flex items-center justify-center bg-gray-950 bg-opacity-50 p-2 lg:text-4xl lg:h-screen lg:bg-gray-950 lg:bg-opacity-50 lg:w-full lg:flex lg:items-start lg:justify-start lg:p-10 ">
-                {image.title}
-              </h1>
-            </div>
+            {image.type === "image" ? (
+              <img
+                src={image.src}
+                alt={`Slide ${index + 1}`}
+                className="absolute w-full h-full Carousel-animation"
+              />
+            ) : (
+              <video
+                src={image.src}
+                autoPlay
+                muted
+                loop
+                className="absolute w-full h-full object-cover"
+              />
+            )}
+            {title ? (
+              <div className="absolute  text-center top-6 lg:text-right lg:w-[30vw]  lg:right-0 lg:top-0 lg:text-wrap h-screen">
+                <h1 className="text-white font-tienne font-bold text-xl flex items-center justify-center bg-gray-950 bg-opacity-50 p-2 lg:text-4xl lg:h-screen lg:bg-gray-950 lg:bg-opacity-50 lg:w-full lg:flex lg:items-start lg:justify-start lg:p-10 ">
+                  {image.title}
+                </h1>
+              </div>
+            ) : null}
           </div>
         ))}
       </div>
@@ -105,7 +85,7 @@ const Carousel = () => {
 
       <button
         type="button"
-        className="hidden lg:block absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        className=" lg:block absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
         data-carousel-prev
         onClick={prevSlide}
       >
@@ -131,7 +111,7 @@ const Carousel = () => {
       </button>
       <button
         type="button"
-        className="hidden lg:block absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        className=" lg:block absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
         data-carousel-next
         onClick={nextSlide}
       >

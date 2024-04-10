@@ -102,9 +102,9 @@ const Navbar = () => {
                 </Link>
                 {/* SUBMENU OPENS */}
                 {item.name === "VERTICALS" && isSubMenuOpen && (
-                  <div className="absolute  right-30 z-10 text-white hover:text-gray-300 rounded-lg shadow-lg">
+                  <div className="absolute  right-30 z-10 text-white  rounded-lg shadow-lg">
                     <ul
-                      className="py-2 text-sm text-white hover:text-gray-300"
+                      className="py-2 text-sm text-white rounded-lg"
                       aria-labelledby="dropdownDefaultButton"
                       onClick={() => {
                         setIsSubMenuOpen(false);
@@ -115,7 +115,7 @@ const Navbar = () => {
                         <li key={subItem.name}>
                           <Link
                             to={subItem.to}
-                            className="block px-4 py-2 text-white hover:text-gray-300 bg-secondary hover:bg-uicolor"
+                            className="block px-4 py-2 text-white  bg-secondary hover:bg-uicolor"
                             onClick={() => {
                               setIsSubMenuOpen(false);
                               toggleMenu();
@@ -146,10 +146,7 @@ const Navbar = () => {
                 <div className="flex items-center justify-between pb-4">
                   <div className="inline-flex items-center space-x-2">
                     <img
-                      src={
-                        Logo ||
-                        "https://i.postimg.cc/yxrZ4ygc/logo2.png"
-                      }
+                      src={Logo || "https://i.postimg.cc/yxrZ4ygc/logo2.png"}
                       alt=""
                       className="w-40 lg:w-56 "
                     />
@@ -178,7 +175,7 @@ const Navbar = () => {
                     >
                       <Link
                         to={item.to}
-                        className={`static text-sm font-tennie font-bold text-white hover:text-gray-300 active:text-gray-500 flex items-center justify-center gap-0 w-full `}
+                        className={`static text-sm font-tennie font-bold text-white  flex items-center justify-center gap-0 w-full `}
                       >
                         {item.name}
                         {item.name === "VERTICALS" && (
@@ -188,14 +185,14 @@ const Navbar = () => {
                       {item.name === "VERTICALS" && isSubMenuOpen && (
                         <div className="absolute w-[80%]  z-10 bg-primary  rounded-lg shadow-lg">
                           <ul
-                            className="py-2 text-sm text-gray-700 dark:text-gray-200"
+                            className="py-2 text-sm "
                             aria-labelledby="dropdownDefaultButton"
                           >
                             {item.subMenu.map((subItem) => (
                               <li key={subItem.name}>
                                 <Link
                                   to={subItem.to}
-                                  className="static block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white "
+                                  className="static block px-4 py-2 text-white hover:text-white hover:bg-secondary"
                                   onClick={() => toggleMenu()}
                                 >
                                   {subItem.name}

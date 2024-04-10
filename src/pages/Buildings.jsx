@@ -147,8 +147,13 @@ const Building = () => {
         <div className="mb-8">
           <Breadcrumb values={["Home", "Buildings"]} />
         </div>
+        <div className="py-2">
+          <h2 className="tienne-bold text-2xl text-tableheadcolor">
+          Architecting Dreams: Forcon Infra's Mastery in Building Exceptional Spaces
+          </h2>
+        </div>
         <div>
-          <p className="text-[18px] text-justify georgia-regular">
+          <p className="text-[18px] lg:text-justify georgia-regular">
             We excel in the dynamic Buildings Sector, where we derive immense
             pleasure from crafting exquisite homes and commercial spaces. With
             our unwavering commitment to creativity and meticulous attention to

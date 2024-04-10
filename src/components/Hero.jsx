@@ -4,14 +4,8 @@ const Hero = () => {
   return (
     <section className="w-full py-8 lg:py-0  lg:px-16 font-tienne">
       <div className=" px-4 md:px-6">
-        <div className="flex flex-col gap-4 min-h-[600px] items-center justify-center space-y-4 text-center">
-          <div className="space-y-2">
-            <p className="text-sm font-semibold tracking-wide  uppercase animate-slidein">
-              Welcome to{" "}
-              <span className="text-tableheadcolor animate-slidein">
-                Forcon Infra
-              </span>
-            </p>
+        <div className="flex flex-col gap-4 min-h-[500px] items-center justify-center space-y-4 text-center">
+          <div className="">
             <h2 className="text-3xl font-bold tracking-tighter lg:text-4xl animate-slidein300">
               Providing Sustainable{" "}
               <span className="text-tableheadcolor animate-slidein">

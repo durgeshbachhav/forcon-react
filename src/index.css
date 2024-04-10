@@ -115,18 +115,16 @@
   0% {
     transform: scale(1);
   }
-  50% {
-    transform: scale(1.2);
-  }
+
   100% {
-    transform: scale(1);
+    transform: scale(1.4);
   }
 }
 
 .Carousel-animation {
   animation: grow-and-shrink 8000ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
+  /* animation-iteration-count: infinite; */
+  animation-timing-function: ease-in;
 }
 
 /*  */
@@ -139,7 +137,7 @@
 }
 
 .Sector-card-animation :hover {
-  transform: perspective(3000px) rotateY(20deg);
+  transform: perspective(6000px) rotateY(20deg);
 }
 
 /* image in plant and machinary when hover on image it will be display */
@@ -183,13 +181,9 @@
   object-fit: cover;
 }
 
-/* .bg-primary {
-  background-image: linear-gradient(
-    to right,
-    #2a2546,
-    #3a3365,
-    #4b4285,
-    #5d51a7,
-    #7061ca
-  );
-} */
+@media only screen and (max-width: 600px) {
+  /* Yaha par aap apne element ko display block ki jagah display inline-block ya phir kisi aur appropriate display property ke sath set kar sakte hain. */
+  .span {
+    display: block;
+  }
+}

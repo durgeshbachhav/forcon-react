@@ -67,14 +67,20 @@ const Marine = () => {
     "Location",
     "Total Rs(In Crores)",
   ];
-
   return (
     <div>
       <section className="py-8 px-8 lg:px-24 ">
         <div className="mb-8 ">
           <Breadcrumb values={["Home", "Marine Engineering"]} />
         </div>
-        <p className="text-[18px] text-justify georgia-regular">
+
+        <div className="py-2">
+          <h2 className="tienne-bold text-2xl text-tableheadcolor">
+            Navigating Innovation: Forcon Infra's Leading Marine Engineering
+            Solutions
+          </h2>
+        </div>
+        <p className="text-[18px]  georgia-regular lg:text-justify">
           Marine engineering is a critical aspect of our company as we're at the
           forefront of providing top-quality marine engineering solutions. With
           a focus on innovation and sustainability, we harness advanced

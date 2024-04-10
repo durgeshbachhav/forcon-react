@@ -7,22 +7,56 @@ import VisionMissionValues from "../components/VisionMissionValues";
 import Breadcrumb from "../components/BreadCrumb";
 
 const About = () => {
-  const data = {
-    img: aboutImage,
-    text: [
-      "Bringing Your Ideas and Innovations to Life",
-      "Forcon Infra, formerly known as B. P. Sangle Constructions Pvt. Ltd., has a long and distinguished history in the infrastructure industry. Founded in 1984 as a stone crushing venture by Mr. Punjaji Nana Sangle, we quickly expanded our operations and registered as a government contractor, executing our first Asphalt Road Project for PWD. From the very beginning, our aim has been to establish ourselves as the most renowned and reliable infrastructure company in the industry, and we have been working tirelessly to achieve this goal ever since.",
-      "Our commitment to excellence was recognized in 2004, when we received an award for excellent work in the Simhastha Kumbh Mela. Throughout the years, we continued to reach new heights and milestones, including a turning point in 2009 when we established a new venture of Automatic Vibro Casting Pipe. Another significant milestone was achieved in 2012 when we ventured into the RMC Business, which has become an integral part of our business today. In 2015, we were awarded the first 123 km of National Highway Project in BEED District, which paved the way for our success.",
-    ],
-  };
-
   return (
     <div className="">
       {/*  */}
       <div className="mt-8 px-8 lg:px-24">
         <Breadcrumb values={["Home", "About Us"]} />
       </div>
-      <div className="py-12">{<ImageAndData data={data} />}</div>
+      <div className="py-10">
+        {/* {<ImageAndData data={data} />} */}
+        <div className="flex flex-col gap-4 items-center justify-center lg:flex-row lg:justify-between px-8 lg:px-24">
+          <div className="lg:w-1/2">
+            <img
+              src={aboutImage}
+              alt=""
+              className="rounded-sm lg:h-[80vh] lg:w-full object-cover"
+            />
+          </div>
+          <div className="lg:w-1/2">
+            <div>
+              <h3 className=" font-tienne tienne-bold text-2xl font-semibold mb-2 lg:text-3xl lg:py-2 text-tableheadcolor">
+                Bringing Your Ideas and Innovations to Life
+              </h3>
+
+              <p className="text-base mb-2 lg:text-justify georgia-regular">
+                Forcon Infra, formerly known as B. P. Sangle Constructions Pvt.
+                Ltd., has a long and distinguished history in the infrastructure
+                industry. Founded in 1984 as a stone crushing venture by{" "}
+                <span className="span"></span>Mr.Punjaji Nana Sangle, we quickly
+                expanded our operations and registered as a government
+                contractor, executing our first Asphalt Road Project for PWD.
+                From the very beginning, our aim has been to establish ourselves
+                as the most renowned and reliable infrastructure company in the
+                industry, and we have been working tirelessly to achieve this
+                goal ever since.
+              </p>
+              <p className="text-base mb-2 lg:text-justify georgia-regular">
+                Our commitment to excellence was recognized in 2004, when we
+                received an award for excellent work in the Simhastha Kumbh
+                Mela. Throughout the years, we continued to reach new heights
+                and milestones, including a turning point in 2009 when we
+                established a new venture of Automatic Vibro Casting Pipe.
+                Another significant milestone was achieved in 2012 when we
+                ventured into the RMC Business, which has become an integral
+                part of our business today. In 2015, we were awarded the first
+                123 km of National Highway Project in BEED District, which paved
+                the way for our success.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
       {/*  */}
       <div className="py-8 px-8 lg:px-24 text-gray-300  text-xl bg-primary">
         <p className="lg:text-justify georgia-regular mb-4">
@@ -66,7 +100,7 @@ const About = () => {
           {" "}
           {/* Limit the width of the content on larger screens */}
           <h2 className="text-2xl  font-bold mb-4 text-justify font-tienne lg:text-3xl">
-            Director Desk:
+            Director's Desk:
           </h2>{" "}
           {/* Apply appropriate text styles */}
           <p className="text-base text-justify georgia-regular">
