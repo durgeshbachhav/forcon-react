@@ -3,6 +3,9 @@ import Breadcrumb from "../components/BreadCrumb";
 import ProductPortFolio from "../components/ProductPortFolio";
 import Carousel from "../components/Carousel";
 import images from "../carouselData/rmcCarousel";
+import CollegeComponent from "../components/CollegeComponent";
+import collegeImages from "../CollegeCompData/collegeImages";
+
 const Rmc = () => {
   const projectPortfolio = [
     {
@@ -148,8 +151,8 @@ const Rmc = () => {
     {
       Heading: "ThermoCon",
       content: [
-        "ThermoCon is a special concrete, produced by using chilled water/ice which helps to control the temperature of the concrete and maintaining it within the acceptance criteria.  The other ingredients used in this concrete are also thermally controlled to bring down the temperature within the limits at the time of placing. This reduces the effect of high temperature and helps is minimizing shrinkage cracks, faster drying of concrete, formation of cold joint, etc.",
-        "Its ability to maintain optimal temperatures during placement and curing accelerates construction timelines while guaranteeing superior quality and durability, making ThermoCon the preferred choice for critical infrastructure projects.",
+        "ThermoCon is a unique concrete blend crafted with chilled water/ice to regulate temperature during production and placement. Its ingredients are thermally controlled to minimize high temperatures, reducing shrinkage cracks and accelerating drying.",
+        "This ensures faster construction timelines and superior quality, making ThermoCon the top choice for critical projects.",
       ],
       table: [
         {
@@ -207,8 +210,8 @@ const Rmc = () => {
     {
       Heading: "ColourCon",
       content: [
-        "ColourCon is a colourful concrete that provides the liberty to architects to explore their vision and bring variety in the treatment of various elements of a building. It is available in various shades and colours. It is relatively maintenance free as compare to bricks, pavers, cobbies, etc.",
-        " ColourCon's durable and weather-resistant properties ensure long-lasting vibrancy, making it an ideal choice for decorative applications in both indoor and outdoor settings. Its versatility allows architects and designers to create visually striking elements, adding aesthetic value to any project while maintaining low maintenance requirements.",
+        "ColourCon offers architects the freedom to realize vibrant designs with its array of shades and colors. Its low-maintenance nature surpasses that of traditional materials like bricks and pavers. ",
+        "With durability and weather resistance, ColourCon retains its vibrancy over time, perfect for decorative use indoors and out. Architects and designers can create visually stunning elements with ease, enhancing projects while minimizing upkeep.",
       ],
     },
   ];
@@ -220,10 +223,9 @@ const Rmc = () => {
           <Breadcrumb values={["Home", "RMC"]} />
         </div>
         <div className="py-4">
-          <h2 className="tienne-bold text-2xl text-tableheadcolor">
+          <h2 className="tienne-bold font-bold text-2xl text-tableheadcolor">
             Pioneering Precision: Forcon Infra's Advanced Concrete Solutions and
             Seamless Delivery
-
           </h2>
         </div>
         <Carousel images={images} title={false} />
@@ -246,25 +248,35 @@ const Rmc = () => {
           </p> */}
           <ul className="list-disc georgia-regular text-base lg:text-lg text-justify px-4">
             <li>
-              We provide specially designed concrete to achieve the desired
-              strength and performance of the structure.
+              We specialize in crafting custom concrete formulations
+              meticulously tailored to meet the exacting demands of each
+              structure, ensuring unparalleled strength and performance.
             </li>
             <li>
-              RMC is manufactured at our state of the art fully automatic
-              batching plants we have superior quality systems for managing the
-              end-to-end production process
+              At our cutting-edge fully automated batching plants, we
+              meticulously produce Ready-Mix Concrete (RMC) with precision. Our
+              advanced quality control systems oversee every aspect of the
+              production process, ensuring excellence from start to finish.
             </li>
             <li>
-              Benefit from our expertise in dispatch and tracking, ensuring
-              prompt delivery to meet your project demands.
+              Utilizing our proficiency in dispatch and meticulous tracking
+              systems, we guarantee punctual delivery of every truckload,
+              fulfilling each order promptly to meet the exacting demands of our
+              valued customers.
             </li>
             <li>
-              Choose from a comprehensive range of RMC grades, from M7.5 to M60
-              and beyond, tailored to your specific structural requirements.
+              Our comprehensive range of Ready-Mix Concrete (RMC) extends from
+              Grade M7.5 to M60 and beyond, precisely tailored to match the
+              specific structural requirements of each project.
+            </li>
+            <li>
+              Delivering top-quality Ready-Mix Concrete (RMC) throughout Nashik,
+              our strategically located plants in Sinnar and Nashik ensure swift
+              and efficient distribution, catering to diverse construction needs
+              with precision and reliability.
             </li>
           </ul>
         </div>
-
         {/* add table */}
         <div>
           <h1 className="font-tienne font-bold  py-8 text-tableheadcolor text-3xl">
@@ -295,6 +307,9 @@ const Rmc = () => {
               tableheading={item.headings}
             />
           ))}
+        </div>
+        <div>
+          <CollegeComponent collegeImages={collegeImages} />
         </div>
       </section>
     </div>

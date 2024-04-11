@@ -3,6 +3,7 @@ import ImageThree from "../img/rmcSlider2.png";
 import ImageFour from "../img/rmcSlider3.png";
 import ImageSix from "../img/rmcSlider4.png";
 import ImageFive from "../img/rmcSlider5.jpg";
+import ImageTwo from "../img/map.png";
 // import VideoOne from "../img/rmcSlider1.png";
 // import VideoTwo from "../img/rmcSlider1.png";
 
@@ -33,6 +34,11 @@ const images = [
      {
           type: "image",
           src: ImageFive,
+          title: ``,
+     },
+     {
+          type: "image",
+          src: ImageTwo,
           title: ``,
      },
      // {
