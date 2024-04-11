@@ -15,7 +15,7 @@ const ProductPortFolio = ({
       </h5>
       <ul className="list-disc pl-4">
         {content?.map((item, index) => (
-          <li key={index} className="mb-2 georgia-regular">
+          <li key={index} className="mb-2 text-start georgia-regular">
             {item}
           </li>
         ))}

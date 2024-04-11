@@ -51,8 +51,9 @@ const Rmc = () => {
     {
       Heading: "ExpressCon",
       content: [
-        "ExpressCon is a special concrete, produced by using various blends of cementitious materials along with advanced quality super plasticizers. This results in the reinforcement of the micro-pore structure of the concrete leading to very dense, impervious and long-lasting structures.",
-        "ExpressCon's unique formulation not only enhances the strength and durability of structures but also accelerates the curing process, making it ideal for projects requiring rapid turnaround times.",
+        "Speeds Up Construction & Boosts Durability.",
+        "This high-strength concrete allows faster construction and earlier building use.",
+        "It's made with special blends and advanced additives for a denser, more durable structure.",
       ],
       table: [
         {
@@ -89,8 +90,9 @@ const Rmc = () => {
     {
       Heading: "FlowCon",
       content: [
-        "FlowCon is special concrete, produced by using high quality latest generation super plasticizers and viscosity modifying agents that gives it a unique self-compacting feature, which in turn allows complicated, intricate and elegant design without leaving any voids.",
-        "FlowCon's innovative self-compacting properties not only ensure excellent flowability and workability but also eliminate the need for excessive vibration during placement, reducing labour costs and construction time. FlowCon delivers exceptional performance, reliability, and ease of use, enhancing efficiency and quality in every project.",
+        "Self-Compacting Concrete for Easier Work & Flawless Designs.",
+        "FlowCon's special formula makes it self-leveling and requires minimal compaction.",
+        "Ideal for intricate designs, it fills voids for a smooth, flawless finish.",
       ],
       table: [
         {
@@ -119,8 +121,9 @@ const Rmc = () => {
     {
       Heading: "FibreCon",
       content: [
-        "FibreCon is an enhanced crack resistant and relatively ductile concrete, produced by using various types of fibres like polyster, polypropylene, glass, steel, etc. that minimize the problems of plastic shrinkage cracks of the concrete in the plastic stage and substantially increases its static and dynamic properties like flexural impact and tensile strength.",
-        "FibreCon's superior crack resistance and enhanced durability make it an ideal choice for demanding applications such as Trimix flooring and slab construction, ensuring long-lasting performance and structural integrity even under heavy loads and harsh environmental conditions.",
+        "Tougher Concrete for Demanding Projects",
+        "FibreCon's reinforced with fibers (polyester, etc.) to resist cracking and improve strength.",
+        "Perfect for heavy-duty projects like Trimix floors, it delivers lasting performance.",
       ],
       table: [
         {
@@ -151,8 +154,8 @@ const Rmc = () => {
     {
       Heading: "ThermoCon",
       content: [
-        "ThermoCon is a unique concrete blend crafted with chilled water/ice to regulate temperature during production and placement. Its ingredients are thermally controlled to minimize high temperatures, reducing shrinkage cracks and accelerating drying.",
-        "This ensures faster construction timelines and superior quality, making ThermoCon the top choice for critical projects.",
+        "Cool Concrete for Faster Construction.",
+        "This unique blend uses chilled water to control temperature, reducing cracks and drying time.","Perfect for critical projects, ThermoCon speeds up construction and delivers superior quality.",
       ],
       table: [
         {
@@ -181,7 +184,7 @@ const Rmc = () => {
       Heading: "LightCon",
       content: [
         "LightCon is a special concrete, produced by using composite material consisting of Portland cement, aggregates, porous fillers, and modifying agents. Its density varies from 800 to 1500kg/m3.",
-        "It is suitable for non-load bearing elements such as insulating materials for roofts, floors and electrical cables.In addition to its lightweight properties, LightCon offers excellent thermal and acoustic insulation, making it an ideal choice for applications where energy efficiency and sound attenuation are paramount.",
+        "Made with special fillers, LightCon offers superior insulation (thermal & acoustic) at a lighter weight. Ideal for roofs, floors, and electrical applications where energy savings and sound control matter.",
       ],
       headings: ["Key Feature", "Application"],
       table: [
@@ -208,10 +211,38 @@ const Rmc = () => {
       ],
     },
     {
-      Heading: "ColourCon",
+      Heading: "MegaCon",
       content: [
-        "ColourCon offers architects the freedom to realize vibrant designs with its array of shades and colors. Its low-maintenance nature surpasses that of traditional materials like bricks and pavers. ",
-        "With durability and weather resistance, ColourCon retains its vibrancy over time, perfect for decorative use indoors and out. Architects and designers can create visually stunning elements with ease, enhancing projects while minimizing upkeep.",
+        "Megacon is a special concrete which gives high strength for concrete generally M60 above.",
+        "It is produced by using high cementitious and specially formulated micro fines with high quality admixtures.",
+      ],
+      headings: ["Key Feature", "Application"],
+      table: [
+        {
+          feature:
+            "High early strength allowing early stripping times and speedy construction",
+          application: "RCC columns and beams in high rise buildings",
+        },
+        {
+          feature: "Supports high-rise constructions.",
+          application:
+            "columns, beams and girders for mega-urban infrastructure projects",
+        },
+        {
+          feature: "Jumbo Strength and Dense Concrete",
+          application: "Marine structures",
+        },
+        {
+          feature: "Increased floor space availability.",
+          application: "Precast structural elements.",
+        },
+      ],
+    },
+    {
+      Heading: "EcoCon",
+      content: [
+        "EcoCon is a special concrete which gives high durable mix and low environmental impact. ",
+        "It is produced by using green products available in the industry waste which provides the structure a good shielding to protect from harmful environmental attack.",
       ],
     },
   ];
@@ -224,8 +255,8 @@ const Rmc = () => {
         </div>
         <div className="py-4">
           <h2 className="tienne-bold font-bold text-2xl text-tableheadcolor">
-            Pioneering Precision: Forcon Infra's Advanced Concrete Solutions and
-            Seamless Delivery
+            Build Faster, Build Better: Forcon Infra's Advanced Concrete
+            Solutions
           </h2>
         </div>
         <Carousel images={images} title={false} />
@@ -246,7 +277,7 @@ const Rmc = () => {
             in dispatch and tracking, we guarantee on-time delivery of every
             truckload, fulfilling each order to meet our customer's demands.
           </p> */}
-          <ul className="list-disc georgia-regular text-base lg:text-lg text-justify px-4">
+          <ul className="list-disc georgia-regular text-base lg:text-lg text-start px-4">
             <li>
               We specialize in crafting custom concrete formulations
               meticulously tailored to meet the exacting demands of each
@@ -278,7 +309,7 @@ const Rmc = () => {
           </ul>
         </div>
         {/* add table */}
-        <div>
+        {/* <div>
           <h1 className="font-tienne font-bold  py-8 text-tableheadcolor text-3xl">
             Product Portfolio
           </h1>
@@ -292,7 +323,7 @@ const Rmc = () => {
               content={item.content}
             />
           ))}
-        </div>
+        </div> */}
         <div>
           <h1 className="font-tienne font-bold  mb-4 mt-8 text-tableheadcolor text-3xl">
             Our Special Products

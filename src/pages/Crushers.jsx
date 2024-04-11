@@ -78,41 +78,44 @@ const Crushers = () => {
       </div>
       <div className="py-4">
         <h2 className="tienne-bold text-2xl text-tableheadcolor">
-          Forging the Future: Forcon Infra's Revolutionary Crushers Transforming
-          Mining and Construction
+          Don't Just Break It, Crush It: Forcon Infra's Cutting-Edge Crushers
         </h2>
       </div>
       <Carousel images={images} title={false} />
 
       <div className="mt-10">
-        <ul className="list-disc georgia-regular text-base lg:text-lg text-justify px-4">
+        <ul className="list-disc georgia-regular text-base lg:text-lg text-start px-4">
           <li className="">
-            Forcon Infra: Spearheading transformation in mining and construction
-            industries.
+            <span className="font-bold">Mining and Construction : </span>{" "}
+            Spearheading transformation in mining and construction industries.
           </li>
           <li>
-            State-of-the-Art Crushers: Renowned for superior-quality aggregate
-            production.
+            <span className="font-bold">State-of-the-Art Crushers : </span>
+            Renowned for superior-quality aggregate production.
           </li>
           <li>
-            Efficient Operations: Minimal maintenance costs, reduced power
-            consumption, and spacious feed opening.
+            <span className="font-bold">Efficient Operations : </span>
+            Minimal maintenance costs, reduced power consumption, and spacious
+            feed opening.
           </li>
           <li>
-            Innovative Design: Effortless throw setting adjustment and
-            distinctive crushing chambers.
+            <span className="font-bold">Innovative Design : </span>
+            Effortless throw setting adjustment and distinctive crushing
+            chambers.
           </li>
           <li>
-            Consistent Quality: Guaranteed product quality and shape with
-            maximized capacity.
+            <span className="font-bold">Consistent Quality : </span>
+            Guaranteed product quality and shape with maximized capacity.
           </li>
           <li>
-            Dust Seal System: Ensures internal component safety, minimizing
-            maintenance expenses.
+            <span className="font-bold">Dust Seal System : </span>
+            Ensures internal component safety, minimizing maintenance expenses.
           </li>
           <li>
-            Industry-Leading Production Rates: Achieve unmatched efficiency with
-            Forcon Infra's crushers.
+            <span className="font-bold">
+              Industry-Leading Production Rates :{" "}
+            </span>
+            Achieve unmatched efficiency with Forcon Infra's crushers.
           </li>
         </ul>
         {/* <p className=" georgia-regular text-[18px] lg:text-justify">Forcon Infra leads the charge in revolutionizing the mining and construction industries, delivering state-of-the-art crushers renowned for their ability to produce superior-quality aggregate with unmatched efficiency. Our crushers boast easy maintenance, minimal operational costs per ton, reduced power consumption, and a spacious feed opening to optimize performance. Featuring innovative designs for effortless throw setting adjustment and distinctive crushing chambers, we guarantee consistent product quality and shape while maximizing capacity. Moreover, our dust seal system safeguards internal components, minimizing maintenance expenses and achieving industry-leading production rates.</p> */}
