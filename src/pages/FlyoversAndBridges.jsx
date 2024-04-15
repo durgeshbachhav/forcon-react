@@ -51,7 +51,7 @@ const FlyoverAndBridge = () => {
 
         <div className="py-2">
           <h2 className="tienne-bold text-2xl text-tableheadcolor">
-            Forcon Infra's Legacy in Flyovers and Bridge Construction
+            Our Legacy in Flyovers and Bridge Construction
           </h2>
         </div>
         <div>

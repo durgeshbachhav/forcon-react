@@ -244,7 +244,7 @@ const Highway = () => {
           <Breadcrumb values={["Home", "Highways"]} />
         </div>
         <div className="py-2">
-          <h2 className="tienne-bold text-2xl text-tableheadcolor"> Leading the Way: Forcon Infra's Commitment to Excellence in Highway and Transportation Construction</h2>
+          <h2 className="tienne-bold text-2xl text-tableheadcolor"> Leading the Way: Our Commitment to Excellence in Highway and Transportation Construction</h2>
         </div>
         <div className="">
           <p className="text-[18px] lg:text-justify georgia-regular">

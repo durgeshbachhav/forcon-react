@@ -35,7 +35,7 @@ const Airport = () => {
         </div>
         <div className="py-2">
           <h2 className="tienne-bold text-2xl text-tableheadcolor">
-            Elevating Air Travel: Forcon Infra's Pioneering Approach to Airport
+            Elevating Air Travel: Our Pioneering Approach to Airport
             Infrastructure Development
           </h2>
         </div>

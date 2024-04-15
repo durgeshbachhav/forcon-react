@@ -72,17 +72,22 @@ const Rmc = () => {
         {
           feature:
             "Structure can put into intended use earlier	Tunnel & Subways",
-          application: "Concrete casting using Aluform systems",
+          application: "Tunnel & Subways",
         },
         {
           feature:
-            "Structure can put into intended use earlier	Tunnel & Subways",
-          application: "	Temporary water control structures",
+            "Cost effective solution",
+          application: "Concrete casting using Aluform systems.",
         },
         {
           feature:
-            "Structure can put into intended use earlier	Tunnel & Subways",
-          application: "	Climbing & Gliding framework systems",
+            "",
+          application: "Temporary water control structures",
+        },
+        {
+          feature:
+            "",
+          application: "Climbing & Gliding framework systems",
         },
       ],
       headings: ["Key Feature", "Application"],
@@ -244,6 +249,31 @@ const Rmc = () => {
         "EcoCon is a special concrete which gives high durable mix and low environmental impact. ",
         "It is produced by using green products available in the industry waste which provides the structure a good shielding to protect from harmful environmental attack.",
       ],
+      headings: ["Key Feature", "Application"],
+      table: [
+        {
+          feature:
+            "Durable & Sustainable.",
+          application: "Mass foundations.",
+        },
+        {
+          feature: "Low heat of hydration.",
+          application:
+            "Underground structures.",
+        },
+        {
+          feature: "Continue strength gain upto lateral ages.",
+          application: "General industrial flooring.",
+        },
+        {
+          feature: "Mitigate cracking.",
+          application: "Reinforced and precast concrete elements.",
+        },
+        {
+          feature: "Mitigate cracking.",
+          application: "Concrete pavements.",
+        },
+      ],
     },
   ];
 
@@ -255,7 +285,7 @@ const Rmc = () => {
         </div>
         <div className="py-4">
           <h2 className="tienne-bold font-bold text-2xl text-tableheadcolor">
-            Build Faster, Build Better: Forcon Infra's Advanced Concrete
+            Build Faster, Build Better: Our Advanced Concrete
             Solutions
           </h2>
         </div>

@@ -149,7 +149,7 @@ const Building = () => {
         </div>
         <div className="py-2">
           <h2 className="tienne-bold text-2xl text-tableheadcolor">
-          Architecting Dreams: Forcon Infra's Mastery in Building Exceptional Spaces
+          Architecting Dreams: Our Mastery in Building Exceptional Spaces
           </h2>
         </div>
         <div>

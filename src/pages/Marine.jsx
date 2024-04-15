@@ -76,7 +76,7 @@ const Marine = () => {
 
         <div className="py-2">
           <h2 className="tienne-bold text-2xl text-tableheadcolor">
-            Navigating Innovation: Forcon Infra's Leading Marine Engineering
+            Navigating Innovation: Our Leading Marine Engineering
             Solutions
           </h2>
         </div>

@@ -51,7 +51,7 @@ const Dam = () => {
         
         <div className="py-2">
           <h2 className="tienne-bold text-2xl text-tableheadcolor">
-          Empowering Water: Forcon Infra's Innovations in Dam Construction and Water Management.
+          Empowering Water: Our Innovations in Dam Construction and Water Management.
           </h2>
         </div>
         <div>

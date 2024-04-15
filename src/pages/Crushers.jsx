@@ -78,7 +78,7 @@ const Crushers = () => {
       </div>
       <div className="py-4">
         <h2 className="tienne-bold text-2xl text-tableheadcolor">
-          Don't Just Break It, Crush It: Forcon Infra's Cutting-Edge Crushers
+          Don't Just Break It, Crush It: Our Cutting-Edge Crushers
         </h2>
       </div>
       <Carousel images={images} title={false} />

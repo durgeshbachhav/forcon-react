@@ -34,7 +34,9 @@ const CollegeComponent = ({ collegeImages }) => {
     <div
       className="flex items-center justify-center w-full  h-56  bg-tablesubheadingcolor rounded-lg"
       style={{
-        overflow: "hidden",
+        overflow: "scroll",
+        scrollbarWidth: "none",
+        msOverflowStyle: "none",
       }}
       ref={containerRef}
       onMouseOver={() => setIsHovered(true)}
@@ -51,7 +53,6 @@ const CollegeComponent = ({ collegeImages }) => {
         ))}
     </div>
   );
-  
 };
 
 export default CollegeComponent;
