@@ -1,6 +1,8 @@
 import React from "react";
 import Breadcrumb from "../components/BreadCrumb";
 import Table from "../components/Table";
+import Carousel from "../components/Carousel";
+import images from '../carouselData/flyoverimages'
 
 const FlyoverAndBridge = () => {
   const headings = [
@@ -44,17 +46,20 @@ const FlyoverAndBridge = () => {
 
   return (
     <div>
-      <section className="py-8 px-8 lg:px-24">
-        <div className="mb-8">
+      <section className="py-8 ">
+        <div className="mb-8 px-8 lg:px-24">
           <Breadcrumb values={["Home", "Flyovers & Bridges"]} />
         </div>
 
-        <div className="py-2">
+        <div className="py-2 px-8 lg:px-24">
           <h2 className="tienne-bold text-2xl text-tableheadcolor">
             Our Legacy in Flyovers and Bridge Construction
           </h2>
         </div>
-        <div>
+        <div className="lg:px-24">
+        <Carousel images={images} title={false} />
+        </div>
+        <div className="mt-8 px-8 lg:px-24">
           <p className="text-[18px] lg:text-justify georgia-regular">
             At Forcon Infra, we pride ourselves on being at the forefront of
             flyovers and bridge construction. With a rich legacy of expertise in
@@ -62,7 +67,7 @@ const FlyoverAndBridge = () => {
             quality, safety, and innovation in the industry.
           </p>
         </div>
-        <div className="mt-6 flex flex-col ">
+        <div className="mt-6 flex flex-col px-8 lg:px-24">
           <Table data={data} headings={headings} />
         </div>
       </section>

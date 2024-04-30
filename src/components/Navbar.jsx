@@ -65,13 +65,13 @@ const Navbar = () => {
         {/* DESKTOP SCREEN */}
         {/* LOGO  */}
         <div className="inline-flex items-center space-x-2">
-          <span className="">
+          <Link to={"/"} className="">
             <img
               src={Logo || "https://i.postimg.cc/yxrZ4ygc/logo2.png"}
               alt=""
               className="w-40 lg:w-56 "
             />
-          </span>
+          </Link>
         </div>
         {/* NAVITEMS  */}
         <div className="hidden lg:block">

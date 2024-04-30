@@ -12,7 +12,7 @@ const CollegeComponent = ({ collegeImages }) => {
         if (containerRef.current) {
           containerRef.current.scrollLeft += 2; // Adjust scrolling speed as needed
         }
-      }, 20); // Adjust interval for smoother or faster scrolling
+      }, 30); // Adjust interval for smoother or faster scrolling
     };
 
     const stopAutoScroll = () => {
@@ -32,7 +32,7 @@ const CollegeComponent = ({ collegeImages }) => {
 
   return (
     <div
-      className="flex items-center justify-center w-full  h-56  bg-tablesubheadingcolor rounded-lg"
+      className="flex items-center justify-center w-full  h-56  bg-gray-300 rounded-lg "
       style={{
         overflow: "scroll",
         scrollbarWidth: "none",

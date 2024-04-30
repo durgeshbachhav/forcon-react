@@ -56,12 +56,14 @@ const Footer = () => {
                 <span className="hover:underline">{link.label}</span>
               </HashLink>
             ))}
-          </div>  
+          </div>
         </div>
 
         {/* Logo */}
         <div className="lg:w-1/5 flex items-center justify-center flex-col gap-8 ">
-          <img src={Logo} alt="Logo" className="w-40 lg:w-full" />
+          <Link to={"/"}>
+            <img src={Logo} alt="Logo" className="w-40 lg:w-full" />
+          </Link>
           <div className="flex justify-center">
             <div className="mx-2 bg-blue-50 rounded-full p-2 text-black hover:bg-tableheadcolor cursor-pointer">
               <FaFacebookF className="text-xl " />

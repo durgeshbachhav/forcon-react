@@ -6,6 +6,7 @@ import ImageFive from "../assets/img/Jpeg/five.jpg";
 import ImageSix from "../assets/img/Jpeg/seven.jpg";
 import VideoOne from "../videos/videoOne.mp4";
 import VideoTwo from "../videos/videoTwo.mp4";
+import VideoThree from "../videos/crusherVideo.mp4";
 
 
 const images = [
@@ -14,7 +15,6 @@ const images = [
     src: ImageOne,
     title: `Providing Smart Infrastructure Solutions For A Better Tomorrow`,
   },
-
   {
     type: "image",
     src: ImageThree,
@@ -25,7 +25,6 @@ const images = [
     src: ImageFour,
     title: `Excellence In Action-Providing Innovative Solutions`,
   },
-
   {
     type: "image",
     src: ImageSix,
@@ -40,6 +39,11 @@ const images = [
     type: "video",
     src: VideoOne, // if want to image please add tapovan image
     title: `Smart Infrastructure For A Brighter Future`,
+  },
+  {
+    type: "video",
+    src: VideoThree,
+    title: `Unleash Innovation with Our Advanced Crushers`,
   },
 ];
 

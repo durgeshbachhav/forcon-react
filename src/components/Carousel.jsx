@@ -24,13 +24,13 @@ const Carousel = ({ images ,title }) => {
   useEffect(() => {
     const intervalId = setInterval(() => {
       nextSlide();
-    }, 8000); // Adjust the interval as needed (5000 milliseconds = 5 seconds)
+    }, 4000); // Adjust the interval as needed (5000 milliseconds = 5 seconds)
 
     return () => clearInterval(intervalId); // Cleanup function to clear interval when component unmounts
   }, [currentIndex]);
 
   return (
-    <div className="relative w-full">
+    <div className="relative w-full ">
       {/* Carousel wrapper */}
       <div className="relative h-64 overflow-hidden md:h-96 lg:h-[80vh] ">
         {/* Carousel items */}
@@ -85,7 +85,7 @@ const Carousel = ({ images ,title }) => {
 
       <button
         type="button"
-        className=" lg:block absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        className=" lg:block absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none "
         data-carousel-prev
         onClick={prevSlide}
       >
@@ -111,7 +111,7 @@ const Carousel = ({ images ,title }) => {
       </button>
       <button
         type="button"
-        className=" lg:block absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        className=" lg:block absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none "
         data-carousel-next
         onClick={nextSlide}
       >

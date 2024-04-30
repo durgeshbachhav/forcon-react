@@ -1,6 +1,8 @@
 import React from "react";
 import Breadcrumb from "../components/BreadCrumb";
 import Table from "../components/Table";
+import Carousel from "../components/Carousel";
+import images from '../carouselData/highwayimages'
 
 const Highway = () => {
   const data = [
@@ -239,20 +241,23 @@ const Highway = () => {
 
   return (
     <div>
-      <section className="py-8 px-8 lg:px-24 ">
-        <div className="mb-8">
+      <section className="py-8 ">
+        <div className="mb-8 px-8 lg:px-24 ">
           <Breadcrumb values={["Home", "Highways"]} />
         </div>
-        <div className="py-2">
+        <div className="py-2 px-8 lg:px-24 ">
           <h2 className="tienne-bold text-2xl text-tableheadcolor"> Leading the Way: Our Commitment to Excellence in Highway and Transportation Construction</h2>
         </div>
-        <div className="">
+        <div className="lg:px-24">
+        <Carousel images={images} title={false} />
+        </div>
+        <div className="mt-6 px-8 lg:px-24 ">
           <p className="text-[18px] lg:text-justify georgia-regular">
           Forcon Infra is recognized as a leading expert in highway and transportation construction. Renowned for our commitment to quality, safety, and innovation, the company's exceptional team of engineers, construction specialists and skilled management collaboratively strive to bring each project to fruition, setting new benchmarks for excellence.
           </p>
         </div>
         {/* table */}
-        <div className="mt-6 flex flex-col ">
+        <div className="mt-6 flex flex-col px-8 lg:px-24 ">
           <Table data={data} headings={headings} />
         </div>
       </section>

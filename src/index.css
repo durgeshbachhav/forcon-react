@@ -122,7 +122,7 @@
 }
 
 .Carousel-animation {
-  animation: grow-and-shrink 8000ms;
+  animation: grow-and-shrink 4000ms;
   /* animation-iteration-count: infinite; */
   animation-timing-function: ease-in;
 }
@@ -137,7 +137,7 @@
 }
 
 .Sector-card-animation :hover {
-  transform: perspective(6000px) rotateY(20deg);
+  transform: perspective(4000px) rotateY(20deg);
 }
 
 /* image in plant and machinary when hover on image it will be display */

@@ -1,6 +1,7 @@
 import React from "react";
 import ImageAndData from "../components/ImageAndData";
 import aboutImage from "../assets/img/Jpeg/aboutnew.jpg";
+import ImageFour from "../img/rmcSlider3.png";
 import CoreImage from "../assets/img/Info1.jpg";
 import DirectorImage from "../assets/img/director.jpg";
 import VisionMissionValues from "../components/VisionMissionValues";
@@ -15,15 +16,15 @@ const About = () => {
       </div>
       <div className="py-10">
         {/* {<ImageAndData data={data} />} */}
-        <div className="flex flex-col gap-4 items-center justify-center lg:flex-row lg:justify-between px-8 lg:px-24">
+        <div className="flex flex-col gap-4 items-center justify-center lg:flex-row lg:justify-between  lg:px-24">
           <div className="lg:w-1/2">
             <img
-              src={aboutImage}
+              src={ImageFour}
               alt=""
               className="rounded-sm lg:h-[80vh] lg:w-full object-cover"
             />
           </div>
-          <div className="lg:w-1/2">
+          <div className="lg:w-1/2 px-8">
             <div>
               <h3 className=" font-tienne tienne-bold text-2xl font-semibold mb-2 lg:text-3xl lg:py-2 text-tableheadcolor">
                 Bringing Your Ideas and Innovations to Life

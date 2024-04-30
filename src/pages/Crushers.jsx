@@ -72,19 +72,27 @@ const Crushers = () => {
   ];
 
   return (
-    <div className="py-8 px-8 lg:px-24">
-      <div className="mb-8">
+    <div className="py-8 ">
+      <div className="mb-8 px-8 lg:px-24">
         <Breadcrumb values={["Home", "Crushers"]} />
       </div>
-      <div className="py-4">
+      <div className="py-4 px-8 lg:px-24">
         <h2 className="tienne-bold text-2xl text-tableheadcolor">
-          Don't Just Break It, Crush It: Our Cutting-Edge Crushers
+          Crush Beyond Limits : Unleash Innovation with Our Advanced Crushers
         </h2>
       </div>
-      <Carousel images={images} title={false} />
+      <div className="lg:px-24">
+        <Carousel images={images} title={false} />
+      </div>
 
-      <div className="mt-10">
+      <div className="mt-10 px-8 lg:px-24">
         <ul className="list-disc georgia-regular text-base lg:text-lg text-start px-4">
+          <li className="">
+            <span className="font-bold">
+              Largest Plant in Northern Maharashtra :
+            </span>{" "}
+            Our crushing facility stands as the largest in northern Maharashtra.
+          </li>
           <li className="">
             <span className="font-bold">Mining and Construction : </span>{" "}
             Spearheading transformation in mining and construction industries.
@@ -120,22 +128,22 @@ const Crushers = () => {
         </ul>
         {/* <p className=" georgia-regular text-[18px] lg:text-justify">Forcon Infra leads the charge in revolutionizing the mining and construction industries, delivering state-of-the-art crushers renowned for their ability to produce superior-quality aggregate with unmatched efficiency. Our crushers boast easy maintenance, minimal operational costs per ton, reduced power consumption, and a spacious feed opening to optimize performance. Featuring innovative designs for effortless throw setting adjustment and distinctive crushing chambers, we guarantee consistent product quality and shape while maximizing capacity. Moreover, our dust seal system safeguards internal components, minimizing maintenance expenses and achieving industry-leading production rates.</p> */}
       </div>
-      <div className="py-8 font-tienne">
+      <div className="py-8 font-tienne px-8 lg:px-24">
         <h2 className="text-xl py-2">Crushing Plant 250 TPH Make Sandvik</h2>
         <h5 className="">Production of Sandvik Plant</h5>
         <Table data={projectOne} headings={headings} />
       </div>
-      <div className="py-2 font-tienne">
+      <div className="py-2 font-tienne px-8 lg:px-24">
         <h2 className="text-xl py-2">WMM Plant 120 TPH</h2>
         <h5>Production</h5>
         <Table data={projectTwo} headings={headings} />
       </div>
-      <div className="py-2 font-tienne">
+      <div className="py-2 font-tienne px-8 lg:px-24">
         <h2 className="text-xl py-2">WMM Plant 120 TPH</h2>
         <h5>Production</h5>
         <Table data={projectThree} headings={headings} />
       </div>
-      <div className="py-2 font-tienne">
+      <div className="py-2 font-tienne px-8 lg:px-24">
         <h2 className="text-xl py-2">Propel Sander Cone Plant 50 TPH</h2>
         <h5>Production</h5>
         <Table data={projectFour} headings={headings} />

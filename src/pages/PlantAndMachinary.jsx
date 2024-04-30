@@ -87,8 +87,8 @@ const PlantAndMachinary = () => {
 
 const AccordionForVehicle = ({ title, data, headings }) => {
   return (
-    <details className="group  rounded-md bg-tableheadcolor shadow-md">
-      <summary className="flex items-center justify-between p-4 cursor-pointer outline-none group-open:bg-tableheadcolor group-open:text-red rounded-md hover:bg-tablesubheadingcolor  group-open:shadow-md ">
+    <details className="group  rounded-md bg-secondary shadow-md">
+      <summary className="flex items-center justify-between p-4 cursor-pointer outline-none group-open:bg-tableheadcolor group-open:text-red group-open:rounded-t-md rounded-md hover:bg-primary  group-open:shadow-md ">
         <div className="flex items-center justify-center gap-2">
           <span className="text-lg font-semibold sm:text-xl md:text-xl lg:text-xl  font-tienne text-white">
             {title}
@@ -109,7 +109,7 @@ const AccordionForVehicle = ({ title, data, headings }) => {
           <path d="m6 9 6 6 6-6"></path>
         </svg>
       </summary>
-      <div className="px-4 pb-4 group-open:bg-white rounded-md">
+      <div className="px-4 pb-4 group-open:bg-white rounded-b-md">
         <p className="text-base sm:text-lg md:text-xl lg:text-xl  py-2 georgia-regular">
           <Table data={data} headings={headings} />
         </p>

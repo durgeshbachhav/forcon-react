@@ -75,18 +75,15 @@ const Rmc = () => {
           application: "Tunnel & Subways",
         },
         {
-          feature:
-            "Cost effective solution",
+          feature: "Cost effective solution",
           application: "Concrete casting using Aluform systems.",
         },
         {
-          feature:
-            "",
+          feature: "",
           application: "Temporary water control structures",
         },
         {
-          feature:
-            "",
+          feature: "",
           application: "Climbing & Gliding framework systems",
         },
       ],
@@ -160,7 +157,8 @@ const Rmc = () => {
       Heading: "ThermoCon",
       content: [
         "Cool Concrete for Faster Construction.",
-        "This unique blend uses chilled water to control temperature, reducing cracks and drying time.","Perfect for critical projects, ThermoCon speeds up construction and delivers superior quality.",
+        "This unique blend uses chilled water to control temperature, reducing cracks and drying time.",
+        "Perfect for critical projects, ThermoCon speeds up construction and delivers superior quality.",
       ],
       table: [
         {
@@ -252,14 +250,12 @@ const Rmc = () => {
       headings: ["Key Feature", "Application"],
       table: [
         {
-          feature:
-            "Durable & Sustainable.",
+          feature: "Durable & Sustainable.",
           application: "Mass foundations.",
         },
         {
           feature: "Low heat of hydration.",
-          application:
-            "Underground structures.",
+          application: "Underground structures.",
         },
         {
           feature: "Continue strength gain upto lateral ages.",
@@ -278,19 +274,20 @@ const Rmc = () => {
   ];
 
   return (
-    <div className="py-8 px-8 lg:px-24">
+    <div className="py-8 ">
       <section className="w-full ">
-        <div className="mb-8">
+        <div className="mb-8 px-8 lg:px-24">
           <Breadcrumb values={["Home", "RMC"]} />
         </div>
-        <div className="py-4">
+        <div className="py-4 px-8 lg:px-24">
           <h2 className="tienne-bold font-bold text-2xl text-tableheadcolor">
-            Build Faster, Build Better: Our Advanced Concrete
-            Solutions
+            Build Faster, Build Better: Our Advanced Concrete Solutions
           </h2>
         </div>
-        <Carousel images={images} title={false} />
-        <div className="mt-10">
+        <div className="lg:px-24">
+          <Carousel images={images} title={false} />
+        </div>
+        <div className="mt-10 px-8 lg:px-24">
           {/* <p className="text-[18px]  georgia-regular lg:text-justify">
             Forcon Infra boasts cutting-edge technology with state-of-the-art
             laboratories and fully automated batching plants, offering a total
@@ -354,7 +351,7 @@ const Rmc = () => {
             />
           ))}
         </div> */}
-        <div>
+        <div className="px-8 lg:px-24">
           <h1 className="font-tienne font-bold  mb-4 mt-8 text-tableheadcolor text-3xl">
             Our Special Products
           </h1>
@@ -369,7 +366,7 @@ const Rmc = () => {
             />
           ))}
         </div>
-        <div>
+        <div className="px-8 lg:px-24">
           <CollegeComponent collegeImages={collegeImages} />
         </div>
       </section>

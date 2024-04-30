@@ -1,6 +1,8 @@
 import React from "react";
 import Breadcrumb from "../components/BreadCrumb";
 import Table from "../components/Table";
+import Carousel from "../components/Carousel";
+import images from '../carouselData/marineimages'
 
 const Marine = () => {
   const data = [
@@ -69,18 +71,20 @@ const Marine = () => {
   ];
   return (
     <div>
-      <section className="py-8 px-8 lg:px-24 ">
-        <div className="mb-8 ">
+      <section className="py-8 ">
+        <div className="mb-8 px-8 lg:px-24 ">
           <Breadcrumb values={["Home", "Marine Engineering"]} />
         </div>
 
-        <div className="py-2">
+        <div className="py-2 px-8 lg:px-24 ">
           <h2 className="tienne-bold text-2xl text-tableheadcolor">
-            Navigating Innovation: Our Leading Marine Engineering
-            Solutions
+            Navigating Innovation: Our Leading Marine Engineering Solutions
           </h2>
         </div>
-        <p className="text-[18px]  georgia-regular lg:text-justify">
+        <div className="lg:px-24">
+        <Carousel images={images} title={false} />
+        </div>
+        <p className="text-[18px] mt-8  georgia-regular lg:text-justify px-8 lg:px-24 ">
           Marine engineering is a critical aspect of our company as we're at the
           forefront of providing top-quality marine engineering solutions. With
           a focus on innovation and sustainability, we harness advanced
@@ -88,7 +92,7 @@ const Marine = () => {
           solutions that meet the unique needs of the government.
         </p>
 
-        <div className="mt-6 flex flex-col ">
+        <div className="mt-6 flex flex-col px-8 lg:px-24 ">
           <Table data={data} headings={headings} />
         </div>
       </section>
